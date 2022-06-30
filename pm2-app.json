@@ -1,0 +1,9 @@
+{
+	"apps": [
+		{
+			"name": "little-eagle-v3",
+			"script": "yarn",
+			"args": "run start"
+		}
+	]
+}

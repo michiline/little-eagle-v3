@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next -p 4101",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 4101",
+    "compile:i18n": "formatjs compile-folder --ast --format simple public/locales public/compiled-locales",
+    "i18n": "npm run compile:i18n",
     "lint": "next lint"
   },
   "dependencies": {
