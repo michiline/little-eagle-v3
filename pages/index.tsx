@@ -1,10 +1,5 @@
-import Cover from 'components/Cover'
-import { coverHome } from 'utils/const'
+import Home from 'modules/Home'
 
-export default function Home() {
-  return (
-    <>
-      <Cover imgUrl={coverHome} />
-    </>
-  )
+export default function HomePage() {
+  return <Home />
 }

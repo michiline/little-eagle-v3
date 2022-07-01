@@ -6,7 +6,7 @@
     "dev": "next -p 4101",
     "build": "next build",
     "start": "next start -p 4101",
-    "compile:i18n": "formatjs compile-folder --ast --format simple public/locales public/compiled-locales",
+    "compile:i18n": "formatjs compile-folder --ast --format simple locales public/locales",
     "i18n": "npm run compile:i18n",
     "lint": "next lint"
   },
@@ -14,10 +14,12 @@
     "next": "12.2.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-intl": "^6.0.4",
     "react-is": "^18.2.0",
     "styled-components": "^5.3.5"
   },
   "devDependencies": {
+    "@formatjs/cli": "^5.0.2",
     "@types/node": "18.0.0",
     "@types/react": "18.0.14",
     "@types/react-dom": "18.0.5",

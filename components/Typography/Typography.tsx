@@ -1,17 +1,24 @@
 import React, { ReactNode } from 'react'
-
+import { Stylable } from 'utils/types'
 import { StyledTypography } from './styles'
 
-export interface Props {
+export interface TypographyProps extends Stylable {
   children: ReactNode
   variant?: 'h1' | 'h2' | 'h3' | 'h4' | 'body' | 'menu' | 'button' | 'caption'
   fontWeight?: 'bold' | 'normal'
-  color?: 'primary' | 'secondary'
+  color?: 'dark' | 'light' | 'menu'
 }
 
-const Typography = ({ children, variant = 'body', fontWeight = 'normal', color = 'primary' }: Props) => {
+const Typography = ({
+  children,
+  variant = 'body',
+  fontWeight = 'normal',
+  color = 'dark',
+  style,
+  className,
+}: TypographyProps) => {
   return (
-    <StyledTypography variant={variant} fontWeight={fontWeight} color={color}>
+    <StyledTypography variant={variant} fontWeight={fontWeight} color={color} style={style} className={className}>
       {children}
     </StyledTypography>
   )

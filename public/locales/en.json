@@ -1,0 +1,26 @@
+{
+  "home.cover.button": [
+    {
+      "type": 0,
+      "value": "View my work"
+    }
+  ],
+  "home.cover.subtitle": [
+    {
+      "type": 0,
+      "value": "The world through my lens"
+    }
+  ],
+  "home.latest": [
+    {
+      "type": 0,
+      "value": "Latest photoshoots"
+    }
+  ],
+  "home.viewGallery": [
+    {
+      "type": 0,
+      "value": "View gallery"
+    }
+  ]
+}

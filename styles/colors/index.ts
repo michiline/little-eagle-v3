@@ -8,6 +8,6 @@ export const themeColors = {
     tertiary: '#FFD8C1', // soft orange
   },
   menu: '#FF4747', // bright red,
-  footer: '#605454', // logo dark,
+  footer: '#605454', // logo dark
   borders: '#D3B1AF', // borders
 }

@@ -1,0 +1,26 @@
+{
+  "home.cover.button": [
+    {
+      "type": 0,
+      "value": "Pogledaj galeriju"
+    }
+  ],
+  "home.cover.subtitle": [
+    {
+      "type": 0,
+      "value": "Svijet kroz moju leću"
+    }
+  ],
+  "home.latest": [
+    {
+      "type": 0,
+      "value": "Najnovije fotografije "
+    }
+  ],
+  "home.viewGallery": [
+    {
+      "type": 0,
+      "value": "Pogledaj galeriju"
+    }
+  ]
+}
