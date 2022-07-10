@@ -83,4 +83,5 @@ export const StyledTypography = styled.div<StyledTypographyProps>`
     }
   }};
   line-height: 1.5;
+  margin-bottom: 0.4em;
 `

@@ -1,4 +1,76 @@
 {
+  "at-home-with-m-a": [
+    {
+      "type": 0,
+      "value": "Doma s M & A"
+    }
+  ],
+  "autumn-with-t": [
+    {
+      "type": 0,
+      "value": "Jesen s T"
+    }
+  ],
+  "baptism-andrija": [
+    {
+      "type": 0,
+      "value": "Krštenje Andrija"
+    }
+  ],
+  "baptism-ivan": [
+    {
+      "type": 0,
+      "value": "Krštenje Ivan"
+    }
+  ],
+  "baptism-karla": [
+    {
+      "type": 0,
+      "value": "Krštenje Karla"
+    }
+  ],
+  "baptism-tamara": [
+    {
+      "type": 0,
+      "value": "Krštenje Tamara"
+    }
+  ],
+  "brothers-n-m": [
+    {
+      "type": 0,
+      "value": "Braća N & M"
+    }
+  ],
+  "chill-vibez-battles": [
+    {
+      "type": 0,
+      "value": "Chill Vibez natjecanje"
+    }
+  ],
+  "christmas-time": [
+    {
+      "type": 0,
+      "value": "Božićno vrijeme"
+    }
+  ],
+  "crikvenica-2021": [
+    {
+      "type": 0,
+      "value": "Dan grada Crikvenice 2021"
+    }
+  ],
+  "eestec-meetings": [
+    {
+      "type": 0,
+      "value": "EESTEC sastanci"
+    }
+  ],
+  "goddess-awakening": [
+    {
+      "type": 0,
+      "value": "Buđenje boginje"
+    }
+  ],
   "home.cover.button": [
     {
       "type": 0,
@@ -11,16 +83,34 @@
       "value": "Svijet kroz moju leću"
     }
   ],
-  "home.latest": [
+  "home.latest.button": [
+    {
+      "type": 0,
+      "value": "Pogledaj galeriju"
+    }
+  ],
+  "home.latest.title": [
     {
       "type": 0,
       "value": "Najnovije fotografije "
     }
   ],
-  "home.viewGallery": [
+  "i-a-a": [
     {
       "type": 0,
-      "value": "Pogledaj galeriju"
+      "value": "I & A & A"
+    }
+  ],
+  "maternity-sara": [
+    {
+      "type": 0,
+      "value": "Trudnica Sara"
+    }
+  ],
+  "sea-session": [
+    {
+      "type": 0,
+      "value": "Obitelj na moru"
     }
   ]
 }

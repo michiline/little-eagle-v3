@@ -1,4 +1,76 @@
 {
+  "at-home-with-m-a": [
+    {
+      "type": 0,
+      "value": "At home with M & A"
+    }
+  ],
+  "autumn-with-t": [
+    {
+      "type": 0,
+      "value": "Autumn with T"
+    }
+  ],
+  "baptism-andrija": [
+    {
+      "type": 0,
+      "value": "Baptism Andrija"
+    }
+  ],
+  "baptism-ivan": [
+    {
+      "type": 0,
+      "value": "Baptism Ivan"
+    }
+  ],
+  "baptism-karla": [
+    {
+      "type": 0,
+      "value": "Baptism Karla"
+    }
+  ],
+  "baptism-tamara": [
+    {
+      "type": 0,
+      "value": "Baptism Tamara"
+    }
+  ],
+  "brothers-n-m": [
+    {
+      "type": 0,
+      "value": "Brothers N & M"
+    }
+  ],
+  "chill-vibez-battles": [
+    {
+      "type": 0,
+      "value": "Chill Vibez battles"
+    }
+  ],
+  "christmas-time": [
+    {
+      "type": 0,
+      "value": "Christmas time"
+    }
+  ],
+  "crikvenica-2021": [
+    {
+      "type": 0,
+      "value": "Crikvenica city day 2021"
+    }
+  ],
+  "eestec-meetings": [
+    {
+      "type": 0,
+      "value": "EESTEC meetings"
+    }
+  ],
+  "goddess-awakening": [
+    {
+      "type": 0,
+      "value": "Goddess awakening"
+    }
+  ],
   "home.cover.button": [
     {
       "type": 0,
@@ -11,16 +83,34 @@
       "value": "The world through my lens"
     }
   ],
-  "home.latest": [
+  "home.latest.button": [
+    {
+      "type": 0,
+      "value": "View gallery"
+    }
+  ],
+  "home.latest.title": [
     {
       "type": 0,
       "value": "Latest photoshoots"
     }
   ],
-  "home.viewGallery": [
+  "i-a-a": [
     {
       "type": 0,
-      "value": "View gallery"
+      "value": "I & A & A"
+    }
+  ],
+  "maternity-sara": [
+    {
+      "type": 0,
+      "value": "Maternity Sara"
+    }
+  ],
+  "sea-session": [
+    {
+      "type": 0,
+      "value": "Sea session"
     }
   ]
 }
