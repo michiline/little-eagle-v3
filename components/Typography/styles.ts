@@ -26,7 +26,7 @@ export const StyledTypography = styled.div<StyledTypographyProps>`
         return `${p.theme.typography.size.Body}px`
     }
   }};
-  @media only screen and (max-width: ${p => p.theme.breakpoints.md}px) {
+  @media only screen and (max-width: ${p => p.theme.breakpoints.lg}px) {
     font-size: ${p => {
       switch (p.variant) {
         case 'h1':

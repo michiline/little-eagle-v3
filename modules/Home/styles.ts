@@ -18,9 +18,6 @@ export const Subtitle = styled(Typography)`
 
 export const GalleryButton = styled(Button)`
   margin-top: 24px;
-  @media only screen and (max-width: ${p => p.theme.breakpoints.md}px) {
-    margin-top 16px;
-  }
 `
 
 export const LatestPhotoshoots = styled.div`
