@@ -71,6 +71,30 @@
       "value": "Buđenje boginje"
     }
   ],
+  "home.about.body.1": [
+    {
+      "type": 0,
+      "value": "Po struci psiholog, u srcu fotograf. Živim u Zagrebu, ali dostupna u cijelom svijetu."
+    }
+  ],
+  "home.about.body.2": [
+    {
+      "type": 0,
+      "value": "Ne volim biti ispred kamere, ali volim biti osoba iza nje. Veseli me hvatanje posebnih trenutaka i stvaranje nezaboravnih uspomena."
+    }
+  ],
+  "home.about.button": [
+    {
+      "type": 0,
+      "value": "Više o meni"
+    }
+  ],
+  "home.about.title": [
+    {
+      "type": 0,
+      "value": "Bok, ja sam Ana!"
+    }
+  ],
   "home.cover.button": [
     {
       "type": 0,
@@ -95,6 +119,24 @@
       "value": "Najnovije fotografije "
     }
   ],
+  "home.testimonials.bovani": [
+    {
+      "type": 0,
+      "value": "Bilo mi je zadovoljstvo surađivati s tobom za fotografije iz ureda! Ugodno je biti u tvojoj blizini. Pomogla si mi da se opustim pred kamerom, što mi je inače vrlo teško. Hvala, jedva čekam prilike za nove fotografije u budućnosti! "
+    }
+  ],
+  "home.testimonials.lucija": [
+    {
+      "type": 0,
+      "value": "Oduševljeni smo. Veliko hvala na trudu i cjelokupnom dogovoru, našim željama i brzoj isporuci. Imate našu preporuku! :)"
+    }
+  ],
+  "home.testimonials.nikolina": [
+    {
+      "type": 0,
+      "value": "Nema osobe koja nas nije pitala tko nam je radio fotografije za vjenčanje - a mi s ponosom i zahvalnošću kažemo @littleeagle. Tako kul, tako profesionalno, a opet spontano i opušteno, baš kako treba biti. Od nas sve preporuke - jer Ana vidi sve detalje, a detalji čine razliku ;)"
+    }
+  ],
   "home.testimonials.title": [
     {
       "type": 0,
@@ -117,24 +159,6 @@
     {
       "type": 0,
       "value": "Obitelj na moru"
-    }
-  ],
-  "testimonials.bovani": [
-    {
-      "type": 0,
-      "value": "Bilo mi je zadovoljstvo surađivati s tobom za fotografije iz ureda! Ugodno je biti u tvojoj blizini. Pomogla si mi da se opustim pred kamerom, što mi je inače vrlo teško. Hvala, jedva čekam prilike za nove fotografije u budućnosti! "
-    }
-  ],
-  "testimonials.lucija": [
-    {
-      "type": 0,
-      "value": "Oduševljeni smo. Veliko hvala na trudu i cjelokupnom dogovoru, našim željama i brzoj isporuci. Imate našu preporuku! :)"
-    }
-  ],
-  "testimonials.nikolina": [
-    {
-      "type": 0,
-      "value": "Nema osobe koja nas nije pitala tko nam je radio fotografije za vjenčanje - a mi s ponosom i zahvalnošću kažemo @littleeagle. Tako kul, tako profesionalno, a opet spontano i opušteno, baš kako treba biti. Od nas sve preporuke - jer Ana vidi sve detalje, a detalji čine razliku ;)"
     }
   ]
 }

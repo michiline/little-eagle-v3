@@ -71,6 +71,30 @@
       "value": "Goddess awakening"
     }
   ],
+  "home.about.body.1": [
+    {
+      "type": 0,
+      "value": "By degree a psychologist, by heart a photographer. Based in Zagreb (Croatia), available worldwide"
+    }
+  ],
+  "home.about.body.2": [
+    {
+      "type": 0,
+      "value": "I don’t like to be in front of the camera, but I love being the person behind it. Capturing special moments and creating unforgettable memories gives me the feeling of excitement and fills me with joy."
+    }
+  ],
+  "home.about.button": [
+    {
+      "type": 0,
+      "value": "More about me"
+    }
+  ],
+  "home.about.title": [
+    {
+      "type": 0,
+      "value": "Hi, I'm Ana!"
+    }
+  ],
   "home.cover.button": [
     {
       "type": 0,
@@ -95,6 +119,24 @@
       "value": "Latest photoshoots"
     }
   ],
+  "home.testimonials.bovani": [
+    {
+      "type": 0,
+      "value": "It was such a pleasure to work with you for my office photos! You're so pleasant to be around, and helped making me more comfortable in front of the camera, which is never easy for me. Thank you, I can't wait for new photos opportunities in the future!"
+    }
+  ],
+  "home.testimonials.lucija": [
+    {
+      "type": 0,
+      "value": "We are thrilled. Thank you very much for the effort and the whole agreement, our wishes and fast delivery. You have our recommendation! :)"
+    }
+  ],
+  "home.testimonials.nikolina": [
+    {
+      "type": 0,
+      "value": "There isn't a person who hasn't asked us who did our wedding photos - and we proudly and gratefully say @littleeagle. So cool, so professional, yet spontaneous and relaxed, just the way it should be. All recommendations from us - because Ana sees all the details, and the details make the difference ;)"
+    }
+  ],
   "home.testimonials.title": [
     {
       "type": 0,
@@ -117,24 +159,6 @@
     {
       "type": 0,
       "value": "Sea session"
-    }
-  ],
-  "testimonials.bovani": [
-    {
-      "type": 0,
-      "value": "It was such a pleasure to work with you for my office photos! You're so pleasant to be around, and helped making me more comfortable in front of the camera, which is never easy for me. Thank you, I can't wait for new photos opportunities in the future!"
-    }
-  ],
-  "testimonials.lucija": [
-    {
-      "type": 0,
-      "value": "We are thrilled. Thank you very much for the effort and the whole agreement, our wishes and fast delivery. You have our recommendation! :)"
-    }
-  ],
-  "testimonials.nikolina": [
-    {
-      "type": 0,
-      "value": "There isn't a person who hasn't asked us who did our wedding photos - and we proudly and gratefully say @littleeagle. So cool, so professional, yet spontaneous and relaxed, just the way it should be. All recommendations from us - because Ana sees all the details, and the details make the difference ;)"
     }
   ]
 }

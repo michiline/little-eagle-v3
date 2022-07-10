@@ -6,8 +6,22 @@ import Slideshow from 'components/Slideshow'
 import Typography from 'components/Typography'
 import { FormattedMessage } from 'react-intl'
 
-import { coverHome, latestGalleries, portfolio, testimonials } from 'utils/const'
-import { GalleryButton, LatestPhotoshoots, Subtitle, Testimonials, Title, TitleWrap } from './styles'
+import { aboutHome, coverHome, latestGalleries, portfolio, testimonials } from 'utils/const'
+import {
+  About,
+  AboutBody,
+  GalleryButton,
+  Image,
+  ImageColumn,
+  ImageFrame,
+  LatestGalleries,
+  Subtitle,
+  Testimonials,
+  TextColumn,
+  Title,
+  TitleWrap,
+  VisitAbout,
+} from './styles'
 
 const Home = () => {
   return (
@@ -34,7 +48,7 @@ const Home = () => {
         </NavLink>
       </Cover>
       <Container backgroundColor="secondary">
-        <LatestPhotoshoots>
+        <LatestGalleries>
           <Typography variant="h1" fontWeight="normal" color="dark" style={{ alignSelf: 'flex-start' }}>
             <FormattedMessage id="home.latest.title" />
           </Typography>
@@ -44,12 +58,40 @@ const Home = () => {
               <FormattedMessage id="home.latest.button" />
             </GalleryButton>
           </NavLink>
-        </LatestPhotoshoots>
+        </LatestGalleries>
       </Container>
       <Container backgroundColor="primary" style={{ paddingLeft: '24px', paddingRight: '24px' }}>
         <Testimonials>
           <Slideshow items={testimonials} />
         </Testimonials>
+      </Container>
+      <Container backgroundColor="secondary" style={{ paddingLeft: '24px', paddingRight: '24px' }}>
+        <About>
+          <ImageColumn>
+            <ImageFrame />
+            <Image src={aboutHome} alt={'alt'} />
+          </ImageColumn>
+          <TextColumn>
+            <Typography variant="h1" color={'dark'}>
+              <FormattedMessage id={'home.about.title'} />
+            </Typography>
+            <AboutBody>
+              <Typography variant="body" color={'dark'}>
+                <FormattedMessage id={'home.about.body.1'} />
+              </Typography>
+              <Typography variant="body" color={'dark'} style={{ marginTop: '24px' }}>
+                <FormattedMessage id={'home.about.body.2'} />
+              </Typography>
+              <VisitAbout>
+                <NavLink href="/about">
+                  <GalleryButton>
+                    <FormattedMessage id="home.about.button" />
+                  </GalleryButton>
+                </NavLink>
+              </VisitAbout>
+            </AboutBody>
+          </TextColumn>
+        </About>
       </Container>
     </>
   )
