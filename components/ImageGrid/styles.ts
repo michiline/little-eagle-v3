@@ -45,10 +45,13 @@ export const Overlay = styled.div`
   transition-property: visibility, opacity;
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  ${ImageLink}:hover & {
-    visibility: visible;
-    opacity: 1;
+  @media (hover: hover) and (pointer: fine) {
+    ${ImageLink}:hover & {
+      visibility: visible;
+      opacity: 1;
+    }
   }
+
   z-index: 3;
 `
 
@@ -61,7 +64,9 @@ export const Title = styled(Typography)`
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 4;
-  ${ImageLink}:hover & {
-    transform: scale(1.05);
+  @media (hover: hover) and (pointer: fine) {
+    ${ImageLink}:hover & {
+      transform: scale(1.05);
+    }
   }
 `
