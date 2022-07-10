@@ -28,28 +28,6 @@ export const StyledTypography = styled.div<StyledTypographyProps>`
     font-size: ${p => {
       switch (p.variant) {
         case 'h1':
-          return `${p.theme.typography.size.H1 * 0.9}px`
-        case 'h2':
-          return `${p.theme.typography.size.H2 * 0.9}px`
-        case 'h3':
-          return `${p.theme.typography.size.H3 * 0.9}px`
-        case 'h4':
-          return `${p.theme.typography.size.H4 * 0.9}px`
-        case 'body':
-          return `${p.theme.typography.size.Body * 0.9}px`
-        case 'menu':
-          return `${p.theme.typography.size.Menu * 0.9}px`
-        case 'caption':
-          return `${p.theme.typography.size.Caption * 0.9}px`
-        default:
-          return `${p.theme.typography.size.Body * 0.9}px`
-      }
-    }};
-  }
-  @media only screen and (max-width: ${p => p.theme.breakpoints.lg}px) {
-    font-size: ${p => {
-      switch (p.variant) {
-        case 'h1':
           return `${p.theme.typography.size.H1 * 0.8}px`
         case 'h2':
           return `${p.theme.typography.size.H2 * 0.8}px`
@@ -60,18 +38,26 @@ export const StyledTypography = styled.div<StyledTypographyProps>`
       }
     }};
   }
+  @media only screen and (max-width: ${p => p.theme.breakpoints.lg}px) {
+    font-size: ${p => {
+      switch (p.variant) {
+        case 'body':
+          return `${p.theme.typography.size.Body * 0.9}px`
+      }
+    }};
+  }
 
   @media only screen and (max-width: ${p => p.theme.breakpoints.md}px) {
     font-size: ${p => {
       switch (p.variant) {
         case 'h1':
-          return `${p.theme.typography.size.H1 * 0.6}px`
+          return `${p.theme.typography.size.H1 * 0.65}px`
         case 'h2':
-          return `${p.theme.typography.size.H2 * 0.6}px`
+          return `${p.theme.typography.size.H2 * 0.65}px`
         case 'h3':
-          return `${p.theme.typography.size.H3 * 0.6}px`
+          return `${p.theme.typography.size.H3 * 0.65}px`
         case 'h4':
-          return `${p.theme.typography.size.H4 * 0.6}px`
+          return `${p.theme.typography.size.H4 * 0.65}px`
       }
     }};
   }
