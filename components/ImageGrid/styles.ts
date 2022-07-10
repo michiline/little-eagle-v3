@@ -58,7 +58,7 @@ export const Overlay = styled.div`
 export const Title = styled(Typography)`
   position: absolute;
   bottom: 8px;
-  left: 32px;
+  left: 24px;
   text-shadow: 5px 10px 10px rgba(121, 117, 117, 0.15);
   transition-property: transform;
   transition-duration: 500ms;

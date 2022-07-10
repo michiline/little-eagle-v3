@@ -95,6 +95,12 @@
       "value": "Najnovije fotografije "
     }
   ],
+  "home.testimonials.title": [
+    {
+      "type": 0,
+      "value": "Komentari klijenata"
+    }
+  ],
   "i-a-a": [
     {
       "type": 0,
@@ -111,6 +117,24 @@
     {
       "type": 0,
       "value": "Obitelj na moru"
+    }
+  ],
+  "testimonials.bovani": [
+    {
+      "type": 0,
+      "value": "Bilo mi je zadovoljstvo surađivati s tobom za fotografije iz ureda! Ugodno je biti u tvojoj blizini. Pomogla si mi da se opustim pred kamerom, što mi je inače vrlo teško. Hvala, jedva čekam prilike za nove fotografije u budućnosti! "
+    }
+  ],
+  "testimonials.lucija": [
+    {
+      "type": 0,
+      "value": "Oduševljeni smo. Veliko hvala na trudu i cjelokupnom dogovoru, našim željama i brzoj isporuci. Imate našu preporuku! :)"
+    }
+  ],
+  "testimonials.nikolina": [
+    {
+      "type": 0,
+      "value": "Nema osobe koja nas nije pitala tko nam je radio fotografije za vjenčanje - a mi s ponosom i zahvalnošću kažemo @littleeagle. Tako kul, tako profesionalno, a opet spontano i opušteno, baš kako treba biti. Od nas sve preporuke - jer Ana vidi sve detalje, a detalji čine razliku ;)"
     }
   ]
 }

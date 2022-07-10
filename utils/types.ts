@@ -30,3 +30,9 @@ export interface Image {
   url: string
   href: string
 }
+
+export interface SlideshowItem {
+  id: string
+  url: string
+  author: string
+}

@@ -23,7 +23,9 @@ export const StyledButton = styled.div<StyledButtonProps>(
       padding: 10px 0;
       width: 350px;
       @media only screen and (max-width: ${theme.breakpoints.lg}px) {
-        width: 275px;
+        width: 300px;
+        padding: 8px 0;
+        font-size: calc(0.9*${theme.typography.size.Button}px);
       }
     `
 )

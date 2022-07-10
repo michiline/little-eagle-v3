@@ -17,7 +17,10 @@ export const Subtitle = styled(Typography)`
 `
 
 export const GalleryButton = styled(Button)`
-  margin-top: 24px;
+  margin-top: 48px;
+  @media only screen and (max-width: ${p => p.theme.breakpoints.lg}px) {
+    margin-top 32px;
+  }
 `
 
 export const LatestPhotoshoots = styled.div`
@@ -27,4 +30,16 @@ export const LatestPhotoshoots = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+`
+
+export const Testimonials = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 960px;
+  @media only screen and (max-width: ${p => p.theme.breakpoints.md}px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `

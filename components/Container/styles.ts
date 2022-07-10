@@ -18,5 +18,8 @@ export const StyledContainer = styled.div<ContainerProps>`
         return `${p.theme.colors.background.primary}`
     }
   }};
-  padding: 16px 8px;
+  padding: 72px 8px;
+  @media only screen and (max-width: ${p => p.theme.breakpoints.lg}px) {
+    padding: 48px 8px;
+  }
 `

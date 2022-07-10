@@ -18,14 +18,34 @@ export const StyledTypography = styled.div<StyledTypographyProps>`
         return `${p.theme.typography.size.Body}px`
       case 'menu':
         return `${p.theme.typography.size.Menu}px`
-      case 'button':
-        return `${p.theme.typography.size.Button}px`
       case 'caption':
         return `${p.theme.typography.size.Caption}px`
       default:
         return `${p.theme.typography.size.Body}px`
     }
   }};
+  @media only screen and (max-width: ${p => p.theme.breakpoints.xl}px) {
+    font-size: ${p => {
+      switch (p.variant) {
+        case 'h1':
+          return `${p.theme.typography.size.H1 * 0.9}px`
+        case 'h2':
+          return `${p.theme.typography.size.H2 * 0.9}px`
+        case 'h3':
+          return `${p.theme.typography.size.H3 * 0.9}px`
+        case 'h4':
+          return `${p.theme.typography.size.H4 * 0.9}px`
+        case 'body':
+          return `${p.theme.typography.size.Body * 0.9}px`
+        case 'menu':
+          return `${p.theme.typography.size.Menu * 0.9}px`
+        case 'caption':
+          return `${p.theme.typography.size.Caption * 0.9}px`
+        default:
+          return `${p.theme.typography.size.Body * 0.9}px`
+      }
+    }};
+  }
   @media only screen and (max-width: ${p => p.theme.breakpoints.lg}px) {
     font-size: ${p => {
       switch (p.variant) {
@@ -37,16 +57,6 @@ export const StyledTypography = styled.div<StyledTypographyProps>`
           return `${p.theme.typography.size.H3 * 0.8}px`
         case 'h4':
           return `${p.theme.typography.size.H4 * 0.8}px`
-        case 'body':
-          return `${p.theme.typography.size.Body * 0.8}px`
-        case 'menu':
-          return `${p.theme.typography.size.Menu * 0.8}px`
-        case 'button':
-          return `${p.theme.typography.size.Button * 0.8}px`
-        case 'caption':
-          return `${p.theme.typography.size.Caption * 0.8}px`
-        default:
-          return `${p.theme.typography.size.Body * 0.8}px`
       }
     }};
   }
@@ -62,16 +72,6 @@ export const StyledTypography = styled.div<StyledTypographyProps>`
           return `${p.theme.typography.size.H3 * 0.6}px`
         case 'h4':
           return `${p.theme.typography.size.H4 * 0.6}px`
-        case 'body':
-          return `${p.theme.typography.size.Body * 0.6}px`
-        case 'menu':
-          return `${p.theme.typography.size.Menu * 0.6}px`
-        case 'button':
-          return `${p.theme.typography.size.Button * 0.6}px`
-        case 'caption':
-          return `${p.theme.typography.size.Caption * 0.6}px`
-        default:
-          return `${p.theme.typography.size.Body * 0.6}px`
       }
     }};
   }
@@ -85,7 +85,6 @@ export const StyledTypography = styled.div<StyledTypographyProps>`
         return `${p.theme.typography.family.primary}`
       case 'body':
       case 'menu':
-      case 'button':
       case 'caption':
         return `${p.theme.typography.family.secondary}`
       default:

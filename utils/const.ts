@@ -1,4 +1,4 @@
-import { Category, CategoryProps, Gallery, GalleryProps, Image } from './types'
+import { Category, CategoryProps, Gallery, GalleryProps, Image, SlideshowItem } from './types'
 
 const ROOT = process.env.NEXT_PUBLIC_STATIC_URL
 
@@ -46,3 +46,26 @@ export const portfolio = generatePortfolio([
 ])
 
 export const latestGalleries = [portfolio[0].galleries[0], portfolio[0].galleries[1], portfolio[0].galleries[2]]
+
+export const testimonials = [
+  <SlideshowItem>{
+    id: 'testimonials.bovani',
+    url: `${ROOT}/testimonials/bovani.jpg`,
+    author: 'Vanda B. @Bovani design',
+  },
+  <SlideshowItem>{
+    id: 'testimonials.nikolina',
+    url: `${ROOT}/testimonials/nikolina.jpg`,
+    author: 'Nikolina & Ivan',
+  },
+  <SlideshowItem>{
+    id: 'testimonials.lucija',
+    url: `${ROOT}/testimonials/lucija.jpg`,
+    author: 'Lucija G. K.',
+  },
+  <SlideshowItem>{
+    id: 'testimonials.lucija',
+    url: `${ROOT}/testimonials/lucija.jpg`,
+    author: 'Lucija G. K.',
+  },
+]

@@ -7,8 +7,12 @@ export interface ContainerProps extends Stylable {
   children: ReactNode
 }
 
-const Container = ({ backgroundColor, children }: ContainerProps) => {
-  return <StyledContainer backgroundColor={backgroundColor}>{children}</StyledContainer>
+const Container = ({ backgroundColor, children, style }: ContainerProps) => {
+  return (
+    <StyledContainer backgroundColor={backgroundColor} style={style}>
+      {children}
+    </StyledContainer>
+  )
 }
 
 export default Container
