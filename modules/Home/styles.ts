@@ -16,13 +16,6 @@ export const Subtitle = styled(Typography)`
   text-align: center;
 `
 
-export const GalleryButton = styled(Button)`
-  margin-top: 48px;
-  @media only screen and (max-width: ${p => p.theme.breakpoints.lg}px) {
-    margin-top 32px;
-  }
-`
-
 export const LatestGalleries = styled.div`
   width: 100%;
   max-width: 1400px;
@@ -109,4 +102,39 @@ export const ImageFrame = styled.div`
 export const VisitAbout = styled.div`
   width: 100%;
   margin-top: 32px;
+`
+interface CanvasProps {
+  url: string
+}
+
+export const Canvas = styled.div<CanvasProps>`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  max-width: 960px;
+  @media only screen and (min-width: ${p => p.theme.breakpoints.lg + 1}px) {
+    background-image: url(${p => p.url});
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 700px;
+    margin-top: 48px;
+    padding: 80px 24px;
+  }
+  @media only screen and (max-width: ${p => p.theme.breakpoints.md}px) {
+    flex-direction: column;
+    align-items: center;
+  }
+`
+
+export const CanvasCenter = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media only screen and (min-width: ${p => p.theme.breakpoints.lg + 1}px) {
+    max-width: 575px;
+  }
 `

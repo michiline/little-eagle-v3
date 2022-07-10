@@ -65,6 +65,54 @@
       "value": "EESTEC sastanci"
     }
   ],
+  "footer.about": [
+    {
+      "type": 0,
+      "value": "O meni"
+    }
+  ],
+  "footer.events": [
+    {
+      "type": 0,
+      "value": "Događanja"
+    }
+  ],
+  "footer.gallery": [
+    {
+      "type": 0,
+      "value": "Cijela galerija"
+    }
+  ],
+  "footer.portraits": [
+    {
+      "type": 0,
+      "value": "Portreti"
+    }
+  ],
+  "footer.services": [
+    {
+      "type": 0,
+      "value": "Moje usluge"
+    }
+  ],
+  "footer.title.1": [
+    {
+      "type": 0,
+      "value": "LittleEagle"
+    }
+  ],
+  "footer.title.2": [
+    {
+      "type": 0,
+      "value": "Galerija"
+    }
+  ],
+  "footer.weddings": [
+    {
+      "type": 0,
+      "value": "Vjenčanja"
+    }
+  ],
   "goddess-awakening": [
     {
       "type": 0,

@@ -14,12 +14,17 @@ export const StyledContainer = styled.div<ContainerProps>`
         return `${p.theme.colors.background.secondary}`
       case 'tertiary':
         return `${p.theme.colors.background.tertiary}`
+      case 'footer':
+        return `${p.theme.colors.footer}`
       default:
         return `${p.theme.colors.background.primary}`
     }
   }};
-  padding: 72px 8px;
+  padding: 72px 16px;
   @media only screen and (max-width: ${p => p.theme.breakpoints.lg}px) {
+    padding: 48px 16px;
+  }
+  @media only screen and (max-width: ${p => p.theme.breakpoints.md}px) {
     padding: 48px 8px;
   }
 `

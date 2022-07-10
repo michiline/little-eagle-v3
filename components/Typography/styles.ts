@@ -33,8 +33,6 @@ export const StyledTypography = styled.div<StyledTypographyProps>`
           return `${p.theme.typography.size.H2 * 0.8}px`
         case 'h3':
           return `${p.theme.typography.size.H3 * 0.8}px`
-        case 'h4':
-          return `${p.theme.typography.size.H4 * 0.8}px`
       }
     }};
   }
@@ -56,8 +54,6 @@ export const StyledTypography = styled.div<StyledTypographyProps>`
           return `${p.theme.typography.size.H2 * 0.65}px`
         case 'h3':
           return `${p.theme.typography.size.H3 * 0.65}px`
-        case 'h4':
-          return `${p.theme.typography.size.H4 * 0.65}px`
       }
     }};
   }
@@ -86,6 +82,8 @@ export const StyledTypography = styled.div<StyledTypographyProps>`
         return `${p.theme.colors.text.primary}`
       case 'light':
         return `${p.theme.colors.background.primary}`
+      case 'footer':
+        return `${p.theme.colors.background.secondary}`
       case 'menu':
         return `${p.theme.colors.menu}`
       default:

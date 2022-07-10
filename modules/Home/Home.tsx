@@ -1,3 +1,4 @@
+import Button from 'components/Button'
 import Container from 'components/Container'
 import Cover from 'components/Cover'
 import ImageGrid from 'components/ImageGrid'
@@ -6,11 +7,12 @@ import Slideshow from 'components/Slideshow'
 import Typography from 'components/Typography'
 import { FormattedMessage } from 'react-intl'
 
-import { aboutHome, coverHome, latestGalleries, portfolio, testimonials } from 'utils/const'
+import { aboutHome, canvasHome, coverHome, latestGalleries, portfolio, testimonials } from 'utils/const'
 import {
   About,
   AboutBody,
-  GalleryButton,
+  Canvas,
+  CanvasCenter,
   Image,
   ImageColumn,
   ImageFrame,
@@ -42,9 +44,9 @@ const Home = () => {
           <FormattedMessage id="home.cover.subtitle" />
         </Subtitle>
         <NavLink href="/gallery">
-          <GalleryButton variant="outlined">
+          <Button variant="outlined">
             <FormattedMessage id="home.cover.button" />
-          </GalleryButton>
+          </Button>
         </NavLink>
       </Cover>
       <Container backgroundColor="secondary">
@@ -54,9 +56,9 @@ const Home = () => {
           </Typography>
           <ImageGrid images={latestGalleries} numInRow={3} />
           <NavLink href="/gallery">
-            <GalleryButton>
+            <Button>
               <FormattedMessage id="home.latest.button" />
-            </GalleryButton>
+            </Button>
           </NavLink>
         </LatestGalleries>
       </Container>
@@ -79,19 +81,29 @@ const Home = () => {
               <Typography variant="body" color={'dark'}>
                 <FormattedMessage id={'home.about.body.1'} />
               </Typography>
-              <Typography variant="body" color={'dark'} style={{ marginTop: '24px' }}>
+              <Typography variant="body" color={'dark'} style={{ marginTop: '16px' }}>
                 <FormattedMessage id={'home.about.body.2'} />
               </Typography>
-              <VisitAbout>
-                <NavLink href="/about">
-                  <GalleryButton>
-                    <FormattedMessage id="home.about.button" />
-                  </GalleryButton>
-                </NavLink>
-              </VisitAbout>
+              <NavLink href="/about">
+                <Button>
+                  <FormattedMessage id="home.about.button" />
+                </Button>
+              </NavLink>
             </AboutBody>
           </TextColumn>
         </About>
+      </Container>
+      <Container backgroundColor="primary">
+        <Canvas url={canvasHome}>
+          <CanvasCenter>
+            <ImageGrid images={portfolio.slice(0, 4)} numInRow={2} />
+          </CanvasCenter>
+          <NavLink href="/gallery">
+            <Button>
+              <FormattedMessage id="home.latest.button" />
+            </Button>
+          </NavLink>
+        </Canvas>
       </Container>
     </>
   )

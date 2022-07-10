@@ -6,6 +6,7 @@ import { theme } from 'styles/theme'
 import English from 'public/locales/en.json'
 import Croatian from 'public/locales/hr.json'
 import { IntlProvider } from 'react-intl'
+import Footer from 'modules/Footer'
 
 export default function App({ Component, pageProps }) {
   const { locale } = useRouter()
@@ -25,6 +26,7 @@ export default function App({ Component, pageProps }) {
       <IntlProvider onError={() => null} locale={locale} messages={messages}>
         <ThemeProvider theme={theme}>
           <Component {...pageProps} />
+          <Footer />
         </ThemeProvider>
       </IntlProvider>
     </>

@@ -65,6 +65,48 @@
       "value": "EESTEC meetings"
     }
   ],
+  "footer.about": [
+    {
+      "type": 0,
+      "value": "About me"
+    }
+  ],
+  "footer.events": [
+    {
+      "type": 0,
+      "value": "Events"
+    }
+  ],
+  "footer.gallery": [
+    {
+      "type": 0,
+      "value": "Full gallery"
+    }
+  ],
+  "footer.portraits": [
+    {
+      "type": 0,
+      "value": "Portraits"
+    }
+  ],
+  "footer.title.1": [
+    {
+      "type": 0,
+      "value": "LittleEagle"
+    }
+  ],
+  "footer.title.2": [
+    {
+      "type": 0,
+      "value": "Gallery"
+    }
+  ],
+  "footer.weddings": [
+    {
+      "type": 0,
+      "value": "Weddings"
+    }
+  ],
   "goddess-awakening": [
     {
       "type": 0,

@@ -1,5 +1,5 @@
 import Typography from 'components/Typography'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { ImageGridProps } from './ImageGrid'
 
 export const StyledImageGrid = styled.div`
@@ -18,10 +18,22 @@ export const ImageLink = styled.a<StyledImageLinkProps>`
   display: flex;
   cursor: pointer;
   width: 100%;
-  max-width: calc(100% / 3 - 16px / 3);
-  @media only screen and (max-width: ${p => p.theme.breakpoints.lg}px) {
-    max-width: 100%;
-  }
+  ${p =>
+    p.numInRow === 3 &&
+    css`
+      @media only screen and (max-width: ${p => p.theme.breakpoints.lg}px) {
+        max-width: 100%;
+      }
+      max-width: calc(100% / 3 - 16px / 3);
+    `}
+  ${p =>
+    p.numInRow === 2 &&
+    css`
+      @media only screen and (max-width: ${p => p.theme.breakpoints.lg}px) {
+        max-width: 100%;
+      }
+      max-width: calc(100% / 2 - 8px / 2);
+    `}
 `
 
 export const StyledImage = styled.img`

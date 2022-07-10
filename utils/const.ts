@@ -6,6 +6,8 @@ export const coverHome = `${ROOT}/gallery/home`
 
 export const aboutHome = 'https://littleeagle.s3.eu-central-1.amazonaws.com/hi-3-3-2.jpg'
 
+export const canvasHome = '/images/canvas.png'
+
 const generateGallery = ({ categoryId, galleryId, n }: GalleryProps): Gallery => {
   return {
     id: galleryId,
@@ -29,7 +31,7 @@ const generatePortfolio = (categories: Array<CategoryProps>): Array<Category> =>
   return categories.map(({ categoryId, galleries }) => {
     return <Category>{
       id: categoryId,
-      url: `${ROOT}/portfolio/cover/${categoryId}.jpg`,
+      url: 'https://littleeaglephoto.s3.eu-central-1.amazonaws.com/portfolio/cover/events.jpg', //`${ROOT}/portfolio/cover/${categoryId}.jpg`,
       href: `/portfolio/${categoryId}`,
       galleries: galleries.map(({ galleryId, n }) => generateGallery({ categoryId, galleryId, n })),
     }
@@ -38,7 +40,49 @@ const generatePortfolio = (categories: Array<CategoryProps>): Array<Category> =>
 
 export const portfolio = generatePortfolio([
   <CategoryProps>{
+    categoryId: 'weddings',
+    galleries: [
+      <GalleryProps>{ galleryId: 'at-home-with-m-a', n: 64 },
+      <GalleryProps>{ galleryId: 'sea-session', n: 23 },
+      <GalleryProps>{ galleryId: 'baptism-andrija', n: 49 },
+    ],
+  },
+  <CategoryProps>{
+    categoryId: 'portraits',
+    galleries: [
+      <GalleryProps>{ galleryId: 'at-home-with-m-a', n: 64 },
+      <GalleryProps>{ galleryId: 'sea-session', n: 23 },
+      <GalleryProps>{ galleryId: 'baptism-andrija', n: 49 },
+    ],
+  },
+  <CategoryProps>{
     categoryId: 'family',
+    galleries: [
+      <GalleryProps>{ galleryId: 'at-home-with-m-a', n: 64 },
+      <GalleryProps>{ galleryId: 'sea-session', n: 23 },
+      <GalleryProps>{ galleryId: 'baptism-andrija', n: 49 },
+    ],
+  },
+  <CategoryProps>{
+    categoryId: 'events',
+    galleries: [
+      <GalleryProps>{ galleryId: 'crikvenica-2021', n: 71 },
+      <GalleryProps>{ galleryId: 'goddess-awakening', n: 41 },
+      <GalleryProps>{ galleryId: 'eestec-meetings', n: 47 },
+      <GalleryProps>{ galleryId: 'chill-vibez-battles', n: 47 },
+    ],
+  },
+  <CategoryProps>{
+    categoryId: 'travel',
+    galleries: [
+      <GalleryProps>{ galleryId: 'crikvenica-2021', n: 71 },
+      <GalleryProps>{ galleryId: 'goddess-awakening', n: 41 },
+      <GalleryProps>{ galleryId: 'eestec-meetings', n: 47 },
+      <GalleryProps>{ galleryId: 'chill-vibez-battles', n: 47 },
+    ],
+  },
+  <CategoryProps>{
+    categoryId: 'editorial',
     galleries: [
       <GalleryProps>{ galleryId: 'at-home-with-m-a', n: 64 },
       <GalleryProps>{ galleryId: 'sea-session', n: 23 },
@@ -47,7 +91,7 @@ export const portfolio = generatePortfolio([
   },
 ])
 
-export const latestGalleries = [portfolio[0].galleries[0], portfolio[0].galleries[1], portfolio[0].galleries[2]]
+export const latestGalleries = [portfolio[2].galleries[0], portfolio[2].galleries[1], portfolio[2].galleries[2]]
 
 export const testimonials = [
   <SlideshowItem>{
