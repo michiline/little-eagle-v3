@@ -1,4 +1,70 @@
 {
+  "aal": [
+    {
+      "type": 0,
+      "value": "A & A & L"
+    }
+  ],
+  "about.body.1": [
+    {
+      "type": 0,
+      "value": "Po struci psiholog, u srcu fotograf. Živim u Zagrebu, ali dostupna u cijelom svijetu."
+    }
+  ],
+  "about.body.2": [
+    {
+      "type": 0,
+      "value": "Ne volim biti ispred kamere, ali volim biti osoba iza nje. Veseli me hvatanje posebnih trenutaka i stvaranje nezaboravnih uspomena. Usavršavam svoja znanja i vještine kroz razne radionice i fotografske tečajeve. Još uvijek tražim svoj stil i otvorena sam za nove ideje i projekte"
+    }
+  ],
+  "about.body.3": [
+    {
+      "type": 0,
+      "value": "Pravi sam obožavatelj prirode. Ako imam slobodne dane, vjerojatno sam na putu."
+    }
+  ],
+  "about.body.4": [
+    {
+      "type": 0,
+      "value": "Kampiranje je moj način putovanja. U prirodi se osjećam najsmirenije."
+    }
+  ],
+  "about.body.5": [
+    {
+      "type": 0,
+      "value": "Mogu pojesti puno sladoleda. I lubenice."
+    }
+  ],
+  "about.body.6": [
+    {
+      "type": 0,
+      "value": "Smatram se introvertom. Teđko mi je pričati o sebi, pa zamislite koliko mi je vremena trebalo da ovo napišem."
+    }
+  ],
+  "about.body.7": [
+    {
+      "type": 0,
+      "value": "Nisam upoznala nikoga tko voli sunce i more više od mene."
+    }
+  ],
+  "about.body.8": [
+    {
+      "type": 0,
+      "value": "Učestalo prakticiram jogu i meditiram."
+    }
+  ],
+  "about.body.9": [
+    {
+      "type": 0,
+      "value": "Stranica se zove Little Eagle Photography zbog mog prezimena Orlić."
+    }
+  ],
+  "about.title": [
+    {
+      "type": 0,
+      "value": "Bok, ja sam Ana!"
+    }
+  ],
   "at-home-with-m-a": [
     {
       "type": 0,
@@ -63,6 +129,12 @@
     {
       "type": 0,
       "value": "EESTEC sastanci"
+    }
+  ],
+  "engagement-jk": [
+    {
+      "type": 0,
+      "value": "Zaruke J & K"
     }
   ],
   "footer.about": [
@@ -197,16 +269,70 @@
       "value": "I & A & A"
     }
   ],
+  "khl": [
+    {
+      "type": 0,
+      "value": "K & H & L"
+    }
+  ],
   "maternity-sara": [
     {
       "type": 0,
       "value": "Trudnica Sara"
     }
   ],
+  "menu.about": [
+    {
+      "type": 0,
+      "value": "O meni"
+    }
+  ],
+  "menu.home": [
+    {
+      "type": 0,
+      "value": "Naslovna"
+    }
+  ],
+  "menu.portfolio": [
+    {
+      "type": 0,
+      "value": "Fotogalerija"
+    }
+  ],
   "sea-session": [
     {
       "type": 0,
       "value": "Obitelj na moru"
+    }
+  ],
+  "wedding-istria": [
+    {
+      "type": 0,
+      "value": "Vjenčanje u Istri"
+    }
+  ],
+  "wedding-md": [
+    {
+      "type": 0,
+      "value": "Vjenčanje M & D"
+    }
+  ],
+  "wedding-mp": [
+    {
+      "type": 0,
+      "value": "Vjenčanje M & P"
+    }
+  ],
+  "wedding-mt": [
+    {
+      "type": 0,
+      "value": "Vjenčanje M & T"
+    }
+  ],
+  "wedding-rm": [
+    {
+      "type": 0,
+      "value": "Vjenčanje R & M"
     }
   ]
 }

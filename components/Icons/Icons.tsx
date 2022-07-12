@@ -1,10 +1,6 @@
-import { Stylable } from 'utils/types'
-import { IconBase } from './Base'
+import { useTheme } from 'styled-components'
+import { DoubleIconBase, DoubleIconProps, IconBase, IconProps } from './Base'
 import { StyledSocialIcons } from './styles'
-
-interface IconProps extends Stylable {
-  color: 'light' | 'dark'
-}
 
 export const SocialIcons = ({ color }: IconProps) => {
   return (
@@ -49,5 +45,57 @@ export const IconInstagram = ({ style, color }: IconProps) => {
       />
       <path d="M23.7583 8.66669H23.7716" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
     </IconBase>
+  )
+}
+
+export const IconBack = ({ style, color }: IconProps) => {
+  const theme = useTheme()
+  return (
+    <IconBase width={48} height={48} viewBox="0 0 48 48" fill={theme.colors.text.primary} color={color} style={style}>
+      <path d="M24 40 8 24 24 8l2.1 2.1-12.4 12.4H40v3H13.7l12.4 12.4Z" />
+    </IconBase>
+  )
+}
+
+export const IconHamburger = ({ color, show }: DoubleIconProps) => {
+  return (
+    <DoubleIconBase show={show} width={33 + 2 * 8} height={32 + 2 * 8} color={color} fill="none">
+      <line
+        x1="2.4751"
+        y1="5.85022"
+        x2="30.4751"
+        y2="5.85022"
+        strokeWidth="4"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <line
+        x1="5.67505"
+        y1="16.2286"
+        x2="26.5639"
+        y2="16.2286"
+        strokeWidth="4"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <line
+        x1="2.4751"
+        y1="26.607"
+        x2="30.4751"
+        y2="26.607"
+        strokeWidth="4"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </DoubleIconBase>
+  )
+}
+
+export const IconClose = ({ color, show }: DoubleIconProps) => {
+  return (
+    <DoubleIconBase show={show} width={33 + 2 * 8} height={32 + 2 * 8} color={color} fill="none">
+      <path d="M5.60278 4.8819L27.6028 28.0273" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M5.60303 27.8398L27.603 5.06928" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round" />
+    </DoubleIconBase>
   )
 }

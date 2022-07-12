@@ -4,6 +4,7 @@ import { FooterLogo } from 'components/Images'
 import NavLink from 'components/NavLink'
 import Typography from 'components/Typography'
 import { FormattedMessage } from 'react-intl'
+import { email } from 'utils/const'
 import { Contact, FooterCenter, FooterLogoWrap, Links, LinksColumn, LinksGroup, Socials } from './styles'
 
 const Footer = () => {
@@ -58,7 +59,7 @@ const Footer = () => {
           <Contact>
             <SocialIcons color={'dark'} />
             <Typography variant="caption" style={{ marginLeft: '8px' }}>
-              ana_orlic@yahoo.com
+              {email}
             </Typography>
           </Contact>
         </Socials>

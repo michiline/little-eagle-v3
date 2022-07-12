@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { useTheme } from 'styled-components'
 import { Stylable } from 'utils/types'
-import { StyledSvg } from './styles'
+import { DoubleStyledSvg, StyledSvg } from './styles'
 
 export interface IconProps extends Stylable {
   color?: 'dark' | 'light'
@@ -13,11 +13,24 @@ export interface IconProps extends Stylable {
   children?: React.ReactNode
 }
 
+export interface DoubleIconProps extends IconProps {
+  show: boolean
+}
+
 export const IconBase = ({ children, color, ...rest }: IconProps) => {
   const theme = useTheme()
   return (
     <StyledSvg stroke={color === 'dark' ? theme.colors.text.primary : theme.colors.background.primary} {...rest}>
       {children}
     </StyledSvg>
+  )
+}
+
+export const DoubleIconBase = ({ children, color, ...rest }: DoubleIconProps) => {
+  const theme = useTheme()
+  return (
+    <DoubleStyledSvg stroke={color === 'dark' ? theme.colors.text.primary : theme.colors.background.primary} {...rest}>
+      {children}
+    </DoubleStyledSvg>
   )
 }

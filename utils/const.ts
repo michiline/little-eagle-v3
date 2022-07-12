@@ -9,6 +9,8 @@ export const homeLogo = '/images/home-logo.png'
 
 export const footerLogo = '/images/footer-logo.png'
 
+export const email = 'ana_orlic@yahoo.com'
+
 const generateGallery = ({ categoryId, galleryId, n }: GalleryProps): Gallery => {
   return {
     id: galleryId,
