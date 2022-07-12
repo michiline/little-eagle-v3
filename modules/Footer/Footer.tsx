@@ -1,14 +1,14 @@
 import Container from 'components/Container'
-import { SocialIcons } from 'components/Icon'
+import { SocialIcons } from 'components/Icons'
+import { FooterLogo } from 'components/Images'
 import NavLink from 'components/NavLink'
 import Typography from 'components/Typography'
 import { FormattedMessage } from 'react-intl'
-import { CamLogo, Contact, FooterCenter, Links, LinksColumn, LinksGroup, Socials } from './styles'
+import { Contact, FooterCenter, FooterLogoWrap, Links, LinksColumn, LinksGroup, Socials } from './styles'
 
 const Footer = () => {
   return (
     <Container backgroundColor="footer" style={{ paddingLeft: '32px', paddingRight: '32px' }}>
-      {' '}
       <FooterCenter>
         <Links>
           <LinksColumn>
@@ -52,9 +52,11 @@ const Footer = () => {
           </LinksColumn>
         </Links>
         <Socials>
-          <CamLogo src={'/images/cam-bird-logo-brown.png'} />
+          <FooterLogoWrap>
+            <FooterLogo />
+          </FooterLogoWrap>
           <Contact>
-            <SocialIcons color={'brown'} />
+            <SocialIcons color={'dark'} />
             <Typography variant="caption" style={{ marginLeft: '8px' }}>
               ana_orlic@yahoo.com
             </Typography>

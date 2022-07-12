@@ -1,3 +1,4 @@
+import { FooterLogo } from 'components/Images'
 import styled from 'styled-components'
 
 export const FooterCenter = styled.div`
@@ -22,10 +23,6 @@ export const Contact = styled.div`
   display: flex;
   align-items: center;
 `
-export const CamLogo = styled.img`
-  width: 200px;
-`
-
 export const Links = styled.div`
   display: flex;
   flex-direction: row;
@@ -56,4 +53,10 @@ export const NavLink = styled.div`
   text-align: start;
   padding-top: 8px;
   padding-bottom: 8px;
+`
+
+export const FooterLogoWrap = styled.div`
+  @media only screen and (max-width: ${p => p.theme.breakpoints.md}px) {
+    margin-top: 24px;
+  }
 `

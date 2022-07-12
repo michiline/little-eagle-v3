@@ -9,7 +9,6 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Abril+Fatface:wght@400&family=Raleway:wght@400;700;900&display=swap"
           rel="stylesheet"
         ></link>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <body>
         <Main />

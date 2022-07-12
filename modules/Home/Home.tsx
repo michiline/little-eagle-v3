@@ -2,18 +2,18 @@ import Button from 'components/Button'
 import Container from 'components/Container'
 import Cover from 'components/Cover'
 import ImageGrid from 'components/ImageGrid'
+import { HomeAboutImage, HomeLogo } from 'components/Images'
 import NavLink from 'components/NavLink'
 import Slideshow from 'components/Slideshow'
 import Typography from 'components/Typography'
 import { FormattedMessage } from 'react-intl'
 
-import { aboutHome, canvasHome, coverHome, latestGalleries, portfolio, testimonials } from 'utils/const'
+import { homeCanvas, homeCover, latestGalleries, portfolio, testimonials } from 'utils/const'
 import {
   About,
   AboutBody,
   Canvas,
   CanvasCenter,
-  Image,
   ImageColumn,
   ImageFrame,
   LatestGalleries,
@@ -22,13 +22,13 @@ import {
   TextColumn,
   Title,
   TitleWrap,
-  VisitAbout,
 } from './styles'
 
 const Home = () => {
   return (
     <>
-      <Cover imgUrl={coverHome}>
+      <Cover imgUrl={homeCover}>
+        <HomeLogo />
         <TitleWrap>
           <Title variant="h1" fontWeight="normal" color="light">
             little
@@ -70,8 +70,8 @@ const Home = () => {
       <Container backgroundColor="secondary" style={{ paddingLeft: '24px', paddingRight: '24px' }}>
         <About>
           <ImageColumn>
+            <HomeAboutImage style={{ zIndex: 2 }} />
             <ImageFrame />
-            <Image src={aboutHome} alt={'alt'} />
           </ImageColumn>
           <TextColumn>
             <Typography variant="h1" color={'dark'}>
@@ -94,7 +94,7 @@ const Home = () => {
         </About>
       </Container>
       <Container backgroundColor="primary">
-        <Canvas url={canvasHome}>
+        <Canvas url={homeCanvas}>
           <CanvasCenter>
             <ImageGrid images={portfolio.slice(0, 4)} numInRow={2} />
           </CanvasCenter>

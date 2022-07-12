@@ -2,11 +2,12 @@ import { Category, CategoryProps, Gallery, GalleryProps, Image, SlideshowItem } 
 
 const ROOT = process.env.NEXT_PUBLIC_STATIC_URL
 
-export const coverHome = `${ROOT}/gallery/home`
+export const homeCover = `${ROOT}/gallery/home`
+export const homeAbout = 'https://littleeagle.s3.eu-central-1.amazonaws.com/hi-3-3-2.jpg'
+export const homeCanvas = '/images/canvas.png'
+export const homeLogo = '/images/home-logo.png'
 
-export const aboutHome = 'https://littleeagle.s3.eu-central-1.amazonaws.com/hi-3-3-2.jpg'
-
-export const canvasHome = '/images/canvas.png'
+export const footerLogo = '/images/footer-logo.png'
 
 const generateGallery = ({ categoryId, galleryId, n }: GalleryProps): Gallery => {
   return {
@@ -42,9 +43,14 @@ export const portfolio = generatePortfolio([
   <CategoryProps>{
     categoryId: 'weddings',
     galleries: [
-      <GalleryProps>{ galleryId: 'at-home-with-m-a', n: 64 },
-      <GalleryProps>{ galleryId: 'sea-session', n: 23 },
-      <GalleryProps>{ galleryId: 'baptism-andrija', n: 49 },
+      <GalleryProps>{ galleryId: 'wedding-md', n: 79 },
+      <GalleryProps>{ galleryId: 'wedding-istria', n: 88 },
+      <GalleryProps>{ galleryId: 'khl', n: 99 },
+      <GalleryProps>{ galleryId: 'aal', n: 74 },
+      <GalleryProps>{ galleryId: 'wedding-mt', n: 99 },
+      <GalleryProps>{ galleryId: 'wedding-mp', n: 118 },
+      <GalleryProps>{ galleryId: 'wedding-rm', n: 62 },
+      <GalleryProps>{ galleryId: 'engagement-jk', n: 40 },
     ],
   },
   <CategoryProps>{
@@ -61,6 +67,14 @@ export const portfolio = generatePortfolio([
       <GalleryProps>{ galleryId: 'at-home-with-m-a', n: 64 },
       <GalleryProps>{ galleryId: 'sea-session', n: 23 },
       <GalleryProps>{ galleryId: 'baptism-andrija', n: 49 },
+      <GalleryProps>{ galleryId: 'baptism-ivan', n: 53 },
+      <GalleryProps>{ galleryId: 'baptism-tamara', n: 39 },
+      <GalleryProps>{ galleryId: 'brothers-n-m', n: 34 },
+      <GalleryProps>{ galleryId: 'baptism-karla', n: 35 },
+      <GalleryProps>{ galleryId: 'christmas-time', n: 29 },
+      <GalleryProps>{ galleryId: 'autumn-with-t', n: 28 },
+      <GalleryProps>{ galleryId: 'maternity-sara', n: 36 },
+      <GalleryProps>{ galleryId: 'i-a-a', n: 21 },
     ],
   },
   <CategoryProps>{

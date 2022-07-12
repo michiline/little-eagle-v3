@@ -1,7 +1,6 @@
 import Link from 'next/link'
-import { ReactNode } from 'react'
 import { FormattedMessage } from 'react-intl'
-import { Gallery, Image, Stylable } from 'utils/types'
+import { Image, Stylable } from 'utils/types'
 import { StyledImage, ImageLink, StyledImageGrid, Overlay, Title } from './styles'
 
 export interface ImageGridProps extends Stylable {

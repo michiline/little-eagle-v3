@@ -1,4 +1,3 @@
-import Button from 'components/Button'
 import Typography from 'components/Typography'
 import styled from 'styled-components'
 
@@ -82,11 +81,6 @@ export const ImageColumn = styled.div`
   }
 `
 
-export const Image = styled.img`
-  width: 100%;
-  z-index: 2;
-`
-
 export const ImageFrame = styled.div`
   position: absolute;
   top: 24px;
@@ -99,10 +93,6 @@ export const ImageFrame = styled.div`
   }
 `
 
-export const VisitAbout = styled.div`
-  width: 100%;
-  margin-top: 32px;
-`
 interface CanvasProps {
   url: string
 }
@@ -121,7 +111,7 @@ export const Canvas = styled.div<CanvasProps>`
     background-repeat: no-repeat;
     height: 700px;
     margin-top: 48px;
-    padding: 80px 24px;
+    padding-top: 80px;
   }
   @media only screen and (max-width: ${p => p.theme.breakpoints.md}px) {
     flex-direction: column;
