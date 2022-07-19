@@ -11,11 +11,14 @@ export const StyledDrawer = styled.div<StyledDrawerProps>`
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 10;
+  z-index: 11;
   transition-property: transform;
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateX(376px);
+  @media only screen and (max-width: ${p => p.theme.breakpoints.md}px) {
+    width: 326px;
+  }
   ${p =>
     p.isOpen &&
     `
@@ -39,21 +42,21 @@ export const Backdrop = styled.div<{ isOpen: boolean; onClick: () => void }>`
     p.isOpen &&
     `
     opacity: 1;
-    z-index: 9;
+    z-index: 10;
   `}
 `
 
 export const MenuIcon = styled.div`
-  top: 16px;
-  right: 32px;
+  top: 24px;
+  right: 16px;
   @media only screen and (max-width: ${p => p.theme.breakpoints.md}px) {
     top: 8px;
-    right: 24px;
+    right: 8px;
   }
   position: fixed;
   width: 48px;
   height: 48px;
-  z-index: 10;
+  z-index: 11;
 `
 
 export const LocaleLinks = styled.div`

@@ -1,18 +1,16 @@
 import { ReactNode } from 'react'
 import { Stylable } from 'utils/types'
-import { StyledContainer } from './styles'
+import { StyledContainer, StyledMinHeightContainer } from './styles'
 
 export interface ContainerProps extends Stylable {
   backgroundColor: string
+  minHeight?: boolean
+  minimal?: boolean
   children: ReactNode
 }
 
-const Container = ({ backgroundColor, children, style }: ContainerProps) => {
-  return (
-    <StyledContainer backgroundColor={backgroundColor} style={style}>
-      {children}
-    </StyledContainer>
-  )
+const Container = ({ children, ...rest }: ContainerProps) => {
+  return <StyledContainer {...rest}>{children}</StyledContainer>
 }
 
 export default Container

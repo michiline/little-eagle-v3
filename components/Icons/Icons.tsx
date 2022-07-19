@@ -48,10 +48,10 @@ export const IconInstagram = ({ style, color }: IconProps) => {
   )
 }
 
-export const IconBack = ({ style, color }: IconProps) => {
+export const IconBack = (props: IconProps) => {
   const theme = useTheme()
   return (
-    <IconBase width={48} height={48} viewBox="0 0 48 48" fill={theme.colors.text.primary} color={color} style={style}>
+    <IconBase width={48} height={48} viewBox="0 0 48 48" fill={theme.colors.text.primary} {...props}>
       <path d="M24 40 8 24 24 8l2.1 2.1-12.4 12.4H40v3H13.7l12.4 12.4Z" />
     </IconBase>
   )
@@ -97,5 +97,32 @@ export const IconClose = ({ color, show }: DoubleIconProps) => {
       <path d="M5.60278 4.8819L27.6028 28.0273" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round" />
       <path d="M5.60303 27.8398L27.603 5.06928" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round" />
     </DoubleIconBase>
+  )
+}
+
+export const IconGalleryBack = (props: IconProps) => {
+  const theme = useTheme()
+  return (
+    <IconBase width={40} height={40} viewBox="0 0 48 48" fill={theme.colors.background.primary} {...props}>
+      <path d="M20 44 0 24 20 4l2.8 2.85L5.65 24 22.8 41.15Z" />
+    </IconBase>
+  )
+}
+
+export const IconGalleryForward = (props: IconProps) => {
+  const theme = useTheme()
+  return (
+    <IconBase width={40} height={40} viewBox="0 0 48 48" fill={theme.colors.background.primary} {...props}>
+      <path d="m15.2 43.9-2.8-2.85L29.55 23.9 12.4 6.75l2.8-2.85 20 20Z" />
+    </IconBase>
+  )
+}
+
+export const IconGalleryClose = (props: IconProps) => {
+  const theme = useTheme()
+  return (
+    <IconBase width={40} height={40} viewBox="0 0 48 48" fill={theme.colors.background.primary} {...props}>
+      <path d="m12.45 37.65-2.1-2.1L21.9 24 10.35 12.45l2.1-2.1L24 21.9l11.55-11.55 2.1 2.1L26.1 24l11.55 11.55-2.1 2.1L24 26.1Z" />
+    </IconBase>
   )
 }

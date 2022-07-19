@@ -8,8 +8,6 @@ export const TitleWrap = styled.div`
   justify-content: center;
 `
 
-export const Title = styled(Typography)``
-
 export const Subtitle = styled(Typography)`
   width: 100%;
   text-align: center;

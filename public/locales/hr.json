@@ -5,58 +5,70 @@
       "value": "A & A & L"
     }
   ],
-  "about.body.1": [
+  "about.facts": [
     {
       "type": 0,
-      "value": "Po struci psiholog, u srcu fotograf. Živim u Zagrebu, ali dostupna u cijelom svijetu."
+      "value": "Zanimljivosti"
     }
   ],
-  "about.body.2": [
+  "about.facts.1": [
     {
       "type": 0,
-      "value": "Ne volim biti ispred kamere, ali volim biti osoba iza nje. Veseli me hvatanje posebnih trenutaka i stvaranje nezaboravnih uspomena. Usavršavam svoja znanja i vještine kroz razne radionice i fotografske tečajeve. Još uvijek tražim svoj stil i otvorena sam za nove ideje i projekte"
+      "value": "Volim putovati. Ako sam slobodna, vjerojatno sam na putu."
     }
   ],
-  "about.body.3": [
+  "about.facts.2": [
     {
       "type": 0,
-      "value": "Pravi sam obožavatelj prirode. Ako imam slobodne dane, vjerojatno sam na putu."
+      "value": "Preferiram kampiranje. U prirodi se osjećam smireno."
     }
   ],
-  "about.body.4": [
-    {
-      "type": 0,
-      "value": "Kampiranje je moj način putovanja. U prirodi se osjećam najsmirenije."
-    }
-  ],
-  "about.body.5": [
+  "about.facts.3": [
     {
       "type": 0,
       "value": "Mogu pojesti puno sladoleda. I lubenice."
     }
   ],
-  "about.body.6": [
+  "about.facts.4": [
     {
       "type": 0,
       "value": "Smatram se introvertom. Teđko mi je pričati o sebi, pa zamislite koliko mi je vremena trebalo da ovo napišem."
     }
   ],
-  "about.body.7": [
+  "about.facts.5": [
     {
       "type": 0,
-      "value": "Nisam upoznala nikoga tko voli sunce i more više od mene."
+      "value": "Malo ljudi voli sunce i more više od mene."
     }
   ],
-  "about.body.8": [
+  "about.facts.6": [
     {
       "type": 0,
-      "value": "Učestalo prakticiram jogu i meditiram."
+      "value": "Prakticiram jogu i trudim se učestalo meditirati."
     }
   ],
-  "about.body.9": [
+  "about.facts.7": [
     {
       "type": 0,
       "value": "Stranica se zove Little Eagle Photography zbog mog prezimena Orlić."
+    }
+  ],
+  "about.text.1": [
+    {
+      "type": 0,
+      "value": "Po struci psiholog - u srcu fotograf. Živim u Zagrebu, ali za fotografiranje sam dostupna u cijelom svijetu."
+    }
+  ],
+  "about.text.2": [
+    {
+      "type": 0,
+      "value": "Nisam osoba koja voli biti ispred kamere, ali zato volim biti iza nje. Veseli me hvatanje posebnih trenutaka i stvaranje nezaboravnih uspomena."
+    }
+  ],
+  "about.text.3": [
+    {
+      "type": 0,
+      "value": "Usavršavam svoja znanja i vještine kroz razne radionice i fotografske tečajeve. Moj stil se konstantno razvija, a ja sam uvijek otvorena za nove ideje i projekte."
     }
   ],
   "about.title": [
@@ -119,6 +131,12 @@
       "value": "Božićno vrijeme"
     }
   ],
+  "collaborations": [
+    {
+      "type": 0,
+      "value": "Suradnje"
+    }
+  ],
   "crikvenica-2021": [
     {
       "type": 0,
@@ -135,6 +153,18 @@
     {
       "type": 0,
       "value": "Zaruke J & K"
+    }
+  ],
+  "events": [
+    {
+      "type": 0,
+      "value": "Događanja"
+    }
+  ],
+  "family": [
+    {
+      "type": 0,
+      "value": "Obitelj"
     }
   ],
   "footer.about": [
@@ -191,22 +221,22 @@
       "value": "Buđenje boginje"
     }
   ],
-  "home.about.body.1": [
+  "home.about.button": [
+    {
+      "type": 0,
+      "value": "Više o meni"
+    }
+  ],
+  "home.about.text.1": [
     {
       "type": 0,
       "value": "Po struci psiholog, u srcu fotograf. Živim u Zagrebu, ali dostupna u cijelom svijetu."
     }
   ],
-  "home.about.body.2": [
+  "home.about.text.2": [
     {
       "type": 0,
       "value": "Ne volim biti ispred kamere, ali volim biti osoba iza nje. Veseli me hvatanje posebnih trenutaka i stvaranje nezaboravnih uspomena."
-    }
-  ],
-  "home.about.button": [
-    {
-      "type": 0,
-      "value": "Više o meni"
     }
   ],
   "home.about.title": [
@@ -299,10 +329,22 @@
       "value": "Fotogalerija"
     }
   ],
+  "portraits": [
+    {
+      "type": 0,
+      "value": "Portreti"
+    }
+  ],
   "sea-session": [
     {
       "type": 0,
       "value": "Obitelj na moru"
+    }
+  ],
+  "travel": [
+    {
+      "type": 0,
+      "value": "Putovanja"
     }
   ],
   "wedding-istria": [
@@ -333,6 +375,12 @@
     {
       "type": 0,
       "value": "Vjenčanje R & M"
+    }
+  ],
+  "weddings": [
+    {
+      "type": 0,
+      "value": "Vjenčanja"
     }
   ]
 }

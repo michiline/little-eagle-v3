@@ -20,7 +20,6 @@ import {
   Subtitle,
   Testimonials,
   TextColumn,
-  Title,
   TitleWrap,
 } from './styles'
 
@@ -30,20 +29,20 @@ const Home = () => {
       <Cover imgUrl={homeCover}>
         <HomeLogo />
         <TitleWrap>
-          <Title variant="h1" fontWeight="normal" color="light">
+          <Typography variant="h1" fontWeight="normal" color="light">
             little
-          </Title>
-          <Title variant="h1" fontWeight="normal" color="menu">
+          </Typography>
+          <Typography variant="h1" fontWeight="normal" color="menu">
             eagle
-          </Title>
-          <Title variant="h1" fontWeight="normal" color="light">
+          </Typography>
+          <Typography variant="h1" fontWeight="normal" color="light">
             photography
-          </Title>
+          </Typography>
         </TitleWrap>
         <Subtitle variant="h2" fontWeight="normal" color="light">
           <FormattedMessage id="home.cover.subtitle" />
         </Subtitle>
-        <NavLink href="/gallery">
+        <NavLink href="/portfolio">
           <Button variant="outlined">
             <FormattedMessage id="home.cover.button" />
           </Button>
@@ -55,7 +54,7 @@ const Home = () => {
             <FormattedMessage id="home.latest.title" />
           </Typography>
           <ImageGrid images={latestGalleries} numInRow={3} />
-          <NavLink href="/gallery">
+          <NavLink href="/portfolio">
             <Button>
               <FormattedMessage id="home.latest.button" />
             </Button>
@@ -79,10 +78,10 @@ const Home = () => {
             </Typography>
             <AboutBody>
               <Typography variant="body" color={'dark'}>
-                <FormattedMessage id={'home.about.body.1'} />
+                <FormattedMessage id={'home.about.text.1'} />
               </Typography>
               <Typography variant="body" color={'dark'} style={{ marginTop: '16px' }}>
-                <FormattedMessage id={'home.about.body.2'} />
+                <FormattedMessage id={'home.about.text.2'} />
               </Typography>
               <NavLink href="/about">
                 <Button>
@@ -98,7 +97,7 @@ const Home = () => {
           <CanvasCenter>
             <ImageGrid images={portfolio.slice(0, 4)} numInRow={2} />
           </CanvasCenter>
-          <NavLink href="/gallery">
+          <NavLink href="/portfolio">
             <Button>
               <FormattedMessage id="home.latest.button" />
             </Button>

@@ -1,8 +1,8 @@
-import styled from 'styled-components'
+import Typography from 'components/Typography'
+import styled, { css } from 'styled-components'
 
 interface StyledHeaderProps {
   isScrolled: boolean
-  show: boolean
 }
 
 export const StyledHeader = styled.div<StyledHeaderProps>`
@@ -12,14 +12,35 @@ export const StyledHeader = styled.div<StyledHeaderProps>`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 48px;
+  padding: 0 16px;
   @media only screen and (max-width: ${p => p.theme.breakpoints.md}px) {
-    padding: 0 24px;
     height: 64px;
+    padding: 8px 8px;
   }
   transition-property: background, box-shadow;
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 10;
-  background: ${p => (p.isScrolled && p.show ? p.theme.colors.background.primary : 'none')};
+  background: ${p => (p.isScrolled ? p.theme.colors.background.primary : 'none')};
+`
+
+export const TitleWrap = styled.div`
+  display: flex;
+`
+
+export const TitleLarge = styled(Typography)`
+  @media only screen and (max-width: ${p => p.theme.breakpoints.md}px) {
+    display: none;
+  }
+`
+
+export const TitleSmall = styled(Typography)`
+  @media only screen and (min-width: ${p => p.theme.breakpoints.md + 1}px) {
+    display: none;
+  }
+`
+
+export const MenuIconPlaceholder = styled.div`
+  width: 48px;
+  height: 48px;
 `

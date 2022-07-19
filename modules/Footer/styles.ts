@@ -1,7 +1,7 @@
 import { FooterLogo } from 'components/Images'
 import styled from 'styled-components'
 
-export const FooterCenter = styled.div`
+export const StyledFooter = styled.div`
   width: 100%;
   max-width: 960px;
   display: flex;

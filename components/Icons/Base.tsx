@@ -11,16 +11,21 @@ export interface IconProps extends Stylable {
   width?: number
   height?: number
   children?: React.ReactNode
+  handleClick?: () => void
 }
 
 export interface DoubleIconProps extends IconProps {
   show: boolean
 }
 
-export const IconBase = ({ children, color, ...rest }: IconProps) => {
+export const IconBase = ({ children, color, handleClick, ...rest }: IconProps) => {
   const theme = useTheme()
   return (
-    <StyledSvg stroke={color === 'dark' ? theme.colors.text.primary : theme.colors.background.primary} {...rest}>
+    <StyledSvg
+      stroke={color === 'dark' ? theme.colors.text.primary : theme.colors.background.primary}
+      {...rest}
+      onClick={handleClick}
+    >
       {children}
     </StyledSvg>
   )

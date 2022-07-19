@@ -5,58 +5,76 @@
       "value": "A & A & L"
     }
   ],
-  "about.body.1": [
+  "about.facts": [
     {
       "type": 0,
-      "value": "Hi, I’m Ana! By degree a psychologist, by heart a photographer. Based in Zagreb - Croatia, but available worldwide. I am not a person who likes to be in front of the camera, so at one point in my life I realized I like to be the person behind it. And ever since I become aware of that, I fell in love with the feeling."
+      "value": "Fun facts"
     }
   ],
-  "about.body.2": [
+  "about.facts.1": [
     {
       "type": 0,
-      "value": "Capturing moments and creating memories gives me the feeling of excitement and fullfilment. I am self-taught, but I began learning and improving my skills through various workshops and courses and I love that process. With my stile still evolving I am open to different ideas and projects and I’m ready to expand my horizons through photography. So if you have an idea, wish or vision I’ll be very happy to try to implement it, so feel free to contact me."
+      "value": "I love traveling. If I'm free, I'm probably on the road."
     }
   ],
-  "about.body.3": [
+  "about.facts.2": [
     {
       "type": 0,
-      "value": "I’m a true fan of travelling nature. If days are free it means I’m on the road."
+      "value": "I prefer camping. Nature is where I feel at peace."
     }
   ],
-  "about.body.4": [
+  "about.facts.3": [
     {
       "type": 0,
-      "value": "Camping is my way of travelling. Nature is where I feel at peace."
+      "value": "I can eat a lot of ice-cream. And watermelon."
     }
   ],
-  "about.body.5": [
+  "about.facts.4": [
     {
       "type": 0,
-      "value": "I can eat a lot of ice-cream. And watermelon. "
+      "value": "I consider myself an introvert. Talking about myself is hard, so imagine how much time it takes me to write this. "
     }
   ],
-  "about.body.6": [
+  "about.facts.5": [
     {
       "type": 0,
-      "value": "I’m an introvert. Talking about myself is hard, so imagine how much time it takes me to write this. "
+      "value": "Not many people love sea and summer more than me."
     }
   ],
-  "about.body.7": [
-    {
-      "type": 0,
-      "value": "There is not that many people who love sea and summer more than me."
-    }
-  ],
-  "about.body.8": [
+  "about.facts.6": [
     {
       "type": 0,
       "value": "I do yoga and I try to be regular in my meditations."
     }
   ],
-  "about.body.9": [
+  "about.facts.7": [
     {
       "type": 0,
       "value": "Little Eagle is my nickname because my surname in Croatian means just that! :)"
+    }
+  ],
+  "about.text.1": [
+    {
+      "type": 0,
+      "value": "By degree a psychologist, by heart a photographer. Based in Zagreb - Croatia, but available worldwide."
+    }
+  ],
+  "about.text.2": [
+    {
+      "type": 0,
+      "value": "I don’t like to be in front of the camera, but I love being the person behind it. Capturing special moments and creating unforgettable memories gives me the feeling of excitement and fills me with joy."
+    }
+  ],
+  "about.text.3": [
+    {
+      "type": 0,
+      "value": "I am constantly learning and improving my skills through various workshops and photography courses. With my style evolving, I am open to different ideas and projects."
+    }
+  ],
+  "about.text.4": [
+    {
+      "type": 0,
+      "value": "If you have an idea, wish or a vision, feel free to get in touch."
     }
   ],
   "about.title": [
@@ -119,6 +137,12 @@
       "value": "Christmas time"
     }
   ],
+  "collaborations": [
+    {
+      "type": 0,
+      "value": "Collaborations"
+    }
+  ],
   "crikvenica-2021": [
     {
       "type": 0,
@@ -135,6 +159,18 @@
     {
       "type": 0,
       "value": "Engagement J & K"
+    }
+  ],
+  "events": [
+    {
+      "type": 0,
+      "value": "Events"
+    }
+  ],
+  "family": [
+    {
+      "type": 0,
+      "value": "Family"
     }
   ],
   "footer.about": [
@@ -185,22 +221,22 @@
       "value": "Goddess awakening"
     }
   ],
-  "home.about.body.1": [
+  "home.about.button": [
+    {
+      "type": 0,
+      "value": "More about me"
+    }
+  ],
+  "home.about.text.1": [
     {
       "type": 0,
       "value": "By degree a psychologist, by heart a photographer. Based in Zagreb (Croatia), available worldwide"
     }
   ],
-  "home.about.body.2": [
+  "home.about.text.2": [
     {
       "type": 0,
       "value": "I don’t like to be in front of the camera, but I love being the person behind it. Capturing special moments and creating unforgettable memories gives me the feeling of excitement and fills me with joy."
-    }
-  ],
-  "home.about.button": [
-    {
-      "type": 0,
-      "value": "More about me"
     }
   ],
   "home.about.title": [
@@ -293,10 +329,22 @@
       "value": "Photo gallery"
     }
   ],
+  "portraits": [
+    {
+      "type": 0,
+      "value": "Portraits"
+    }
+  ],
   "sea-session": [
     {
       "type": 0,
       "value": "Sea session"
+    }
+  ],
+  "travel": [
+    {
+      "type": 0,
+      "value": "Travel"
     }
   ],
   "wedding-istria": [
@@ -327,6 +375,12 @@
     {
       "type": 0,
       "value": "Wedding R & M"
+    }
+  ],
+  "weddings": [
+    {
+      "type": 0,
+      "value": "Weddings"
     }
   ]
 }

@@ -7,6 +7,7 @@ export const StyledSocialIcons = styled.div`
 
 export const StyledSvg = styled.svg`
   padding: 8px;
+  cursor: pointer;
 `
 export const DoubleStyledSvg = styled(StyledSvg)<DoubleIconProps>`
   cursor: pointer;

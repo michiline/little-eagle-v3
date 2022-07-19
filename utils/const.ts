@@ -9,6 +9,11 @@ export const homeLogo = '/images/home-logo.png'
 
 export const footerLogo = '/images/footer-logo.png'
 
+export const aboutImage1 = 'https://littleeagle.s3.eu-central-1.amazonaws.com/hi-3-3-2.jpg'
+
+export const aboutLogo = '/images/cam-logo-paint.png'
+export const aboutTripodImage = '/images/cam-logo-tripod.png'
+
 export const email = 'ana_orlic@yahoo.com'
 
 const generateGallery = ({ categoryId, galleryId, n }: GalleryProps): Gallery => {
@@ -98,7 +103,7 @@ export const portfolio = generatePortfolio([
     ],
   },
   <CategoryProps>{
-    categoryId: 'editorial',
+    categoryId: 'collaborations',
     galleries: [
       <GalleryProps>{ galleryId: 'at-home-with-m-a', n: 64 },
       <GalleryProps>{ galleryId: 'sea-session', n: 23 },

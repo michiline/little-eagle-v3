@@ -6,7 +6,7 @@ export interface TypographyProps extends Stylable {
   children: ReactNode
   variant?: 'h1' | 'h2' | 'h3' | 'h4' | 'body' | 'menu' | 'button' | 'caption'
   fontWeight?: 'bold' | 'normal'
-  color?: 'dark' | 'light' | 'menu' | 'footer'
+  color?: 'dark' | 'light' | 'menu' | 'footer' | 'black'
 }
 
 const Typography = ({

@@ -86,10 +86,11 @@ export const StyledTypography = styled.div<StyledTypographyProps>`
         return `${p.theme.colors.background.secondary}`
       case 'menu':
         return `${p.theme.colors.menu}`
+      case 'black':
+        return `${p.theme.colors.footer}`
       default:
         return `${p.theme.colors.text.primary}px`
     }
   }};
   line-height: 1.5;
-  margin-bottom: 0.4em;
 `

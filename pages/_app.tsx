@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router'
-import { useCallback, useMemo, useState } from 'react'
+import { useMemo } from 'react'
 import { ThemeProvider } from 'styled-components'
 import { GlobalStyles } from 'styles/GlobalStyles'
 import { theme } from 'styles/theme'
@@ -28,6 +28,7 @@ export default function App({ Component, pageProps }) {
       <GlobalStyles />
       <IntlProvider onError={() => null} locale={locale} messages={messages}>
         <ThemeProvider theme={theme}>
+          <Header />
           <Component {...pageProps} />
           <Footer />
           <Drawer />

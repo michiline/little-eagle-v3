@@ -40,7 +40,7 @@ const Drawer = () => {
               <FormattedMessage id={'menu.home'} />
             </MenuLink>
           </NavLink>
-          <NavLink href="/gallery" handleClick={toggleDrawer}>
+          <NavLink href="/portfolio" handleClick={toggleDrawer}>
             <MenuLink variant="menu" color="light" isActive={pathname === '/portfolio'}>
               <FormattedMessage id={'menu.portfolio'} />
             </MenuLink>
