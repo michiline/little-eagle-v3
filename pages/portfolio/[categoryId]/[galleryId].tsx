@@ -1,6 +1,5 @@
 import GalleryFull from 'modules/GalleryFull'
 import GalleryJustified from 'modules/GalleryJustified'
-import JustifiedGallery from 'modules/GalleryJustified'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import { portfolio } from 'utils/const'

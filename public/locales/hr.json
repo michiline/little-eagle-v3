@@ -68,7 +68,13 @@
   "about.text.3": [
     {
       "type": 0,
-      "value": "Usavršavam svoja znanja i vještine kroz razne radionice i fotografske tečajeve. Moj stil se konstantno razvija, a ja sam uvijek otvorena za nove ideje i projekte."
+      "value": "Usavršavam svoja znanja i vještine kroz razne radionice i fotografske tečajeve."
+    }
+  ],
+  "about.text.4": [
+    {
+      "type": 0,
+      "value": "Moj stil se konstantno razvija, a ja sam uvijek otvorena za nove ideje i projekte."
     }
   ],
   "about.title": [
@@ -269,6 +275,12 @@
       "value": "Najnovije fotografije "
     }
   ],
+  "home.testimonials.anja": [
+    {
+      "type": 0,
+      "value": "Fotkala sam se kod Ane prije 6 mjeseci i još uvijek sam pod dojmom. Osim što imam odlične fotke, bilo nam je i jako zabavno. Ana je bila ljubazna i vrlo strpljiva sa svim mojim zahtjevima. Ana hvala ti što sam ponovo zavoljela sebe kroz tvoje fotografije."
+    }
+  ],
   "home.testimonials.bovani": [
     {
       "type": 0,
@@ -341,7 +353,7 @@
       "value": "Obitelj na moru"
     }
   ],
-  "travel": [
+  "travels": [
     {
       "type": 0,
       "value": "Putovanja"

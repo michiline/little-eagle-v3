@@ -2,7 +2,7 @@ import { Category, CategoryProps, Gallery, GalleryProps, Image, SlideshowItem } 
 
 const ROOT = process.env.NEXT_PUBLIC_STATIC_URL
 
-export const homeCover = `${ROOT}/gallery/home`
+export const homeCover = `${ROOT}/cover/home.jpg`
 export const homeAbout = 'https://littleeagle.s3.eu-central-1.amazonaws.com/hi-3-3-2.jpg'
 export const homeCanvas = '/images/canvas.png'
 export const homeLogo = '/images/home-logo.png'
@@ -19,7 +19,7 @@ export const email = 'ana_orlic@yahoo.com'
 const generateGallery = ({ categoryId, galleryId, n }: GalleryProps): Gallery => {
   return {
     id: galleryId,
-    url: `${ROOT}/portfolio/cover/${galleryId}.jpg`,
+    url: `${ROOT}/cover/portfolio/${galleryId}.jpg`,
     href: `/portfolio/${categoryId}/${galleryId}`,
     images: {
       low: [...Array(n)].map((_, index) => {
@@ -39,7 +39,7 @@ const generatePortfolio = (categories: Array<CategoryProps>): Array<Category> =>
   return categories.map(({ categoryId, galleries }) => {
     return <Category>{
       id: categoryId,
-      url: 'https://littleeaglephoto.s3.eu-central-1.amazonaws.com/portfolio/cover/events.jpg', //`${ROOT}/portfolio/cover/${categoryId}.jpg`,
+      url: `${ROOT}/cover/category/${categoryId}.jpg`,
       href: `/portfolio/${categoryId}`,
       galleries: galleries.map(({ galleryId, n }) => generateGallery({ categoryId, galleryId, n })),
     }
@@ -61,14 +61,6 @@ export const portfolio = generatePortfolio([
     ],
   },
   <CategoryProps>{
-    categoryId: 'portraits',
-    galleries: [
-      <GalleryProps>{ galleryId: 'at-home-with-m-a', n: 64 },
-      <GalleryProps>{ galleryId: 'sea-session', n: 23 },
-      <GalleryProps>{ galleryId: 'baptism-andrija', n: 49 },
-    ],
-  },
-  <CategoryProps>{
     categoryId: 'family',
     galleries: [
       <GalleryProps>{ galleryId: 'at-home-with-m-a', n: 64 },
@@ -85,22 +77,8 @@ export const portfolio = generatePortfolio([
     ],
   },
   <CategoryProps>{
-    categoryId: 'events',
-    galleries: [
-      <GalleryProps>{ galleryId: 'crikvenica-2021', n: 71 },
-      <GalleryProps>{ galleryId: 'goddess-awakening', n: 41 },
-      <GalleryProps>{ galleryId: 'eestec-meetings', n: 47 },
-      <GalleryProps>{ galleryId: 'chill-vibez-battles', n: 47 },
-    ],
-  },
-  <CategoryProps>{
-    categoryId: 'travel',
-    galleries: [
-      <GalleryProps>{ galleryId: 'crikvenica-2021', n: 71 },
-      <GalleryProps>{ galleryId: 'goddess-awakening', n: 41 },
-      <GalleryProps>{ galleryId: 'eestec-meetings', n: 47 },
-      <GalleryProps>{ galleryId: 'chill-vibez-battles', n: 47 },
-    ],
+    categoryId: 'portraits',
+    galleries: [],
   },
   <CategoryProps>{
     categoryId: 'collaborations',
@@ -110,9 +88,27 @@ export const portfolio = generatePortfolio([
       <GalleryProps>{ galleryId: 'baptism-andrija', n: 49 },
     ],
   },
+  <CategoryProps>{
+    categoryId: 'events',
+    galleries: [
+      <GalleryProps>{ galleryId: 'crikvenica-2021', n: 71 },
+      <GalleryProps>{ galleryId: 'goddess-awakening', n: 41 },
+      <GalleryProps>{ galleryId: 'eestec-meetings', n: 47 },
+      <GalleryProps>{ galleryId: 'chill-vibez-battles', n: 47 },
+    ],
+  },
+  <CategoryProps>{
+    categoryId: 'travels',
+    galleries: [
+      <GalleryProps>{ galleryId: 'crikvenica-2021', n: 71 },
+      <GalleryProps>{ galleryId: 'goddess-awakening', n: 41 },
+      <GalleryProps>{ galleryId: 'eestec-meetings', n: 47 },
+      <GalleryProps>{ galleryId: 'chill-vibez-battles', n: 47 },
+    ],
+  },
 ])
 
-export const latestGalleries = [portfolio[2].galleries[0], portfolio[2].galleries[1], portfolio[2].galleries[2]]
+export const latestGalleries = [portfolio[3].galleries[0], portfolio[1].galleries[2], portfolio[0].galleries[0]]
 
 export const testimonials = [
   <SlideshowItem>{
@@ -131,8 +127,8 @@ export const testimonials = [
     author: 'Lucija G. K.',
   },
   <SlideshowItem>{
-    id: 'home.testimonials.lucija',
-    url: `${ROOT}/testimonials/lucija.jpg`,
-    author: 'Lucija G. K.',
+    id: 'home.testimonials.anja',
+    url: `${ROOT}/testimonials/anja.jpg`,
+    author: 'Anja K.',
   },
 ]

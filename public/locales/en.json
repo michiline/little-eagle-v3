@@ -269,6 +269,12 @@
       "value": "Latest photoshoots"
     }
   ],
+  "home.testimonials.anja": [
+    {
+      "type": 0,
+      "value": "I had my session at Ana's place 6 months ago and I'm still under the impression. Except that I recieved excellent photos, I had so much fun during session. Ana was also kind and patient with all my extra requirements. Thank you Ana for making me fall in love with my self, through your photos."
+    }
+  ],
   "home.testimonials.bovani": [
     {
       "type": 0,
@@ -341,10 +347,10 @@
       "value": "Sea session"
     }
   ],
-  "travel": [
+  "travels": [
     {
       "type": 0,
-      "value": "Travel"
+      "value": "Travels"
     }
   ],
   "wedding-istria": [

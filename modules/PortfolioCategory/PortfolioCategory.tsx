@@ -1,4 +1,5 @@
 import Container from 'components/Container'
+import Cover from 'components/Cover'
 import ImageGrid from 'components/ImageGrid'
 import { Category } from 'utils/types'
 import { StyledPortfolioCategory } from './styles'
@@ -9,11 +10,14 @@ interface PortfolioCategoryProps {
 
 const PortfolioCategory = ({ category }: PortfolioCategoryProps) => {
   return (
-    <Container backgroundColor="primary" minHeight={true}>
-      <StyledPortfolioCategory>
-        <ImageGrid images={category.galleries} numInRow={3} />
-      </StyledPortfolioCategory>
-    </Container>
+    <>
+      <Cover imgUrl={category.url}>Hello</Cover>
+      <Container backgroundColor="primary">
+        <StyledPortfolioCategory>
+          <ImageGrid images={category.galleries} numInRow={3} />
+        </StyledPortfolioCategory>
+      </Container>
+    </>
   )
 }
 
