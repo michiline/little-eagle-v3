@@ -95,6 +95,12 @@
       "value": "Jesen s T"
     }
   ],
+  "balkan": [
+    {
+      "type": 0,
+      "value": "Balkan"
+    }
+  ],
   "baptism-andrija": [
     {
       "type": 0,
@@ -149,6 +155,30 @@
       "value": "Dan grada Crikvenice 2021"
     }
   ],
+  "croatia": [
+    {
+      "type": 0,
+      "value": "Hrvatska"
+    }
+  ],
+  "cuba": [
+    {
+      "type": 0,
+      "value": "Kuba"
+    }
+  ],
+  "editorial.text.1": [
+    {
+      "type": 0,
+      "value": "U moderno doba, puno biznisa ovisi o njihovoj prezentaciji u online svijetu, što uključuje dobro dizajnirane web stranice i društvene mreže, a one su uvijek popraćene i profesionalnim fotkama."
+    }
+  ],
+  "editorial.text.2": [
+    {
+      "type": 0,
+      "value": "Tu sam da kreativno predstavimo vaš proizvod, ideju, vas ili nešto drugo za što je potrebna pomoć fotografa."
+    }
+  ],
   "eestec-meetings": [
     {
       "type": 0,
@@ -161,16 +191,46 @@
       "value": "Zaruke J & K"
     }
   ],
+  "europe": [
+    {
+      "type": 0,
+      "value": "Europa"
+    }
+  ],
   "events": [
     {
       "type": 0,
       "value": "Događanja"
     }
   ],
+  "events.text.1": [
+    {
+      "type": 0,
+      "value": "Bilo da je riječ o gradskoj svečanosti ili plesnom natjecanju, kakav god događaj imali u vašoj bliskoj ili daljoj budućnosti, rado ću ga zabilježiti."
+    }
+  ],
+  "events.text.2": [
+    {
+      "type": 0,
+      "value": "Profesionalne fotke uvijek izgledaju dobro i možete ih iskoristiti za društvene mreže, razne objave ili jednostavno – uspomene. ;)"
+    }
+  ],
   "family": [
     {
       "type": 0,
       "value": "Obitelj"
+    }
+  ],
+  "family.text.1": [
+    {
+      "type": 0,
+      "value": "Mogućnost da zabilježim dragocjene trenutke u životu jedne obitelji, jedna mi je od dražih fotografskih avantura. Uključuje puno spontanosti, ljubavi, zagrljaja te zaigranosti koju djeca dovode u priču, a to je uvijek zabavno! ☺ "
+    }
+  ],
+  "family.text.2": [
+    {
+      "type": 0,
+      "value": "Promjene se događaju brzo, djeca odrastaju još brže, trudnoća traje samo jedan kratki period, stoga mi prilika da zauvijek sačuvam uspomene jednog razdoblja ima posebnu čar."
     }
   ],
   "footer.about": [
@@ -341,10 +401,34 @@
       "value": "Fotogalerija"
     }
   ],
+  "mexico": [
+    {
+      "type": 0,
+      "value": "Meksiko"
+    }
+  ],
+  "portfolio.category.check": [
+    {
+      "type": 0,
+      "value": "Pogledaj projekte:"
+    }
+  ],
   "portraits": [
     {
       "type": 0,
       "value": "Portreti"
+    }
+  ],
+  "portraits.text.1": [
+    {
+      "type": 0,
+      "value": "Kod portreta mi je važno da osobu koju fotografiram razumijem i prikažem ju u njenom najboljem izdanju. Vjerujem da je svaka osoba predivna i da se to može prikazati na fotografiji."
+    }
+  ],
+  "portraits.text.2": [
+    {
+      "type": 0,
+      "value": "Tu sam da zajedno dođemo do željenog cilja ovisno o razlogu fotografiranja. ☺"
     }
   ],
   "sea-session": [
@@ -353,10 +437,46 @@
       "value": "Obitelj na moru"
     }
   ],
+  "soca-valley": [
+    {
+      "type": 0,
+      "value": "Dolina Soče"
+    }
+  ],
+  "srilanka": [
+    {
+      "type": 0,
+      "value": "Šri Lanka"
+    }
+  ],
   "travels": [
     {
       "type": 0,
       "value": "Putovanja"
+    }
+  ],
+  "travels.text.1": [
+    {
+      "type": 0,
+      "value": "Putovanja su moj način kako provodim svoje slobodno, ali i radno vrijeme. Nerijetko ću svoje fotke obrađivati na raznoraznim lokacijama. Moj ured je ponekad hammock, klupica, šator, kafić i to je ono što dodatno volim kod fotografije."
+    }
+  ],
+  "travels.text.2": [
+    {
+      "type": 0,
+      "value": "No, volim i bezbrižna putovanja, kada ne moram ništa, a hoću sve. Nisu sva putovanja zabilježena objektivom, jer ponekad želim biti u potpunosti slobodna, ali ona koja jesu se nalaze u nastavku."
+    }
+  ],
+  "usa": [
+    {
+      "type": 0,
+      "value": "SAD"
+    }
+  ],
+  "wedding-ia": [
+    {
+      "type": 0,
+      "value": "Vjenčanje I & A"
     }
   ],
   "wedding-istria": [
@@ -393,6 +513,24 @@
     {
       "type": 0,
       "value": "Vjenčanja"
+    }
+  ],
+  "weddings.text.1": [
+    {
+      "type": 0,
+      "value": "Objektivom uhvatiti ljubav koja se događa na dan vjenčanja, ne samo između mladenaca, već i između obitelji, prijatelja i različitih generacija je posebna odgovornost koju spremno preuzimam kao fotograf. Važno mi je zabilježiti sve emocije koje se događaju tog dana, kao i energiju koja je jedinstvena i neponovljiva."
+    }
+  ],
+  "weddings.text.2": [
+    {
+      "type": 0,
+      "value": " Mislim da i mladenci i fotograf moraju kliknuti i razumjeti međusobne želje i potrebe. Tu sam za sva pitanja i nedoumice, a u nastavku možete pogledati neke od mojih dosadašnjih vjenčanja i vidjeti je li to ono što tražite za svoj poseban dan! ☺"
+    }
+  ],
+  "zanzibar": [
+    {
+      "type": 0,
+      "value": "Zanzibar"
     }
   ]
 }

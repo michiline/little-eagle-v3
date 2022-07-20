@@ -50,6 +50,7 @@ export const portfolio = generatePortfolio([
   <CategoryProps>{
     categoryId: 'weddings',
     galleries: [
+      <GalleryProps>{ galleryId: 'wedding-ia', n: 275 },
       <GalleryProps>{ galleryId: 'wedding-md', n: 79 },
       <GalleryProps>{ galleryId: 'wedding-istria', n: 88 },
       <GalleryProps>{ galleryId: 'khl', n: 99 },
@@ -100,15 +101,20 @@ export const portfolio = generatePortfolio([
   <CategoryProps>{
     categoryId: 'travels',
     galleries: [
-      <GalleryProps>{ galleryId: 'crikvenica-2021', n: 71 },
-      <GalleryProps>{ galleryId: 'goddess-awakening', n: 41 },
-      <GalleryProps>{ galleryId: 'eestec-meetings', n: 47 },
-      <GalleryProps>{ galleryId: 'chill-vibez-battles', n: 47 },
+      <GalleryProps>{ galleryId: 'croatia', n: 84 },
+      <GalleryProps>{ galleryId: 'mexico', n: 94 },
+      <GalleryProps>{ galleryId: 'zanzibar', n: 47 },
+      <GalleryProps>{ galleryId: 'srilanka', n: 134 },
+      <GalleryProps>{ galleryId: 'soca-valley', n: 12 },
+      <GalleryProps>{ galleryId: 'balkan', n: 10 },
+      <GalleryProps>{ galleryId: 'usa', n: 19 },
+      <GalleryProps>{ galleryId: 'europe', n: 16 },
+      <GalleryProps>{ galleryId: 'cuba', n: 16 },
     ],
   },
 ])
 
-export const latestGalleries = [portfolio[3].galleries[0], portfolio[1].galleries[2], portfolio[0].galleries[0]]
+export const latestGalleries = [portfolio[0].galleries[0], portfolio[3].galleries[0], portfolio[1].galleries[2]]
 
 export const testimonials = [
   <SlideshowItem>{

@@ -26,7 +26,7 @@ import {
 const Home = () => {
   return (
     <>
-      <Cover imgUrl={homeCover} overlay={true}>
+      <Cover imgUrl={homeCover} home={true}>
         <HomeLogo />
         <TitleWrap>
           <Typography variant="h1" fontWeight="normal" color="light">

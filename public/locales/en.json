@@ -95,6 +95,12 @@
       "value": "Autumn with T"
     }
   ],
+  "balkan": [
+    {
+      "type": 0,
+      "value": "Balkans"
+    }
+  ],
   "baptism-andrija": [
     {
       "type": 0,
@@ -149,6 +155,30 @@
       "value": "Crikvenica city day 2021"
     }
   ],
+  "croatia": [
+    {
+      "type": 0,
+      "value": "Croatia"
+    }
+  ],
+  "cuba": [
+    {
+      "type": 0,
+      "value": "Cuba"
+    }
+  ],
+  "editorial.text.1": [
+    {
+      "type": 0,
+      "value": "In modern times, a lot of businesses depend on their presentation in the online world, which includes well-designed websites and social networks, and they are always accompanied by professional photos."
+    }
+  ],
+  "editorial.text.2": [
+    {
+      "type": 0,
+      "value": "I am here to creatively present your product, idea, you or something else that requires the help of a photographer."
+    }
+  ],
   "eestec-meetings": [
     {
       "type": 0,
@@ -161,16 +191,46 @@
       "value": "Engagement J & K"
     }
   ],
+  "europe": [
+    {
+      "type": 0,
+      "value": "Europe"
+    }
+  ],
   "events": [
     {
       "type": 0,
       "value": "Events"
     }
   ],
+  "events.text.1": [
+    {
+      "type": 0,
+      "value": "Whether it’s a city ceremony or a dance competition, whatever event you have in your near or distant future, I’ll be happy to record it."
+    }
+  ],
+  "events.text.2": [
+    {
+      "type": 0,
+      "value": "Professional photos always look good and you can use them for social networks, various posts or simply - memories. ;)"
+    }
+  ],
   "family": [
     {
       "type": 0,
       "value": "Family"
+    }
+  ],
+  "family.text.1": [
+    {
+      "type": 0,
+      "value": "The opportunity to capture precious moments in the life of a family is one of my favorite photographic adventures. It involves a lot of spontaneity, love, hugs, and playfulness that kids bring into the story, and that’s always fun! ☺ "
+    }
+  ],
+  "family.text.2": [
+    {
+      "type": 0,
+      "value": "Changes happen quickly, children grow up even faster, pregnancy lasts only for a short period, so the opportunity to preserve the memories of one period forever has a special charm."
     }
   ],
   "footer.about": [
@@ -272,7 +332,7 @@
   "home.testimonials.anja": [
     {
       "type": 0,
-      "value": "I had my session at Ana's place 6 months ago and I'm still under the impression. Except that I recieved excellent photos, I had so much fun during session. Ana was also kind and patient with all my extra requirements. Thank you Ana for making me fall in love with my self, through your photos."
+      "value": "I had my session at Ana's place 6 months ago and I'm still under the impression. Apart from receiving excellent photos, I had so much fun during session. Ana was also kind and patient with all my extra requirements. Thank you Ana for making me fall in love with my self, through your photos."
     }
   ],
   "home.testimonials.bovani": [
@@ -335,10 +395,34 @@
       "value": "Photo gallery"
     }
   ],
+  "mexico": [
+    {
+      "type": 0,
+      "value": "Mexico"
+    }
+  ],
+  "portfolio.category.check": [
+    {
+      "type": 0,
+      "value": "Check projects:"
+    }
+  ],
   "portraits": [
     {
       "type": 0,
       "value": "Portraits"
+    }
+  ],
+  "portraits.text.1": [
+    {
+      "type": 0,
+      "value": "When it comes to portraits, it is important to me that I understand the person I am photographing and show them at their best. I believe that every person is beautiful and that this can be shown in a photo."
+    }
+  ],
+  "portraits.text.2": [
+    {
+      "type": 0,
+      "value": "I am here to get to the desired destination together depending on the reason for the photo shoot. ☺"
     }
   ],
   "sea-session": [
@@ -347,10 +431,46 @@
       "value": "Sea session"
     }
   ],
+  "soca-valley": [
+    {
+      "type": 0,
+      "value": "Soca valley"
+    }
+  ],
+  "srilanka": [
+    {
+      "type": 0,
+      "value": "Sri Lanka"
+    }
+  ],
   "travels": [
     {
       "type": 0,
       "value": "Travels"
+    }
+  ],
+  "travels.text.1": [
+    {
+      "type": 0,
+      "value": "Traveling is my way of spending my free time, but also my working time. I will often process my photos in various locations. My office is sometimes a hammock, a bench, a tent, a coffee shop and that’s what I additionally love about photography."
+    }
+  ],
+  "travels.text.2": [
+    {
+      "type": 0,
+      "value": "But I also love carefree travel, when I don’t have to do anything and I want everything. Not all trips are recorded with a lens, because sometimes I want to be completely free, but the ones that are are below."
+    }
+  ],
+  "usa": [
+    {
+      "type": 0,
+      "value": "USA"
+    }
+  ],
+  "wedding-ia": [
+    {
+      "type": 0,
+      "value": "Wedding I & A"
     }
   ],
   "wedding-istria": [
@@ -387,6 +507,24 @@
     {
       "type": 0,
       "value": "Weddings"
+    }
+  ],
+  "weddings.text.1": [
+    {
+      "type": 0,
+      "value": "Capturing the love that happens on the wedding day, not only between the newlyweds, but also between family, friends and different generations, is a special responsibility that I readily take on as a photographer. It is important for me to record all the emotions that are happening that day, as well as the energy that is unique and unrepeatable."
+    }
+  ],
+  "weddings.text.2": [
+    {
+      "type": 0,
+      "value": "I think both the newlyweds and the photographer need to click and understand each other’s desires and needs. I’m here for all the questions and concerns, and below you can take a look at some of my weddings so far and see if that’s what you’re looking for for your special day! ☺"
+    }
+  ],
+  "zanzibar": [
+    {
+      "type": 0,
+      "value": "Zanzibar"
     }
   ]
 }

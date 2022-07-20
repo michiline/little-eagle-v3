@@ -4,13 +4,13 @@ import { Container } from './styles'
 
 export interface CoverProps extends Stylable {
   imgUrl: string
-  overlay?: boolean
+  home?: boolean
   children: ReactNode
 }
 
-const Cover = ({ imgUrl, overlay = false, children }: CoverProps) => {
+const Cover = ({ imgUrl, home = false, children }: CoverProps) => {
   return (
-    <Container imgUrl={imgUrl} overlay={overlay}>
+    <Container imgUrl={imgUrl} home={home}>
       {children}
     </Container>
   )

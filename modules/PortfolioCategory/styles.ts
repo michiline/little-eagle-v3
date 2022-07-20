@@ -9,3 +9,8 @@ export const StyledPortfolioCategory = styled.div`
   justify-content: center;
   height: 100%;
 `
+
+export const Text = styled.div`
+  width: 100%;
+  display: flex;
+`
