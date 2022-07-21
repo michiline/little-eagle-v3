@@ -84,9 +84,15 @@ export const portfolio = generatePortfolio([
   <CategoryProps>{
     categoryId: 'collaborations',
     galleries: [
-      <GalleryProps>{ galleryId: 'at-home-with-m-a', n: 64 },
-      <GalleryProps>{ galleryId: 'sea-session', n: 23 },
-      <GalleryProps>{ galleryId: 'baptism-andrija', n: 49 },
+      <GalleryProps>{ galleryId: 'lilium', n: 36 },
+      <GalleryProps>{ galleryId: 'studio-zimat', n: 45 },
+      <GalleryProps>{ galleryId: 'bovani-design', n: 29 },
+      <GalleryProps>{ galleryId: 'brave-phone', n: 14 },
+      <GalleryProps>{ galleryId: 'lifestyle-istria', n: 43 },
+      <GalleryProps>{ galleryId: 'equilibrium-counselling', n: 17 },
+      <GalleryProps>{ galleryId: 'website-dina', n: 11 },
+      <GalleryProps>{ galleryId: 'website-josipa', n: 14 },
+      <GalleryProps>{ galleryId: 'yoni', n: 40 },
     ],
   },
   <CategoryProps>{
@@ -104,7 +110,7 @@ export const portfolio = generatePortfolio([
       <GalleryProps>{ galleryId: 'croatia', n: 84 },
       <GalleryProps>{ galleryId: 'mexico', n: 94 },
       <GalleryProps>{ galleryId: 'zanzibar', n: 47 },
-      <GalleryProps>{ galleryId: 'srilanka', n: 134 },
+      <GalleryProps>{ galleryId: 'srilanka', n: 30 },
       <GalleryProps>{ galleryId: 'soca-valley', n: 12 },
       <GalleryProps>{ galleryId: 'balkan', n: 10 },
       <GalleryProps>{ galleryId: 'usa', n: 19 },
@@ -114,7 +120,7 @@ export const portfolio = generatePortfolio([
   },
 ])
 
-export const latestGalleries = [portfolio[0].galleries[0], portfolio[3].galleries[0], portfolio[1].galleries[2]]
+export const latestGalleries = [portfolio[0].galleries[0], portfolio[1].galleries[0], portfolio[1].galleries[2]]
 
 export const testimonials = [
   <SlideshowItem>{

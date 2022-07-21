@@ -125,6 +125,18 @@
       "value": "Baptism Tamara"
     }
   ],
+  "bovani-design": [
+    {
+      "type": 0,
+      "value": "Bovani design"
+    }
+  ],
+  "brave-phone": [
+    {
+      "type": 0,
+      "value": "Brave phone"
+    }
+  ],
   "brothers-n-m": [
     {
       "type": 0,
@@ -149,6 +161,18 @@
       "value": "Collaborations"
     }
   ],
+  "collaborations.text.1": [
+    {
+      "type": 0,
+      "value": "In modern times, a lot of businesses depend on their presentation in the online world, which includes well-designed websites and social networks, and they are always accompanied by professional photos."
+    }
+  ],
+  "collaborations.text.2": [
+    {
+      "type": 0,
+      "value": "I am here to creatively present your product, idea, you or something else that requires the help of a photographer."
+    }
+  ],
   "crikvenica-2021": [
     {
       "type": 0,
@@ -167,18 +191,6 @@
       "value": "Cuba"
     }
   ],
-  "editorial.text.1": [
-    {
-      "type": 0,
-      "value": "In modern times, a lot of businesses depend on their presentation in the online world, which includes well-designed websites and social networks, and they are always accompanied by professional photos."
-    }
-  ],
-  "editorial.text.2": [
-    {
-      "type": 0,
-      "value": "I am here to creatively present your product, idea, you or something else that requires the help of a photographer."
-    }
-  ],
   "eestec-meetings": [
     {
       "type": 0,
@@ -189,6 +201,12 @@
     {
       "type": 0,
       "value": "Engagement J & K"
+    }
+  ],
+  "equilibrium-counselling": [
+    {
+      "type": 0,
+      "value": "Equilibrium counselling"
     }
   ],
   "europe": [
@@ -371,6 +389,18 @@
       "value": "K & H & L"
     }
   ],
+  "lifestyle-istria": [
+    {
+      "type": 0,
+      "value": "Lifestyle in Istria"
+    }
+  ],
+  "lilium": [
+    {
+      "type": 0,
+      "value": "Lilium dresses"
+    }
+  ],
   "maternity-sara": [
     {
       "type": 0,
@@ -434,13 +464,19 @@
   "soca-valley": [
     {
       "type": 0,
-      "value": "Soca valley"
+      "value": "Soča valley"
     }
   ],
   "srilanka": [
     {
       "type": 0,
       "value": "Sri Lanka"
+    }
+  ],
+  "studio-zimat": [
+    {
+      "type": 0,
+      "value": "Studio Zimat"
     }
   ],
   "travels": [
@@ -458,13 +494,25 @@
   "travels.text.2": [
     {
       "type": 0,
-      "value": "But I also love carefree travel, when I don’t have to do anything and I want everything. Not all trips are recorded with a lens, because sometimes I want to be completely free, but the ones that are are below."
+      "value": "But I also love carefree travel, when I don’t have to do anything and I want everything. Not all trips are recorded with a lens, because sometimes I want to be completely free, but the ones that are below."
     }
   ],
   "usa": [
     {
       "type": 0,
       "value": "USA"
+    }
+  ],
+  "website-dina": [
+    {
+      "type": 0,
+      "value": "Website Dina"
+    }
+  ],
+  "website-josipa": [
+    {
+      "type": 0,
+      "value": "Website Josipa"
     }
   ],
   "wedding-ia": [
@@ -519,6 +567,12 @@
     {
       "type": 0,
       "value": "I think both the newlyweds and the photographer need to click and understand each other’s desires and needs. I’m here for all the questions and concerns, and below you can take a look at some of my weddings so far and see if that’s what you’re looking for for your special day! ☺"
+    }
+  ],
+  "yoni": [
+    {
+      "type": 0,
+      "value": "YONI"
     }
   ],
   "zanzibar": [

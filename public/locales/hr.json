@@ -125,6 +125,18 @@
       "value": "Krštenje Tamara"
     }
   ],
+  "bovani-design": [
+    {
+      "type": 0,
+      "value": "Bovani dizajn"
+    }
+  ],
+  "brave-phone": [
+    {
+      "type": 0,
+      "value": "Hrabri telefon"
+    }
+  ],
   "brothers-n-m": [
     {
       "type": 0,
@@ -149,6 +161,18 @@
       "value": "Suradnje"
     }
   ],
+  "collaborations.text.1": [
+    {
+      "type": 0,
+      "value": "U moderno doba, puno biznisa ovisi o njihovoj prezentaciji u online svijetu, što uključuje dobro dizajnirane web stranice i društvene mreže, a one su uvijek popraćene i profesionalnim fotkama."
+    }
+  ],
+  "collaborations.text.2": [
+    {
+      "type": 0,
+      "value": "Tu sam da kreativno predstavimo vaš proizvod, ideju, vas ili nešto drugo za što je potrebna pomoć fotografa."
+    }
+  ],
   "crikvenica-2021": [
     {
       "type": 0,
@@ -167,18 +191,6 @@
       "value": "Kuba"
     }
   ],
-  "editorial.text.1": [
-    {
-      "type": 0,
-      "value": "U moderno doba, puno biznisa ovisi o njihovoj prezentaciji u online svijetu, što uključuje dobro dizajnirane web stranice i društvene mreže, a one su uvijek popraćene i profesionalnim fotkama."
-    }
-  ],
-  "editorial.text.2": [
-    {
-      "type": 0,
-      "value": "Tu sam da kreativno predstavimo vaš proizvod, ideju, vas ili nešto drugo za što je potrebna pomoć fotografa."
-    }
-  ],
   "eestec-meetings": [
     {
       "type": 0,
@@ -189,6 +201,12 @@
     {
       "type": 0,
       "value": "Zaruke J & K"
+    }
+  ],
+  "equilibrium-counselling": [
+    {
+      "type": 0,
+      "value": "Equilibrium savjetovanje"
     }
   ],
   "europe": [
@@ -377,6 +395,18 @@
       "value": "K & H & L"
     }
   ],
+  "lifestyle-istria": [
+    {
+      "type": 0,
+      "value": "Lifestyle u Istri"
+    }
+  ],
+  "lilium": [
+    {
+      "type": 0,
+      "value": "Lilium haljine"
+    }
+  ],
   "maternity-sara": [
     {
       "type": 0,
@@ -449,6 +479,12 @@
       "value": "Šri Lanka"
     }
   ],
+  "studio-zimat": [
+    {
+      "type": 0,
+      "value": "Studio Zimat"
+    }
+  ],
   "travels": [
     {
       "type": 0,
@@ -471,6 +507,18 @@
     {
       "type": 0,
       "value": "SAD"
+    }
+  ],
+  "website-dina": [
+    {
+      "type": 0,
+      "value": "Web stranica Dina"
+    }
+  ],
+  "website-josipa": [
+    {
+      "type": 0,
+      "value": "Web stranica Josipa"
     }
   ],
   "wedding-ia": [
@@ -525,6 +573,12 @@
     {
       "type": 0,
       "value": " Mislim da i mladenci i fotograf moraju kliknuti i razumjeti međusobne želje i potrebe. Tu sam za sva pitanja i nedoumice, a u nastavku možete pogledati neke od mojih dosadašnjih vjenčanja i vidjeti je li to ono što tražite za svoj poseban dan! ☺"
+    }
+  ],
+  "yoni": [
+    {
+      "type": 0,
+      "value": "YONI"
     }
   ],
   "zanzibar": [
