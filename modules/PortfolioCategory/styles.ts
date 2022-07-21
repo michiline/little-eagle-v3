@@ -1,3 +1,4 @@
+import Typography from 'components/Typography'
 import styled from 'styled-components'
 
 export const StyledPortfolioCategory = styled.div`
@@ -13,4 +14,16 @@ export const StyledPortfolioCategory = styled.div`
 export const Text = styled.div`
   width: 100%;
   display: flex;
+  padding: 0 16px;
+  @media only screen and (max-width: ${p => p.theme.breakpoints.lg}px) {
+    flex-direction: column;
+  }
+`
+
+export const SecondParagraph = styled(Typography)`
+  margin-left: 16px;
+  @media only screen and (max-width: ${p => p.theme.breakpoints.lg}px) {
+    margin-left: 0px;
+    margin-top: 16px;
+  }
 `

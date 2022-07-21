@@ -4,7 +4,6 @@ import { CustomImage, ListItem, StyledGalleryJustified } from './styles'
 
 const GalleryJustifed = ({ images, handleClick }) => {
   const router = useRouter()
-  const { pathname, query } = router
   return (
     <Container backgroundColor="primary" minHeight={true} minimal={true}>
       <StyledGalleryJustified>
