@@ -20,25 +20,15 @@ export const StyledContainer = styled.div<ContainerProps>`
         return `${p.theme.colors.background.primary}`
     }
   }};
-  padding-top: 72px;
-  padding-bottom: 72px;
-  padding-left: 16px;
-  padding-right: 16px;
   @media only screen and (max-width: ${p => p.theme.breakpoints.md}px) {
-    padding-top: 48px;
-    padding-bottom: 48px;
-    padding-left: 8px;
-    padding-right: 8px;
   }
   ${p =>
     p.minHeight &&
     css`
-      padding-top: calc(96px + 32px);
-      padding-bottom: 32px;
+      padding-top: calc(96px);
       min-height: calc(100vh - 347.367px);
       @media only screen and (max-width: ${p => p.theme.breakpoints.md}px) {
-        padding-top: calc(64px + 8px);
-        padding-bottom: 8px;
+        padding-top: calc(64px);
         min-height: 0;
       }
     `}
@@ -46,10 +36,6 @@ export const StyledContainer = styled.div<ContainerProps>`
     p.minimal &&
     css`
       @media only screen and (max-width: ${p => p.theme.breakpoints.md}px) {
-        padding-left: 2px;
-        padding-right: 2px;
       }
     `}
 `
-
-export const StyledMinHeightContainer = styled(StyledContainer)``

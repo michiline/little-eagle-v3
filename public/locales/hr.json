@@ -329,6 +329,12 @@
       "value": "Bok, ja sam Ana!"
     }
   ],
+  "home.canvas.title": [
+    {
+      "type": 0,
+      "value": "Kategorije:"
+    }
+  ],
   "home.cover.button": [
     {
       "type": 0,

@@ -56,7 +56,7 @@
   "about.text.1": [
     {
       "type": 0,
-      "value": "By degree a psychologist, by heart a photographer. Based in Zagreb - Croatia, but available worldwide."
+      "value": "By a degree, psychologist, by heart, a photographer. Based in Zagreb - Croatia, but available worldwide."
     }
   ],
   "about.text.2": [
@@ -323,6 +323,12 @@
       "value": "Hi, I'm Ana!"
     }
   ],
+  "home.canvas.title": [
+    {
+      "type": 0,
+      "value": "Categories:"
+    }
+  ],
   "home.cover.button": [
     {
       "type": 0,
@@ -368,7 +374,7 @@
   "home.testimonials.nikolina": [
     {
       "type": 0,
-      "value": "There isn't a person who hasn't asked us who did our wedding photos - and we proudly and gratefully say @littleeagle. So cool, so professional, yet spontaneous and relaxed, just the way it should be. All recommendations from us - because Ana sees all the details, and the details make the difference ;)"
+      "value": "There isn't a person who hasn't asked us who did our wedding photos - and we proudly and gratefully say @littleeagle. So cool, so professional, yet spontaneous and relaxed, just the way it should be. All recommendations from us - because Ana sees all the details, and the details make the difference. ;)"
     }
   ],
   "home.testimonials.title": [

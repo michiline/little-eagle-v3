@@ -22,12 +22,8 @@ export const StyledButton = styled.div<StyledButtonProps>(
       text-decoration: none;
       padding: 10px 0;
       width: 350px;
-      margin-top: 32px;
-      @media only screen and (max-width: ${theme.breakpoints.lg}px) {
-        width: 300px;
-        padding: 8px 0;
-        margin-top 24px;
-        font-size: calc(0.9*${theme.typography.size.Button}px);
+      @media only screen and (max-width: ${theme.breakpoints.sm}px) {
+        width: 100%;
       }
     `
 )

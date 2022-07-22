@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { TypographyProps } from './Typography'
 
 type StyledTypographyProps = Pick<TypographyProps, 'variant' | 'fontWeight' | 'color'>
@@ -24,7 +24,7 @@ export const StyledTypography = styled.div<StyledTypographyProps>`
         return `${p.theme.typography.size.Body}px`
     }
   }};
-  @media only screen and (max-width: ${p => p.theme.breakpoints.xl}px) {
+  @media only screen and (max-width: ${p => p.theme.breakpoints.lg}px) {
     font-size: ${p => {
       switch (p.variant) {
         case 'h1':
@@ -33,19 +33,13 @@ export const StyledTypography = styled.div<StyledTypographyProps>`
           return `${p.theme.typography.size.H2 * 0.8}px`
         case 'h3':
           return `${p.theme.typography.size.H3 * 0.8}px`
-      }
-    }};
-  }
-  @media only screen and (max-width: ${p => p.theme.breakpoints.lg}px) {
-    font-size: ${p => {
-      switch (p.variant) {
         case 'body':
           return `${p.theme.typography.size.Body * 0.9}px`
       }
     }};
   }
 
-  @media only screen and (max-width: ${p => p.theme.breakpoints.md}px) {
+  @media only screen and (max-width: ${p => p.theme.breakpoints.sm}px) {
     font-size: ${p => {
       switch (p.variant) {
         case 'h1':
@@ -93,4 +87,39 @@ export const StyledTypography = styled.div<StyledTypographyProps>`
     }
   }};
   line-height: 1.5;
+  text-shadow: ${p => p.variant === 'h1' && css`1.5594px 3.89849px 3.89849px rgba(0, 0, 0, 0.2);`};
 `
+
+// @media only screen and (max-width: ${p => p.theme.breakpoints.xl}px) {
+//   font-size: ${p => {
+//     switch (p.variant) {
+//       case 'h1':
+//         return `${p.theme.typography.size.H1 * 0.8}px`
+//       case 'h2':
+//         return `${p.theme.typography.size.H2 * 0.8}px`
+//       case 'h3':
+//         return `${p.theme.typography.size.H3 * 0.8}px`
+//     }
+//   }};
+// }
+// @media only screen and (max-width: ${p => p.theme.breakpoints.lg}px) {
+//   font-size: ${p => {
+//     switch (p.variant) {
+//       case 'body':
+//         return `${p.theme.typography.size.Body * 0.9}px`
+//     }
+//   }};
+// }
+
+// @media only screen and (max-width: ${p => p.theme.breakpoints.md}px) {
+//   font-size: ${p => {
+//     switch (p.variant) {
+//       case 'h1':
+//         return `${p.theme.typography.size.H1 * 0.65}px`
+//       case 'h2':
+//         return `${p.theme.typography.size.H2 * 0.65}px`
+//       case 'h3':
+//         return `${p.theme.typography.size.H3 * 0.65}px`
+//     }
+//   }};
+// }

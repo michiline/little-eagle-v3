@@ -43,7 +43,7 @@ export const ImageColumn = styled.div`
   @media only screen and (max-width: ${p => p.theme.breakpoints.md}px) {
     margin-left: 0;
     width: 100%;
-    margin-top: 32px;
+    margin-top: 48px;
   }
 `
 

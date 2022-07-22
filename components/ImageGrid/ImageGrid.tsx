@@ -8,16 +8,16 @@ export interface ImageGridProps extends Stylable {
   numInRow: number
 }
 
-const ImageGrid = ({ images, numInRow }: ImageGridProps) => {
+const ImageGrid = ({ images, numInRow, style, className }: ImageGridProps) => {
   return (
-    <StyledImageGrid>
+    <StyledImageGrid style={style} className={className}>
       {images &&
         images.map(({ id, url, href }, index: number) => {
           return (
             <Link key={index} href={href} passHref>
               <ImageLink numInRow={numInRow}>
                 <Overlay />
-                <Title variant="h2" color="light">
+                <Title variant="h3" color="light">
                   <FormattedMessage id={id} />
                 </Title>
                 <StyledImage src={url} alt={'alt'} />

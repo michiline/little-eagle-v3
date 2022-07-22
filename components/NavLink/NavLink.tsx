@@ -9,10 +9,20 @@ export interface NavLinkProps extends Stylable {
   href?: string
   isImage?: boolean
   locale?: string
+  fullWidth?: boolean
   handleClick?: () => void
 }
 
-const NavLink = ({ children, href, isImage = false, locale, handleClick }: NavLinkProps) => {
+const NavLink = ({
+  children,
+  href,
+  isImage = false,
+  locale,
+  handleClick,
+  fullWidth = false,
+  style,
+  className,
+}: NavLinkProps) => {
   const router = useRouter()
   const currentLocale = router.locale
   const currentPathname = router.pathname
@@ -23,7 +33,7 @@ const NavLink = ({ children, href, isImage = false, locale, handleClick }: NavLi
       locale={locale ? locale : currentLocale}
       passHref
     >
-      <StyledNavLink isImage={isImage} onClick={handleClick}>
+      <StyledNavLink isImage={isImage} fullWidth={fullWidth} onClick={handleClick} style={style} className={className}>
         {children}
       </StyledNavLink>
     </Link>

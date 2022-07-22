@@ -1,3 +1,4 @@
+import ImageGrid from 'components/ImageGrid'
 import Typography from 'components/Typography'
 import styled from 'styled-components'
 
@@ -8,18 +9,30 @@ export const TitleWrap = styled.div`
   justify-content: center;
 `
 
+export const CoverCenter = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 72px 16px;
+  @media only screen and (max-width: ${p => p.theme.breakpoints.md}px) {
+    width: 100%:
+  }
+`
+
 export const Subtitle = styled(Typography)`
   width: 100%;
   text-align: center;
+  margin-top: 16px;
 `
 
 export const LatestGalleries = styled.div`
   width: 100%;
-  max-width: 1400px;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 72px 16px;
 `
 
 export const Testimonials = styled.div`
@@ -28,6 +41,7 @@ export const Testimonials = styled.div`
   justify-content: space-between;
   width: 100%;
   max-width: 960px;
+  padding: 72px 16px;
   @media only screen and (max-width: ${p => p.theme.breakpoints.md}px) {
     max-width: 475px;
     flex-direction: column;
@@ -41,6 +55,7 @@ export const About = styled.div`
   justify-content: space-between;
   width: 100%;
   max-width: 960px;
+  padding: 72px 16px;
   @media only screen and (max-width: ${p => p.theme.breakpoints.md}px) {
     max-width: 475px;
     flex-direction: column;
@@ -82,7 +97,7 @@ export const ImageColumn = styled.div`
 export const ImageFrame = styled.div`
   position: absolute;
   top: 24px;
-  left: 24px;
+  left: 16px;
   width: 100%;
   height: 100%;
   border: 3px solid ${p => p.theme.colors.text.primary};
@@ -110,10 +125,10 @@ export const Canvas = styled.div<CanvasProps>`
     height: 700px;
     margin-top: 48px;
     padding-top: 80px;
+    margin-bottom: 72px;
   }
-  @media only screen and (max-width: ${p => p.theme.breakpoints.md}px) {
-    flex-direction: column;
-    align-items: center;
+  @media only screen and (max-width: ${p => p.theme.breakpoints.lg}px) {
+    padding: 72px 16px;
   }
 `
 
@@ -124,5 +139,17 @@ export const CanvasCenter = styled.div`
   justify-content: center;
   @media only screen and (min-width: ${p => p.theme.breakpoints.lg + 1}px) {
     max-width: 575px;
+  }
+`
+
+export const CanvasTitle = styled(Typography)`
+  @media only screen and (min-width: ${p => p.theme.breakpoints.lg + 1}px) {
+    display: none;
+  }
+`
+
+export const CanvasImageGrid = styled(ImageGrid)`
+  @media only screen and (max-width: ${p => p.theme.breakpoints.lg}px) {
+    margin-top: 24px;
   }
 `

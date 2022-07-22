@@ -29,7 +29,7 @@ const Slideshow = ({ items }: SlideshowProps) => {
               <Typography variant="body" color="dark">
                 <FormattedMessage id={item.id} />
               </Typography>
-              <Typography variant="body" color="dark" fontWeight="bold">
+              <Typography variant="body" color="dark" fontWeight="bold" style={{ marginTop: '16px' }}>
                 <FormattedMessage id={item.author} />
               </Typography>
             </SlideshowBody>

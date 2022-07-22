@@ -5,11 +5,11 @@ import NavLink from 'components/NavLink'
 import Typography from 'components/Typography'
 import { FormattedMessage } from 'react-intl'
 import { email } from 'utils/const'
-import { Contact, StyledFooter, FooterLogoWrap, Links, LinksColumn, LinksGroup, Socials } from './styles'
+import { Contact, StyledFooter, Links, LinksColumn, LinksGroup, Socials, FooterLink } from './styles'
 
 const Footer = () => {
   return (
-    <Container backgroundColor="footer" style={{ paddingLeft: '32px', paddingRight: '32px' }}>
+    <Container backgroundColor="footer">
       <StyledFooter>
         <Links>
           <LinksColumn>
@@ -17,15 +17,15 @@ const Footer = () => {
               <FormattedMessage id={'footer.title.1'} />
             </Typography>
             <LinksGroup>
-              <NavLink href="/about">
-                <Typography color="footer">
+              <NavLink href="/about" fullWidth={true} style={{ marginTop: '8px' }}>
+                <FooterLink color="footer">
                   <FormattedMessage id="footer.about" />
-                </Typography>
+                </FooterLink>
               </NavLink>
-              <NavLink href="/portfolio">
-                <Typography color="footer">
+              <NavLink href="/portfolio" fullWidth={true}>
+                <FooterLink color="footer">
                   <FormattedMessage id="footer.gallery" />
-                </Typography>
+                </FooterLink>
               </NavLink>
             </LinksGroup>
           </LinksColumn>
@@ -34,28 +34,26 @@ const Footer = () => {
               <FormattedMessage id={'footer.title.2'} />
             </Typography>
             <LinksGroup>
-              <NavLink href="/portfolio/weddings">
-                <Typography color="footer">
+              <NavLink href="/portfolio/weddings" fullWidth={true} style={{ marginTop: '8px' }}>
+                <FooterLink color="footer">
                   <FormattedMessage id="footer.weddings" />
-                </Typography>
+                </FooterLink>
               </NavLink>
-              <NavLink href="/portfolio/portraits">
-                <Typography color="footer">
+              <NavLink href="/portfolio/portraits" fullWidth={true}>
+                <FooterLink color="footer">
                   <FormattedMessage id="footer.portraits" />
-                </Typography>
+                </FooterLink>
               </NavLink>
-              <NavLink href="/portfolio/events">
-                <Typography color="footer">
+              <NavLink href="/portfolio/events" fullWidth={true}>
+                <FooterLink color="footer">
                   <FormattedMessage id="footer.events" />
-                </Typography>
+                </FooterLink>
               </NavLink>
             </LinksGroup>
           </LinksColumn>
         </Links>
         <Socials>
-          <FooterLogoWrap>
-            <FooterLogo />
-          </FooterLogoWrap>
+          <FooterLogo />
           <Contact>
             <SocialIcons color={'dark'} />
             <Typography variant="caption" style={{ marginLeft: '8px' }}>
