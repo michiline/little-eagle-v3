@@ -24,15 +24,16 @@ export const Center = styled.div`
   justify-content: flex-start;
   padding-left: 16px;
   padding-right: 16px;
-  padding-bottom: 48px;
+  padding-bottom: 96px;
   @media only screen and (max-width: ${p => p.theme.breakpoints.sm}px) {
-    padding-bottom: 24px;
+    padding-bottom: 48px;
   }
 `
 
 export const Text = styled.div`
   width: 100%;
   display: flex;
+  margin-top: 24px;
   @media only screen and (max-width: ${p => p.theme.breakpoints.lg}px) {
     flex-direction: column;
   }
