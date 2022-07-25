@@ -15,6 +15,8 @@ export const aboutLogo = '/images/cam-logo-paint.png'
 export const aboutTripodImage = '/images/cam-logo-tripod.png'
 
 export const email = 'ana_orlic@yahoo.com'
+export const facebook = 'https://www.facebook.com/littleeaglephoto'
+export const instagram = 'https://www.instagram.com/littleeaglephoto'
 
 const generateGallery = ({ categoryId, galleryId, n }: GalleryProps): Gallery => {
   return {

@@ -1,4 +1,3 @@
-import { FooterLogo } from 'components/Images'
 import Typography from 'components/Typography'
 import styled from 'styled-components'
 

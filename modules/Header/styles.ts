@@ -12,10 +12,9 @@ export const StyledHeader = styled.div<StyledHeaderProps>`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 16px;
+  padding: 0 8px;
   @media only screen and (max-width: ${p => p.theme.breakpoints.md}px) {
     height: 64px;
-    padding: 8px 8px;
   }
   transition-property: background, box-shadow;
   transition-duration: 500ms;

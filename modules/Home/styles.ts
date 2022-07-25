@@ -13,7 +13,7 @@ export const CoverCenter = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 72px 16px;
+  padding: 96px 16px;
   @media only screen and (max-width: ${p => p.theme.breakpoints.md}px) {
     width: 100%:
   }
@@ -32,7 +32,7 @@ export const LatestGalleries = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 72px 16px;
+  padding: 96px 16px;
   @media only screen and (max-width: ${p => p.theme.breakpoints.sm}px) {
     padding: 48px 16px;
   }
@@ -44,7 +44,7 @@ export const Testimonials = styled.div`
   justify-content: space-between;
   width: 100%;
   max-width: 960px;
-  padding: 72px 16px;
+  padding: 96px 16px;
   @media only screen and (max-width: ${p => p.theme.breakpoints.md}px) {
     max-width: 475px;
     flex-direction: column;
@@ -61,7 +61,7 @@ export const About = styled.div`
   justify-content: space-between;
   width: 100%;
   max-width: 960px;
-  padding: 72px 16px;
+  padding: 96px 16px;
   @media only screen and (max-width: ${p => p.theme.breakpoints.md}px) {
     max-width: 475px;
     flex-direction: column;
@@ -79,7 +79,7 @@ export const TextColumn = styled.div`
   width: 100%;
   margin-left: 80px;
   @media only screen and (max-width: ${p => p.theme.breakpoints.md}px) {
-    margin-top: 56px;
+    margin-top: 48px;
     margin-left: 0;
   }
 `
@@ -134,10 +134,10 @@ export const Canvas = styled.div<CanvasProps>`
     height: 700px;
     margin-top: 48px;
     padding-top: 80px;
-    margin-bottom: 72px;
+    margin-bottom: 96px;
   }
   @media only screen and (max-width: ${p => p.theme.breakpoints.lg}px) {
-    padding: 72px 16px;
+    padding: 96px 16px;
   }
   @media only screen and (max-width: ${p => p.theme.breakpoints.sm}px) {
     padding: 48px 16px;
@@ -152,16 +152,13 @@ export const CanvasCenter = styled.div`
   @media only screen and (min-width: ${p => p.theme.breakpoints.lg + 1}px) {
     max-width: 575px;
   }
+  @media only screen and (max-width: ${p => p.theme.breakpoints.lg}px) {
+    margin-top: 24px;
+  }
 `
 
 export const CanvasTitle = styled(Typography)`
   @media only screen and (min-width: ${p => p.theme.breakpoints.lg + 1}px) {
     display: none;
-  }
-`
-
-export const CanvasImageGrid = styled(ImageGrid)`
-  @media only screen and (max-width: ${p => p.theme.breakpoints.lg}px) {
-    margin-top: 24px;
   }
 `

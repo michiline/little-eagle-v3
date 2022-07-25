@@ -2,29 +2,22 @@ import styled, { css } from 'styled-components'
 import { CoverProps } from './Cover'
 
 type StyledCoverProps = Pick<CoverProps, 'imgUrl' | 'home'>
+type StyledCoverCenterProps = Pick<CoverProps, 'home'>
 
 export const Container = styled.div<StyledCoverProps>`
   width: 100%;
   height: 100vh;
   background-image: url(${p => p.imgUrl});
+  align-items: center;
+  justify-content: center;
   ${p =>
     p.home &&
     css`
       background-image: linear-gradient(182.59deg, rgba(96, 84, 84, 0.6) 2.1%, rgba(156, 108, 105, 0.3) 97.84%),
         url(${p.imgUrl});
-      align-items: center;
-      justify-content: center;
     `}
   display: flex;
   flex-direction: column;
-
-  ${p =>
-    !p.home &&
-    css`
-      align-items: flex-start;
-      justify-content: flex-end;
-      padding: 48px;
-    `}
   background-size: cover;
   background-position: center;
 

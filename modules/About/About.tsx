@@ -28,16 +28,16 @@ const About = () => {
             <Typography variant="h1">
               <FormattedMessage id={'about.title'} />
             </Typography>
-            <Typography variant="body" style={{ marginTop: '8px' }}>
+            <Typography variant="body" style={{ marginTop: '24px' }}>
               <FormattedMessage id={'about.text.1'} />
             </Typography>
-            <Typography variant="body" style={{ marginTop: '8px' }}>
+            <Typography variant="body" style={{ marginTop: '16px' }}>
               <FormattedMessage id={'about.text.2'} />
             </Typography>
-            <Typography variant="body" style={{ marginTop: '8px' }}>
+            <Typography variant="body" style={{ marginTop: '16px' }}>
               <FormattedMessage id={'about.text.3'} />
             </Typography>
-            <Typography variant="body" style={{ marginTop: '8px' }}>
+            <Typography variant="body" style={{ marginTop: '16px' }}>
               <FormattedMessage id={'about.text.4'} />
             </Typography>
           </FirstTextColumn>
@@ -49,25 +49,25 @@ const About = () => {
             <Typography variant="h1">
               <FormattedMessage id={'about.facts'} />
             </Typography>
-            <Typography variant="body" style={{ marginTop: '8px' }}>
+            <Typography variant="body" style={{ marginTop: '24px' }}>
               <FormattedMessage id={'about.facts.1'} />
             </Typography>
-            <Typography variant="body" style={{ marginTop: '8px' }}>
+            <Typography variant="body" style={{ marginTop: '16px' }}>
               <FormattedMessage id={'about.facts.2'} />
             </Typography>
-            <Typography variant="body" style={{ marginTop: '8px' }}>
+            <Typography variant="body" style={{ marginTop: '16px' }}>
               <FormattedMessage id={'about.facts.3'} />
             </Typography>
-            <Typography variant="body" style={{ marginTop: '8px' }}>
+            <Typography variant="body" style={{ marginTop: '16px' }}>
               <FormattedMessage id={'about.facts.4'} />
             </Typography>
-            <Typography variant="body" style={{ marginTop: '8px' }}>
+            <Typography variant="body" style={{ marginTop: '16px' }}>
               <FormattedMessage id={'about.facts.5'} />
             </Typography>
-            <Typography variant="body" style={{ marginTop: '8px' }}>
+            <Typography variant="body" style={{ marginTop: '16px' }}>
               <FormattedMessage id={'about.facts.6'} />
             </Typography>
-            <Typography variant="body" style={{ marginTop: '8px' }}>
+            <Typography variant="body" style={{ marginTop: '16px' }}>
               <FormattedMessage id={'about.facts.7'} />
             </Typography>
           </TextColumn>

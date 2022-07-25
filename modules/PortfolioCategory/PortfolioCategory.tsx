@@ -4,7 +4,7 @@ import ImageGrid from 'components/ImageGrid'
 import Typography from 'components/Typography'
 import { FormattedMessage } from 'react-intl'
 import { Category } from 'utils/types'
-import { SecondParagraph, StyledPortfolioCategory, Text } from './styles'
+import { Center, SecondParagraph, StyledPortfolioCategory, Text } from './styles'
 
 interface PortfolioCategoryProps {
   category: Category
@@ -14,9 +14,11 @@ const PortfolioCategory = ({ category }: PortfolioCategoryProps) => {
   return (
     <>
       <Cover imgUrl={category.url}>
-        <Typography variant="h1" fontWeight="normal" color="light">
-          <FormattedMessage id={category.id} />
-        </Typography>
+        <Center>
+          <Typography variant="h1" fontWeight="normal" color="light">
+            <FormattedMessage id={category.id} />
+          </Typography>
+        </Center>
       </Cover>
       <Container backgroundColor="primary">
         <StyledPortfolioCategory>
@@ -28,10 +30,15 @@ const PortfolioCategory = ({ category }: PortfolioCategoryProps) => {
               <FormattedMessage id={`${category.id}.text.2`} />
             </SecondParagraph>
           </Text>
-          <Typography variant="h1" fontWeight="normal" color="dark" style={{ alignSelf: 'flex-start' }}>
+          <Typography
+            variant="h1"
+            fontWeight="normal"
+            color="dark"
+            style={{ alignSelf: 'flex-start', marginTop: '48px' }}
+          >
             <FormattedMessage id={'portfolio.category.check'} />
           </Typography>
-          <ImageGrid images={category.galleries} numInRow={3} />
+          <ImageGrid images={category.galleries} numInRow={3} style={{ marginTop: '24px' }} />
         </StyledPortfolioCategory>
       </Container>
     </>

@@ -7,17 +7,13 @@ export const StyledAbout = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 936px;
+  max-width: 960px;
 `
 
 export const Row = styled.div`
   width: 100%;
   height: max-content;
   display: flex;
-  margin-top: 48px;
-  &:first-of-type {
-    margin-top: 0;
-  }
   @media only screen and (max-width: ${p => p.theme.breakpoints.lg}px) {
     flex-direction: column;
     max-width: 475px;
@@ -25,6 +21,10 @@ export const Row = styled.div`
   }
   align-items: center;
   justify-content: space-between;
+  padding: 48px 16px;
+  @media only screen and (max-width: ${p => p.theme.breakpoints.sm}px) {
+    padding: 24px 16px;
+  }
 `
 
 export const ImageColumn = styled.div`
@@ -39,7 +39,7 @@ export const SecondImageColumn = styled(ImageColumn)`
     margin-left: 48px;
   }
   @media only screen and (max-width: ${p => p.theme.breakpoints.lg}px) {
-    margin-top: 48px;
+    margin-top: 24px;
   }
 `
 
@@ -67,7 +67,6 @@ export const TextColumn = styled.div`
   flex-direction: column;
   width: 100%;
   @media only screen and (max-width: ${p => p.theme.breakpoints.lg}px) {
-    padding: 0 16px;
     margin-top: 48px;
   }
 `

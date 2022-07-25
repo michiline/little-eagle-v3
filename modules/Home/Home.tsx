@@ -14,7 +14,6 @@ import {
   AboutBody,
   Canvas,
   CanvasCenter,
-  CanvasImageGrid,
   CanvasTitle,
   CoverCenter,
   ImageColumn,
@@ -103,7 +102,7 @@ const Home = () => {
             <FormattedMessage id="home.canvas.title" />
           </CanvasTitle>
           <CanvasCenter>
-            <CanvasImageGrid images={portfolio.slice(0, 4)} numInRow={2} />
+            <ImageGrid images={portfolio.slice(0, 4)} numInRow={2} />
           </CanvasCenter>
           <NavLink href="/portfolio" fullWidth={true} style={{ marginTop: '48px' }}>
             <Button>

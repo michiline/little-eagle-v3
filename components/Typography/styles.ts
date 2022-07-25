@@ -86,7 +86,7 @@ export const StyledTypography = styled.div<StyledTypographyProps>`
         return `${p.theme.colors.text.primary}px`
     }
   }};
-  line-height: 1.5;
+  line-height: 1.4;
   text-shadow: ${p => p.variant === 'h1' && css`1.5594px 3.89849px 3.89849px rgba(0, 0, 0, 0.2);`};
 `
 

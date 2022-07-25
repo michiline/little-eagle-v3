@@ -35,24 +35,24 @@ const Drawer = () => {
           </NavLink>
         </LocaleLinks>
         <NavLinks>
-          <NavLink href="/" handleClick={toggleDrawer}>
+          <NavLink href="/" handleClick={toggleDrawer} fullWidth={true}>
             <MenuLink variant="menu" color="light" isActive={pathname === '/'}>
               <FormattedMessage id={'menu.home'} />
             </MenuLink>
           </NavLink>
-          <NavLink href="/portfolio" handleClick={toggleDrawer}>
+          <NavLink href="/portfolio" handleClick={toggleDrawer} fullWidth={true}>
             <MenuLink variant="menu" color="light" isActive={pathname === '/portfolio'}>
               <FormattedMessage id={'menu.portfolio'} />
             </MenuLink>
           </NavLink>
-          <NavLink href="/about" handleClick={toggleDrawer}>
+          <NavLink href="/about" handleClick={toggleDrawer} fullWidth={true}>
             <MenuLink variant="menu" color="light" isActive={pathname === '/about'}>
               <FormattedMessage id={'menu.about'} />
             </MenuLink>
           </NavLink>
           <Socials>
             <SocialIcons color={'light'} />
-            <Typography variant="caption" color="light">
+            <Typography variant="caption" color="light" style={{ marginRight: '8px' }}>
               {email}
             </Typography>
           </Socials>

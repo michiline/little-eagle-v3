@@ -1,14 +1,15 @@
 import { useTheme } from 'styled-components'
+import { facebook, instagram } from 'utils/const'
 import { DoubleIconBase, DoubleIconProps, IconBase, IconProps } from './Base'
 import { StyledSocialIcons } from './styles'
 
 export const SocialIcons = ({ color }: IconProps) => {
   return (
     <StyledSocialIcons>
-      <a href={'https://www.facebook.com/littleeaglephoto'} target="_blank" rel={'noreferrer'}>
+      <a href={facebook} target="_blank" rel={'noreferrer'}>
         <IconFacebook color={color} />
       </a>
-      <a href={'https://www.instagram.com/littleeaglephoto'} target="_blank" rel={'noreferrer'}>
+      <a href={instagram} target="_blank" rel={'noreferrer'}>
         <IconInstagram color={color} />
       </a>
     </StyledSocialIcons>

@@ -326,7 +326,7 @@
   "home.canvas.title": [
     {
       "type": 0,
-      "value": "Categories:"
+      "value": "Categories"
     }
   ],
   "home.cover.button": [
@@ -440,7 +440,7 @@
   "portfolio.category.check": [
     {
       "type": 0,
-      "value": "Check projects:"
+      "value": "Check projects"
     }
   ],
   "portraits": [

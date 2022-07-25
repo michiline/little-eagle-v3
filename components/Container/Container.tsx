@@ -5,7 +5,6 @@ import { StyledContainer } from './styles'
 export interface ContainerProps extends Stylable {
   backgroundColor: string
   minHeight?: boolean
-  minimal?: boolean
   children: ReactNode
 }
 

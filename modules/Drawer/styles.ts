@@ -48,15 +48,14 @@ export const Backdrop = styled.div<{ isOpen: boolean; onClick: () => void }>`
 
 export const MenuIcon = styled.div`
   top: 24px;
-  right: 16px;
-  @media only screen and (max-width: ${p => p.theme.breakpoints.md}px) {
-    top: 8px;
-    right: 8px;
-  }
+  right: 8px;
   position: fixed;
   width: 48px;
   height: 48px;
   z-index: 11;
+  @media only screen and (max-width: ${p => p.theme.breakpoints.md}px) {
+    top: 8px;
+  }
 `
 
 export const LocaleLinks = styled.div`
@@ -88,7 +87,11 @@ export const NavLinks = styled.div`
   width: 100%;
 `
 export const MenuLink = styled(Typography)<{ isActive: boolean }>`
-  padding: 16px 48px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 48px;
+  padding-right: 16px;
+  width: 100%;
   &:first-of-type {
     margin-left: 0px;
   }
@@ -106,8 +109,5 @@ export const Socials = styled.div`
   justify-content: center;
   position: absolute;
   bottom: 48px;
-  right: 32px;
-  @media only screen and (max-width: ${p => p.theme.breakpoints.md}px) {
-    right: 24px;
-  }
+  right: 8px;
 `

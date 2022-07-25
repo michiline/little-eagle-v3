@@ -20,8 +20,6 @@ export const StyledContainer = styled.div<ContainerProps>`
         return `${p.theme.colors.background.primary}`
     }
   }};
-  @media only screen and (max-width: ${p => p.theme.breakpoints.md}px) {
-  }
   ${p =>
     p.minHeight &&
     css`
@@ -30,12 +28,6 @@ export const StyledContainer = styled.div<ContainerProps>`
       @media only screen and (max-width: ${p => p.theme.breakpoints.md}px) {
         padding-top: calc(64px);
         min-height: 0;
-      }
-    `}
-  ${p =>
-    p.minimal &&
-    css`
-      @media only screen and (max-width: ${p => p.theme.breakpoints.md}px) {
       }
     `}
 `

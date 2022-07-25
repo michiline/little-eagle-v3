@@ -2,13 +2,17 @@ import styled from 'styled-components'
 
 export const StyledGalleryJustified = styled.ul`
   width: 100%;
-  max-width: 1400px;
+  max-width: 1200px;
   display: flex;
   flex-wrap: wrap;
   height: 100%;
   list-style: none;
   @media (max-aspect-ratio: 1/1) and (max-width: 480px) {
     flex-direction: row;
+  }
+  padding: 48px 16px;
+  @media only screen and (max-width: ${p => p.theme.breakpoints.sm}px) {
+    padding: 24px 2px;
   }
 `
 
