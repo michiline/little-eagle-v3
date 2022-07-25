@@ -305,6 +305,18 @@
       "value": "Buđenje boginje"
     }
   ],
+  "head.base": [
+    {
+      "type": 0,
+      "value": " - Little Eagle Photography"
+    }
+  ],
+  "head.home": [
+    {
+      "type": 0,
+      "value": "Naslovnica"
+    }
+  ],
   "home.about.button": [
     {
       "type": 0,
@@ -395,6 +407,12 @@
       "value": "I & A & A"
     }
   ],
+  "in-studio": [
+    {
+      "type": 0,
+      "value": "U studiju"
+    }
+  ],
   "khl": [
     {
       "type": 0,
@@ -441,6 +459,12 @@
     {
       "type": 0,
       "value": "Meksiko"
+    }
+  ],
+  "on-location": [
+    {
+      "type": 0,
+      "value": "Na lokaciji"
     }
   ],
   "portfolio.category.check": [

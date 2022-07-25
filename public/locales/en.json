@@ -299,6 +299,18 @@
       "value": "Goddess awakening"
     }
   ],
+  "head.base": [
+    {
+      "type": 0,
+      "value": " - Little Eagle Photography"
+    }
+  ],
+  "head.home": [
+    {
+      "type": 0,
+      "value": "Home"
+    }
+  ],
   "home.about.button": [
     {
       "type": 0,
@@ -389,6 +401,12 @@
       "value": "I & A & A"
     }
   ],
+  "in-studio": [
+    {
+      "type": 0,
+      "value": "In studio"
+    }
+  ],
   "khl": [
     {
       "type": 0,
@@ -435,6 +453,12 @@
     {
       "type": 0,
       "value": "Mexico"
+    }
+  ],
+  "on-location": [
+    {
+      "type": 0,
+      "value": "On location"
     }
   ],
   "portfolio.category.check": [

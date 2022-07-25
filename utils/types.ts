@@ -23,12 +23,14 @@ export interface GalleryProps {
   galleryId: string
   categoryId: string
   n: number
+  hidden?: boolean
 }
 
 export interface Image {
   id: string
   url: string
   href: string
+  hidden?: boolean
 }
 
 export interface SlideshowItem {

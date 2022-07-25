@@ -18,11 +18,12 @@ export const email = 'ana_orlic@yahoo.com'
 export const facebook = 'https://www.facebook.com/littleeaglephoto'
 export const instagram = 'https://www.instagram.com/littleeaglephoto'
 
-const generateGallery = ({ categoryId, galleryId, n }: GalleryProps): Gallery => {
+const generateGallery = ({ categoryId, galleryId, n, hidden = false }: GalleryProps): Gallery => {
   return {
     id: galleryId,
     url: `${ROOT}/cover/portfolio/${galleryId}.jpg`,
     href: `/portfolio/${categoryId}/${galleryId}`,
+    hidden: hidden,
     images: {
       low: [...Array(n)].map((_, index) => {
         return <Image>{
@@ -43,7 +44,7 @@ const generatePortfolio = (categories: Array<CategoryProps>): Array<Category> =>
       id: categoryId,
       url: `${ROOT}/cover/category/${categoryId}.jpg`,
       href: `/portfolio/${categoryId}`,
-      galleries: galleries.map(({ galleryId, n }) => generateGallery({ categoryId, galleryId, n })),
+      galleries: galleries.map(({ galleryId, n, hidden }) => generateGallery({ categoryId, galleryId, n, hidden })),
     }
   })
 }
@@ -77,11 +78,16 @@ export const portfolio = generatePortfolio([
       <GalleryProps>{ galleryId: 'autumn-with-t', n: 28 },
       <GalleryProps>{ galleryId: 'maternity-sara', n: 36 },
       <GalleryProps>{ galleryId: 'i-a-a', n: 21 },
+      <GalleryProps>{ galleryId: 'i-a-a', n: 21, hidden: true },
     ],
   },
   <CategoryProps>{
     categoryId: 'portraits',
-    galleries: [],
+    galleries: [
+      <GalleryProps>{ galleryId: 'in-studio', n: 26 },
+      <GalleryProps>{ galleryId: 'on-location', n: 38 },
+      <GalleryProps>{ galleryId: 'on-location', n: 38, hidden: true },
+    ],
   },
   <CategoryProps>{
     categoryId: 'collaborations',

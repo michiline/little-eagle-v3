@@ -34,6 +34,16 @@ export const ImageLink = styled.a<StyledImageLinkProps>`
       }
       max-width: calc(100% / 2 - 8px / 2);
     `}
+    ${p =>
+    p.hidden &&
+    css`
+      @media only screen and (min-width: ${p => p.theme.breakpoints.lg + 1}px) {
+        visibility: hidden;
+      }
+      @media only screen and (max-width: ${p => p.theme.breakpoints.lg}px) {
+        display: none;
+      }
+    `}
 `
 
 export const StyledImage = styled.img`
