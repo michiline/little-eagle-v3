@@ -33,6 +33,9 @@ export const LatestGalleries = styled.div`
   align-items: center;
   justify-content: center;
   padding: 72px 16px;
+  @media only screen and (max-width: ${p => p.theme.breakpoints.sm}px) {
+    padding: 48px 16px;
+  }
 `
 
 export const Testimonials = styled.div`
@@ -47,6 +50,9 @@ export const Testimonials = styled.div`
     flex-direction: column;
     align-items: center;
   }
+  @media only screen and (max-width: ${p => p.theme.breakpoints.sm}px) {
+    padding: 48px 16px;
+  }
 `
 
 export const About = styled.div`
@@ -60,6 +66,9 @@ export const About = styled.div`
     max-width: 475px;
     flex-direction: column;
     align-items: center;
+  }
+  @media only screen and (max-width: ${p => p.theme.breakpoints.sm}px) {
+    padding: 48px 16px;
   }
 `
 
@@ -129,6 +138,9 @@ export const Canvas = styled.div<CanvasProps>`
   }
   @media only screen and (max-width: ${p => p.theme.breakpoints.lg}px) {
     padding: 72px 16px;
+  }
+  @media only screen and (max-width: ${p => p.theme.breakpoints.sm}px) {
+    padding: 48px 16px;
   }
 `
 

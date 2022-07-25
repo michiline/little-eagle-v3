@@ -12,6 +12,7 @@ export const StyledFooter = styled.div`
   @media only screen and (max-width: ${p => p.theme.breakpoints.sm}px) {
     justify-content: center;
     flex-direction: column;
+    padding: 48px 16px;
   }
 `
 
