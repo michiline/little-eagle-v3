@@ -48,7 +48,7 @@ const CategoryPage = ({ category }) => {
             id: 'head.portfolio',
           })} - ${intl.formatMessage({ id: 'head.base' })}`}
         />
-        <meta name="og:url" content="https://www.littleeaglephoto.com" />
+        <meta name="og:url" content={`https://www.littleeaglephoto.com/portfolio/${category.id}`} />
         <meta
           name="og:image"
           content={`https://littleeaglephoto.s3.eu-central-1.amazonaws.com/cover/${category.id}-og.jpg`}
