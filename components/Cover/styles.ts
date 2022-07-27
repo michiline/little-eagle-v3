@@ -2,7 +2,6 @@ import styled, { css } from 'styled-components'
 import { CoverProps } from './Cover'
 
 type StyledCoverProps = Pick<CoverProps, 'imgUrl' | 'home'>
-type StyledCoverCenterProps = Pick<CoverProps, 'home'>
 
 export const Container = styled.div<StyledCoverProps>`
   width: 100%;

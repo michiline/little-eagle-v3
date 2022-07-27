@@ -299,16 +299,28 @@
       "value": "Goddess awakening"
     }
   ],
+  "head.about": [
+    {
+      "type": 0,
+      "value": "About me"
+    }
+  ],
   "head.base": [
     {
       "type": 0,
-      "value": " - Little Eagle Photography"
+      "value": "Little Eagle Photography"
     }
   ],
   "head.home": [
     {
       "type": 0,
       "value": "Home"
+    }
+  ],
+  "head.portfolio": [
+    {
+      "type": 0,
+      "value": "Portfolio"
     }
   ],
   "home.about.button": [

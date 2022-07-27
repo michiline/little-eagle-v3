@@ -17,10 +17,10 @@ const ImageGrid = ({ images, numInRow, style, className }: ImageGridProps) => {
             <Link key={index} href={href} passHref>
               <ImageLink numInRow={numInRow} hidden={hidden}>
                 <Overlay />
-                <Title variant="h3" color="light">
+                <Title variant="h3" color="light" shadow={true}>
                   <FormattedMessage id={id} />
                 </Title>
-                <StyledImage src={url} alt={'alt'} />
+                <StyledImage src={url} alt={id} />
               </ImageLink>
             </Link>
           )

@@ -4,6 +4,8 @@ import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import { portfolio } from 'utils/const'
 import { Gallery } from 'utils/types'
+import Head from 'next/head'
+import { useIntl } from 'react-intl'
 
 export async function getStaticProps(context) {
   const categoryId = context.params.categoryId
@@ -83,6 +85,7 @@ const GalleryPage = ({ gallery }: GalleryPageProps) => {
   const router = useRouter()
   const { query, pathname } = router
   const [img, setImg] = useState<number>(null)
+  const intl = useIntl()
   useEffect(() => {
     if (typeof query.img === 'string') {
       setImg(parseInt(query.img))
@@ -124,6 +127,24 @@ const GalleryPage = ({ gallery }: GalleryPageProps) => {
   }
   return (
     <>
+      <Head>
+        <title>{`${intl.formatMessage({ id: gallery.id })} - ${intl.formatMessage({
+          id: 'head.portfolio',
+        })} - ${intl.formatMessage({ id: 'head.base' })}`}</title>
+        <meta
+          name="og:title"
+          content={`${intl.formatMessage({ id: gallery.id })} - ${intl.formatMessage({
+            id: 'head.portfolio',
+          })} - ${intl.formatMessage({ id: 'head.base' })}`}
+        />
+        <meta name="og:url" content="https://www.littleeaglephoto.com" />
+        <meta
+          name="og:image"
+          content={`https://littleeaglephoto.s3.eu-central-1.amazonaws.com/cover/og/${gallery.id}.jpg`}
+        />
+        <meta name="og:image:width" content="320" />
+        <meta name="og:image:height" content="213" />
+      </Head>
       <GalleryJustified images={gallery.images.low} handleClick={handleOpen} />
       <GalleryFull
         url={gallery.images.high[img - 1]}

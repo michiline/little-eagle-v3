@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router'
-import { useMemo } from 'react'
+import { useEffect, useMemo } from 'react'
 import { ThemeProvider } from 'styled-components'
 import { GlobalStyles } from 'styles/GlobalStyles'
 import { theme } from 'styles/theme'
@@ -9,9 +9,11 @@ import { IntlProvider } from 'react-intl'
 import Footer from 'modules/Footer'
 import Header from 'modules/Header'
 import Drawer from 'modules/Drawer'
+import * as gtag from '../utils/gtag'
 
 export default function App({ Component, pageProps }) {
-  const { locale } = useRouter()
+  const router = useRouter()
+  const locale = router.locale
   const messages = useMemo(() => {
     switch (locale) {
       case 'en': {
@@ -23,6 +25,15 @@ export default function App({ Component, pageProps }) {
     }
   }, [locale])
 
+  useEffect(() => {
+    const handleRouteChange = (url: URL) => {
+      gtag.pageview(url)
+    }
+    router.events.on('routeChangeComplete', handleRouteChange)
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange)
+    }
+  }, [router.events])
   return (
     <>
       <GlobalStyles />

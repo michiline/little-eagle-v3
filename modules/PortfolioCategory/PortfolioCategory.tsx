@@ -15,7 +15,7 @@ const PortfolioCategory = ({ category }: PortfolioCategoryProps) => {
     <>
       <Cover imgUrl={category.url}>
         <Center>
-          <Typography variant="h1" fontWeight="normal" color="light">
+          <Typography variant="h1" fontWeight="normal" color="light" shadow={true}>
             <FormattedMessage id={category.id} />
           </Typography>
         </Center>

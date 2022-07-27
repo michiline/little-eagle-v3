@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 import { TypographyProps } from './Typography'
 
-type StyledTypographyProps = Pick<TypographyProps, 'variant' | 'fontWeight' | 'color'>
+type StyledTypographyProps = Pick<TypographyProps, 'variant' | 'fontWeight' | 'color' | 'shadow'>
 
 export const StyledTypography = styled.div<StyledTypographyProps>`
   font-size: ${p => {
@@ -87,7 +87,11 @@ export const StyledTypography = styled.div<StyledTypographyProps>`
     }
   }};
   line-height: 1.4;
-  text-shadow: ${p => p.variant === 'h1' && css`1.5594px 3.89849px 3.89849px rgba(0, 0, 0, 0.2);`};
+  ${p =>
+    p.shadow &&
+    css`
+      text-shadow: 1.5594px 3.89849px 3.89849px rgba(0, 0, 0, 0.2);
+    `}
 `
 
 // @media only screen and (max-width: ${p => p.theme.breakpoints.xl}px) {

@@ -305,16 +305,28 @@
       "value": "Buđenje boginje"
     }
   ],
+  "head.about": [
+    {
+      "type": 0,
+      "value": "O meni"
+    }
+  ],
   "head.base": [
     {
       "type": 0,
-      "value": " - Little Eagle Photography"
+      "value": "Little Eagle Photography"
     }
   ],
   "head.home": [
     {
       "type": 0,
       "value": "Naslovnica"
+    }
+  ],
+  "head.portfolio": [
+    {
+      "type": 0,
+      "value": "Portfolio"
     }
   ],
   "home.about.button": [
@@ -386,7 +398,7 @@
   "home.testimonials.lucija": [
     {
       "type": 0,
-      "value": "Oduševljeni smo. Veliko hvala na trudu i cjelokupnom dogovoru, ispunjenu naših želja i brzoj isporuci. Imate našu preporuku! :)"
+      "value": "Oduševljeni smo. Veliko hvala na trudu i cjelokupnom dogovoru, ispunjenju naših želja i brzoj isporuci. Imate našu preporuku! :)"
     }
   ],
   "home.testimonials.nikolina": [

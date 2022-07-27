@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from 'next/document'
+import { GA_TRACKING_ID } from 'utils/gtag'
 
 export default function Document() {
   return (
@@ -13,6 +14,7 @@ export default function Document() {
         <meta name="theme-color" content="#FFFBF6" />
         <meta name="og:site_name" content="Little Eagle Photography" />
         <meta name="og:type" content="website" />
+
         <meta name="og:title" content="Little Eagle Photography" />
         <meta name="og:url" content="https://www.littleeaglephoto.com" />
         <meta name="og:image" content="https://littleeaglephoto.s3.eu-central-1.amazonaws.com/cover/og.jpg" />
@@ -22,6 +24,20 @@ export default function Document() {
         <meta
           name="og:description"
           content="Ana Orlic is an event and portrait photographer from Zagreb, Croatia. Available worldwide."
+        />
+        {/* Global Site Tag (gtag.js) - Google Analytics */}
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`} />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${GA_TRACKING_ID}', {
+                page_path: window.location.pathname,
+              });
+          `,
+          }}
         />
       </Head>
       <body>

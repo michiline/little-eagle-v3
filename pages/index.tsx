@@ -7,10 +7,7 @@ export default function HomePage() {
   return (
     <>
       <Head>
-        <title>
-          {intl.formatMessage({ id: 'head.home' })}
-          {intl.formatMessage({ id: 'head.base' })}
-        </title>
+        <title>{`${intl.formatMessage({ id: 'head.home' })} - ${intl.formatMessage({ id: 'head.base' })}`}</title>
       </Head>
       <Home />
     </>

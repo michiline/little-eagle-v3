@@ -32,17 +32,17 @@ const Home = () => {
         <CoverCenter>
           <HomeLogo />
           <TitleWrap>
-            <Typography variant="h1" fontWeight="normal" color="light">
+            <Typography variant="h1" fontWeight="normal" color="light" shadow={true}>
               little
             </Typography>
-            <Typography variant="h1" fontWeight="normal" color="menu">
+            <Typography variant="h1" fontWeight="normal" color="menu" shadow={true}>
               eagle
             </Typography>
-            <Typography variant="h1" fontWeight="normal" color="light">
+            <Typography variant="h1" fontWeight="normal" color="light" shadow={true}>
               photography
             </Typography>
           </TitleWrap>
-          <Subtitle variant="h2" fontWeight="normal" color="light">
+          <Subtitle variant="h2" fontWeight="normal" color="light" shadow={true}>
             <FormattedMessage id="home.cover.subtitle" />
           </Subtitle>
           <NavLink href="/portfolio" fullWidth={true} style={{ marginTop: '24px' }}>
