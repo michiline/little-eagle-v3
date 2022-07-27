@@ -2,7 +2,7 @@ import Container from 'components/Container'
 import { AboutLogo, AboutTripodImage } from 'components/Images'
 import Typography from 'components/Typography'
 import { FormattedMessage } from 'react-intl'
-import { aboutImage1 } from 'utils/const'
+import { aboutImage1, aboutImage2 } from 'utils/const'
 import {
   AboutLogoHide,
   FirstTextColumn,
@@ -73,7 +73,7 @@ const About = () => {
           </TextColumn>
           <SecondImageColumn>
             <ImageFrame />
-            <Image src={aboutImage1} alt={'alt'} />
+            <Image src={aboutImage2} alt={'alt'} />
           </SecondImageColumn>
         </Row>
       </StyledAbout>

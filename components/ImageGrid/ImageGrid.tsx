@@ -13,7 +13,6 @@ const ImageGrid = ({ images, numInRow, style, className }: ImageGridProps) => {
     <StyledImageGrid style={style} className={className}>
       {images &&
         images.map(({ id, url, href, hidden }, index: number) => {
-          console.log(hidden)
           return (
             <Link key={index} href={href} passHref>
               <ImageLink numInRow={numInRow} hidden={hidden}>

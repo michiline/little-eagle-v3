@@ -10,6 +10,7 @@ export const homeLogo = '/images/home-logo.png'
 export const footerLogo = '/images/footer-logo.png'
 
 export const aboutImage1 = 'https://littleeagle.s3.eu-central-1.amazonaws.com/hi-3-3-2.jpg'
+export const aboutImage2 = 'https://littleeagle.s3.eu-central-1.amazonaws.com/facts-3.jpg'
 
 export const aboutLogo = '/images/cam-logo-paint.png'
 export const aboutTripodImage = '/images/cam-logo-tripod.png'

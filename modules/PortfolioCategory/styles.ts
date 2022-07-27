@@ -25,9 +25,6 @@ export const Center = styled.div`
   padding-left: 16px;
   padding-right: 16px;
   padding-bottom: 96px;
-  @media only screen and (max-width: ${p => p.theme.breakpoints.sm}px) {
-    padding-bottom: 48px;
-  }
 `
 
 export const Text = styled.div`
