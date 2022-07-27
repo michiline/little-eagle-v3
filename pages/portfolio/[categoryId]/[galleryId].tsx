@@ -132,6 +132,8 @@ const GalleryPage = ({ gallery, categoryId }: GalleryPageProps) => {
     <>
       <Head>
         <title>{`${intl.formatMessage({ id: gallery.id })} - ${intl.formatMessage({
+          id: categoryId,
+        })} - ${intl.formatMessage({
           id: 'head.portfolio',
         })} - ${intl.formatMessage({ id: 'head.base' })}`}</title>
         <meta
