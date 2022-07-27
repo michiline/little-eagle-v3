@@ -84,7 +84,6 @@ interface GalleryPageProps {
 }
 
 const GalleryPage = ({ gallery, categoryId }: GalleryPageProps) => {
-  console.log(categoryId)
   const router = useRouter()
   const { query, pathname } = router
   const [img, setImg] = useState<number>(null)
