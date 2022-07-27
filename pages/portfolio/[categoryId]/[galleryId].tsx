@@ -15,6 +15,7 @@ export async function getStaticProps(context) {
     props: {
       gallery,
       galleryId,
+      categoryId,
     },
   }
 }
@@ -79,9 +80,11 @@ export async function getStaticPaths() {
 
 interface GalleryPageProps {
   gallery: Gallery
+  categoryId: string
 }
 
-const GalleryPage = ({ gallery }: GalleryPageProps) => {
+const GalleryPage = ({ gallery, categoryId }: GalleryPageProps) => {
+  console.log(categoryId)
   const router = useRouter()
   const { query, pathname } = router
   const [img, setImg] = useState<number>(null)
@@ -137,10 +140,10 @@ const GalleryPage = ({ gallery }: GalleryPageProps) => {
             id: 'head.portfolio',
           })} - ${intl.formatMessage({ id: 'head.base' })}`}
         />
-        <meta name="og:url" content="https://www.littleeaglephoto.com" />
+        <meta name="og:url" content={`https://www.littleeaglephoto.com/portfolio/${categoryId}/${gallery.id}`} />
         <meta
           name="og:image"
-          content={`https://littleeaglephoto.s3.eu-central-1.amazonaws.com/cover/og/${gallery.id}.jpg`}
+          content={`https://littleeaglephoto.s3.eu-central-1.amazonaws.com/og/portfolio/${gallery.id}.jpg`}
         />
         <meta name="og:image:width" content="320" />
         <meta name="og:image:height" content="213" />

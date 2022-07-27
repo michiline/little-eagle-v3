@@ -13,7 +13,7 @@ const PortfolioPage = () => {
           content={`${intl.formatMessage({ id: 'head.portfolio' })} - ${intl.formatMessage({ id: 'head.base' })}`}
         />
         <meta name="og:url" content="https://www.littleeaglephoto.com" />
-        <meta name="og:image" content="https://littleeaglephoto.s3.eu-central-1.amazonaws.com/cover/og.jpg" />
+        <meta name="og:image" content="https://littleeaglephoto.s3.eu-central-1.amazonaws.com/og/home.jpg" />
         <meta name="og:image:width" content="320" />
         <meta name="og:image:height" content="213" />
       </Head>
