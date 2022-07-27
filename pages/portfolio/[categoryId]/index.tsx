@@ -51,7 +51,7 @@ const CategoryPage = ({ category }) => {
         <meta name="og:url" content={`https://www.littleeaglephoto.com/portfolio/${category.id}`} />
         <meta
           name="og:image"
-          content={`https://littleeaglephoto.s3.eu-central-1.amazonaws.com/og/category/${category.id}.jpg`}
+          content={`https://littleeaglephoto.s3.eu-central-1.amazonaws.com/cover/category/${category.id}.jpg`}
         />
         <meta name="og:image:width" content="320" />
         <meta name="og:image:height" content="213" />

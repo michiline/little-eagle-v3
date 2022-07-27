@@ -146,7 +146,7 @@ const GalleryPage = ({ gallery, categoryId }: GalleryPageProps) => {
         <meta name="og:url" content={`https://www.littleeaglephoto.com/portfolio/${categoryId}/${gallery.id}`} />
         <meta
           name="og:image"
-          content={`https://littleeaglephoto.s3.eu-central-1.amazonaws.com/og/portfolio/${gallery.id}.jpg`}
+          content={`https://littleeaglephoto.s3.eu-central-1.amazonaws.com/cover/portfolio/${gallery.id}.jpg`}
         />
         <meta name="og:image:width" content="320" />
         <meta name="og:image:height" content="213" />
