@@ -14,7 +14,7 @@ const Slideshow = ({ items }: SlideshowProps) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setActiveIndex((activeIndex + 1) % 4)
-    }, 8000)
+    }, 10000)
     return () => clearTimeout(timer)
   }, [activeIndex])
   return (
