@@ -7,7 +7,6 @@ export default function HomePage() {
   return (
     <>
       <Head>
-        <title>{`${intl.formatMessage({ id: 'head.home' })} - ${intl.formatMessage({ id: 'head.base' })}`}</title>
         <meta name="og:title" content="Little Eagle Photography" />
         <meta name="og:url" content="https://www.littleeaglephoto.com" />
         <meta name="og:image" content="https://littleeaglephoto.s3.eu-central-1.amazonaws.com/cover/home.jpg" />
@@ -18,6 +17,7 @@ export default function HomePage() {
           name="og:description"
           content="Ana Orlić is an event and portrait photographer from Zagreb, Croatia. Available worldwide."
         />
+        <title>{`${intl.formatMessage({ id: 'head.home' })} - ${intl.formatMessage({ id: 'head.base' })}`}</title>
       </Head>
       <Home />
     </>

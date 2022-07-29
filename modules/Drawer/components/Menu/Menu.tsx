@@ -5,6 +5,7 @@ import { useRouter } from 'next/router'
 import { FormattedMessage } from 'react-intl'
 import { email } from 'utils/const'
 import { LocaleLink, LocaleLinks, MenuLink, NavLinks, Socials, StyledMenu } from './styles'
+import useIsMounted from 'utils/hooks/useIsMounted'
 
 export interface MenuProps {
   isOpen: boolean
@@ -13,9 +14,10 @@ export interface MenuProps {
 
 const Menu = ({ isOpen, toggleDrawer }: MenuProps) => {
   const router = useRouter()
-  const { locale, pathname, query } = router
+  const { locale, pathname } = router
+  const isMounted = useIsMounted()
   return (
-    <StyledMenu isOpen={isOpen}>
+    <StyledMenu isOpen={isOpen} isMounted={isMounted}>
       <LocaleLinks>
         <NavLink locale="en" handleClick={toggleDrawer}>
           <LocaleLink variant="caption" color="light" fontWeight="bold" isActive={locale === 'en'}>

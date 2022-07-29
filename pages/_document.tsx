@@ -5,10 +5,6 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Abril+Fatface:wght@400&family=Raleway:wght@400;700&display=swap"
-          rel="stylesheet"
-        ></link>
         <link rel="shortcut icon" href="/images/favicon.ico" />
         <meta charSet="utf-8" />
         <meta name="theme-color" content="#FFFBF6" />
@@ -19,6 +15,10 @@ export default function Document() {
         <meta name="og:site_name" content="Little Eagle Photography" />
         <meta name="og:type" content="website" />
         {/* Global Site Tag (gtag.js) - Google Analytics */}
+        <link
+          href="https://fonts.googleapis.com/css2?family=Abril+Fatface:wght@400&family=Raleway:wght@400;700&display=swap"
+          rel="stylesheet"
+        ></link>
         <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`} />
         <script
           dangerouslySetInnerHTML={{

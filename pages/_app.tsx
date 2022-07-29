@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router'
-import { useEffect, useMemo } from 'react'
+import { Suspense, useEffect, useMemo } from 'react'
 import { ThemeProvider } from 'styled-components'
 import { GlobalStyles } from 'styles/GlobalStyles'
 import { theme } from 'styles/theme'
@@ -43,10 +43,12 @@ export default function App({ Component, pageProps }) {
       <GlobalStyles />
       <IntlProvider onError={() => null} locale={locale} messages={messages}>
         <ThemeProvider theme={theme}>
-          <DynamicHeader />
-          <Component {...pageProps} />
-          <DynamicFooter />
-          <Drawer />
+          <Suspense fallback={'Loading...'}>
+            <DynamicHeader />
+            <Component {...pageProps} />
+            <DynamicFooter />
+            <Drawer />
+          </Suspense>
         </ThemeProvider>
       </IntlProvider>
     </>

@@ -1,7 +1,8 @@
 import Typography from 'components/Typography'
 import styled, { css } from 'styled-components'
 
-export const StyledMenu = styled.div<{ isOpen: boolean }>`
+export const StyledMenu = styled.div<{ isOpen: boolean; isMounted: boolean }>`
+  transform: translateX(100%);
   width: 376px;
   height: 100%;
   background-color: ${p => p.theme.colors.menu};
@@ -9,11 +10,6 @@ export const StyledMenu = styled.div<{ isOpen: boolean }>`
   top: 0;
   right: 0;
   z-index: 11;
-  transition-property: transform;
-  transition-duration: 500ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transform: translateX(376px);
-  visibility: hidden;
   @media only screen and (max-width: ${p => p.theme.breakpoints.md}px) {
     width: 326px;
   }
@@ -21,8 +17,14 @@ export const StyledMenu = styled.div<{ isOpen: boolean }>`
     p.isOpen &&
     `
   transform: translateX(0);
-  visibility: visible;
 `}
+  ${p =>
+    p.isMounted &&
+    css`
+      transition-property: transform;
+      transition-duration: 500ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    `}
 `
 
 export const LocaleLinks = styled.div`
