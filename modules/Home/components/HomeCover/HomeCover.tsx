@@ -4,12 +4,21 @@ import { HomeLogo } from 'components/Images'
 import NavLink from 'components/NavLink'
 import Typography from 'components/Typography'
 import { FormattedMessage } from 'react-intl'
-import { homeCover } from 'utils/const'
-import { CoverCenter, Subtitle, TitleWrap } from './styles'
+import { homeCoverMobile, homeCoverWeb } from 'utils/const'
+import {
+  CoverCenter,
+  CoverImage,
+  CoverImageContainerMobile,
+  CoverImageContainerWeb,
+  Overlay,
+  StyledHomeCover,
+  Subtitle,
+  TitleWrap,
+} from './styles'
 
 const HomeCover = () => {
   return (
-    <Cover imgUrl={homeCover} home={true}>
+    <StyledHomeCover>
       <CoverCenter>
         <HomeLogo />
         <TitleWrap>
@@ -32,7 +41,14 @@ const HomeCover = () => {
           </Button>
         </NavLink>
       </CoverCenter>
-    </Cover>
+      <CoverImageContainerWeb>
+        <CoverImage src={homeCoverWeb} alt={'Wedding couple in grass field holding hands'} layout="fill" />
+      </CoverImageContainerWeb>
+      <CoverImageContainerMobile>
+        <CoverImage src={homeCoverMobile} alt={'Wedding couple in grass field holding hands'} layout="fill" />
+      </CoverImageContainerMobile>
+      <Overlay />
+    </StyledHomeCover>
   )
 }
 
