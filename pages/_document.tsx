@@ -12,6 +12,10 @@ export default function Document() {
         <link rel="shortcut icon" href="/images/favicon.ico" />
         <meta charSet="utf-8" />
         <meta name="theme-color" content="#FFFBF6" />
+        <meta
+          name="description"
+          content="Ana Orlić is an event and portrait photographer from Zagreb, Croatia. Available worldwide."
+        />
         <meta name="og:site_name" content="Little Eagle Photography" />
         <meta name="og:type" content="website" />
         {/* Global Site Tag (gtag.js) - Google Analytics */}

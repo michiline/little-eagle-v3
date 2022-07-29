@@ -10,6 +10,10 @@ import Footer from 'modules/Footer'
 import Header from 'modules/Header'
 import Drawer from 'modules/Drawer'
 import * as gtag from '../utils/gtag'
+import dynamic from 'next/dynamic'
+
+const DynamicFooter = dynamic(() => import('modules/Footer'))
+const DynamicHeader = dynamic(() => import('modules/Header'))
 
 export default function App({ Component, pageProps }) {
   const router = useRouter()
@@ -39,9 +43,9 @@ export default function App({ Component, pageProps }) {
       <GlobalStyles />
       <IntlProvider onError={() => null} locale={locale} messages={messages}>
         <ThemeProvider theme={theme}>
-          <Header />
+          <DynamicHeader />
           <Component {...pageProps} />
-          <Footer />
+          <DynamicFooter />
           <Drawer />
         </ThemeProvider>
       </IntlProvider>
