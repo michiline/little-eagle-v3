@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { FormattedMessage } from 'react-intl'
 import { Image, Stylable } from 'utils/types'
-import { StyledImage, ImageLink, StyledImageGrid, Overlay, Title } from './styles'
+import { StyledImage, ImageLink, StyledImageGrid, Overlay, Title, ImageGridItem } from './styles'
 
 export interface ImageGridProps extends Stylable {
   images: Array<Image>
@@ -20,7 +20,7 @@ const ImageGrid = ({ images, numInRow, style, className }: ImageGridProps) => {
                 <Title variant="h3" color="light" shadow={true}>
                   <FormattedMessage id={id} />
                 </Title>
-                <StyledImage src={url} alt={id} />
+                <ImageGridItem src={url} alt={id} layout="fill" />
               </ImageLink>
             </Link>
           )

@@ -1,4 +1,5 @@
 import Typography from 'components/Typography'
+import Image from 'next/image'
 import styled, { css } from 'styled-components'
 import { ImageGridProps } from './ImageGrid'
 
@@ -18,6 +19,7 @@ export const ImageLink = styled.a<StyledImageLinkProps>`
   display: flex;
   cursor: pointer;
   width: 100%;
+  aspect-ratio: 3 / 2;
   ${p =>
     p.numInRow === 3 &&
     css`
@@ -49,6 +51,10 @@ export const ImageLink = styled.a<StyledImageLinkProps>`
 export const StyledImage = styled.img`
   object-fit: cover;
   width: 100%;
+`
+
+export const ImageGridItem = styled(Image)`
+  object-fit: cover;
 `
 
 export const Overlay = styled.div`
