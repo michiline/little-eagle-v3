@@ -42,7 +42,7 @@ export const ImageColumn = styled.div`
   display: flex;
   justify-content: flex-start;
   width: 100%;
-
+  aspect-ratio: 2 / 3;
   @media only screen and (max-width: ${p => p.theme.breakpoints.md}px) {
     width: 100%;
   }

@@ -6,7 +6,9 @@ export const homeCoverWeb = `${ROOT}/cover/home.jpg`
 export const homeCoverMobile = `${ROOT}/cover/home-768px.jpg`
 export const homeAbout = 'https://littleeagle.s3.eu-central-1.amazonaws.com/hi-3-3-2.jpg'
 export const homeCanvas = '/images/canvas.png'
-export const CamBirdWhiteLogoUrl = '/images/home-logo.png'
+
+export const HomeLogo = '/images/home-logo.png'
+export const FooterLogo = '/images/footer-logo.png'
 
 export const footerLogo = '/images/footer-logo.png'
 

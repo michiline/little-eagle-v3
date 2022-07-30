@@ -1,9 +1,10 @@
 import Button from 'components/Button'
 import Container from 'components/Container'
-import { HomeAboutImage } from 'components/Images'
 import NavLink from 'components/NavLink'
 import Typography from 'components/Typography'
+import Image from 'next/image'
 import { FormattedMessage } from 'react-intl'
+import { aboutImage1 } from 'utils/const'
 import { AboutBody, ImageColumn, ImageFrame, StyledHomeAbout, TextColumn } from './styles'
 
 const HomeAbout = () => {
@@ -11,7 +12,7 @@ const HomeAbout = () => {
     <Container backgroundColor="secondary">
       <StyledHomeAbout>
         <ImageColumn>
-          <HomeAboutImage style={{ zIndex: 2 }} />
+          <Image src={aboutImage1} alt="girl holding hair in the air" layout="fill" style={{ zIndex: 2 }} />
           <ImageFrame />
         </ImageColumn>
         <TextColumn>

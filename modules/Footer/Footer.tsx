@@ -1,10 +1,10 @@
 import Container from 'components/Container'
 import { SocialIcons } from 'components/Icons'
-import { FooterLogo } from 'components/Images'
 import NavLink from 'components/NavLink'
 import Typography from 'components/Typography'
+import Image from 'next/image'
 import { FormattedMessage } from 'react-intl'
-import { email } from 'utils/const'
+import { email, FooterLogo } from 'utils/const'
 import { Contact, StyledFooter, Links, LinksColumn, LinksGroup, Socials, FooterLink } from './styles'
 
 const Footer = () => {
@@ -53,7 +53,7 @@ const Footer = () => {
           </LinksColumn>
         </Links>
         <Socials>
-          <FooterLogo />
+          <Image src={FooterLogo} width={191} height={150} alt="Bird over a camera logo" />
           <Contact>
             <SocialIcons color={'dark'} />
             <Typography variant="caption" style={{ marginLeft: '8px' }}>
