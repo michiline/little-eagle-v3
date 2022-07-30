@@ -1,5 +1,5 @@
 import { ImageProps } from 'next/image'
-import { aboutLogo, aboutTripodImage, footerLogo, homeAbout, homeLogo } from 'utils/const'
+import { aboutLogo, aboutTripodImage, footerLogo, homeAbout, CamBirdWhiteLogoUrl } from 'utils/const'
 import { ImageBase } from './Base'
 
 export const FooterLogo = () => <ImageBase src={footerLogo} width={190} alt={'alt'} />
@@ -11,7 +11,7 @@ export const HomeAboutImage = ({ style }: StyledImageProps) => (
 )
 
 export const HomeLogo = ({ style }: StyledImageProps) => (
-  <ImageBase width={190} style={style} src={homeLogo} alt={'alt'} />
+  <ImageBase width={190} style={style} src={CamBirdWhiteLogoUrl} alt={'alt'} />
 )
 
 export const AboutLogo = ({ style, className }: StyledImageProps) => (
