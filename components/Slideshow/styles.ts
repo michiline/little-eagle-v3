@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Image from 'next/image'
 
 export const TextColumn = styled.div`
   display: flex;
@@ -29,36 +30,41 @@ export const SlideshowBody = styled.div<SlideshowItemProps>`
   top: 0;
   opacity: ${p => (p.active ? 1 : 0)};
   visibility: ${p => (p.active ? 'visible' : 'hidden')};
-  transition-property: opacity;
+  transition-property: opacity, visibility;
   transition-duration: 1000ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 `
 
 export const ImageColumn = styled.div`
-  position: relative;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
   width: 100%;
+  aspect-ratio: 2 / 3;
   margin-left: 32px;
   @media only screen and (max-width: ${p => p.theme.breakpoints.md}px) {
     margin-left: 0;
     width: 100%;
     margin-top: 48px;
   }
+  border: 3px solid ${p => p.theme.colors.text.primary};
 `
 
-export const Image = styled.img<SlideshowItemProps>`
+export const ImageCenter = styled.div`
+  width: calc(100% - 64px);
+  height: calc(100% - 64px);
+  position: relative;
+`
+
+export const SlideshowImage = styled(Image)<SlideshowItemProps>`
   position: ${p => (p.first ? 'relative' : 'absolute')};
-  width: 100%;
-  padding: 32px;
   border: 3px solid ${p => p.theme.colors.text.primary};
   opacity: ${p => (p.active ? 1 : 0)};
-  @media only screen and (max-width: ${p => p.theme.breakpoints.md}px) {
-    padding: 16px;
-  }
-  transition-property: opacity;
+  visibility: ${p => (p.active ? 'visible' : 'hidden')};
+  transition-property: opacity, visibility;
   transition-duration: 1000ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  object-fit: cover;
 `
 
 export const SlideshowPicker = styled.div`
@@ -81,7 +87,7 @@ export const CircleButton = styled.button<{ active: boolean }>`
   border: none;
   cursor: pointer;
   transition-property: background-color;
-  transition-duration: 1000ms;
+  transition-duration: 2000ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   @media only screen and (max-width: ${p => p.theme.breakpoints.md}px) {
     margin-top: 16px;

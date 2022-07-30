@@ -66,3 +66,7 @@ export const Overlay = styled.div`
   left: 0;
   z-index: 1;
 `
+
+export const CamBirdWhiteLogo = styled(Image)`
+  object-fit: cover;
+`

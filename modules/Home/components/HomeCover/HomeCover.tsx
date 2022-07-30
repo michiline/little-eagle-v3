@@ -4,8 +4,9 @@ import { HomeLogo } from 'components/Images'
 import NavLink from 'components/NavLink'
 import Typography from 'components/Typography'
 import { FormattedMessage } from 'react-intl'
-import { homeCoverMobile, homeCoverWeb } from 'utils/const'
+import { homeCoverMobile, homeCoverWeb, CamBirdWhiteLogoUrl } from 'utils/const'
 import {
+  CamBirdWhiteLogo,
   CoverCenter,
   CoverImage,
   CoverImageContainerMobile,
@@ -20,7 +21,7 @@ const HomeCover = () => {
   return (
     <StyledHomeCover>
       <CoverCenter>
-        <HomeLogo />
+        <CamBirdWhiteLogo src={CamBirdWhiteLogoUrl} width={191} height={150} alt="Bird over a camera logo" />
         <TitleWrap>
           <Typography variant="h1" fontWeight="normal" color="light" shadow={true}>
             little

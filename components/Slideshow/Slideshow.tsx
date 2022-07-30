@@ -1,8 +1,19 @@
 import Typography from 'components/Typography'
+import { fill } from 'lodash'
+import dynamic from 'next/dynamic'
 import { useEffect, useState } from 'react'
 import { FormattedMessage } from 'react-intl'
 import { SlideshowItem, Stylable } from 'utils/types'
-import { SlideshowText, TextColumn, SlideshowBody, SlideshowPicker, CircleButton, ImageColumn, Image } from './styles'
+import {
+  SlideshowText,
+  TextColumn,
+  SlideshowBody,
+  SlideshowPicker,
+  CircleButton,
+  ImageColumn,
+  SlideshowImage,
+  ImageCenter,
+} from './styles'
 
 interface SlideshowProps extends Stylable {
   items: Array<SlideshowItem>
@@ -42,9 +53,18 @@ const Slideshow = ({ items }: SlideshowProps) => {
         </SlideshowPicker>
       </TextColumn>
       <ImageColumn>
-        {items.map((item, index) => (
-          <Image key={index} src={item.url} alt={'alt'} first={index === 0} active={index === activeIndex} />
-        ))}
+        <ImageCenter>
+          {items.map((item, index) => (
+            <SlideshowImage
+              key={index}
+              src={item.url}
+              alt={'alt'}
+              first={index === 0}
+              active={index === activeIndex}
+              layout="fill"
+            />
+          ))}
+        </ImageCenter>
       </ImageColumn>
     </>
   )
