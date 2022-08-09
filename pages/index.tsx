@@ -15,7 +15,7 @@ export default function HomePage() {
         <meta name="og:image:alt" content="Wedding couple in grass field holding hands." />
         <meta
           name="og:description"
-          content="Ana Orlić is an event and portrait photographer from Zagreb, Croatia. Available worldwide."
+          content="Little Eagle Photography (Ana Orlić) is an event and portrait photographer from Zagreb, Croatia. Available worldwide."
         />
         <title>{`${intl.formatMessage({ id: 'head.home' })} - ${intl.formatMessage({ id: 'head.base' })}`}</title>
       </Head>

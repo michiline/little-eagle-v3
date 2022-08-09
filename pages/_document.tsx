@@ -10,7 +10,7 @@ export default function Document() {
         <meta name="theme-color" content="#FFFBF6" />
         <meta
           name="description"
-          content="Ana Orlić is an event and portrait photographer from Zagreb, Croatia. Available worldwide."
+          content="Little Eagle Photography (Ana Orlić) is an event and portrait photographer from Zagreb, Croatia. Available worldwide."
         />
         <meta name="og:site_name" content="Little Eagle Photography" />
         <meta name="og:type" content="website" />
