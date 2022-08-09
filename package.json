@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next -p 4101",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "start": "next start -p 4101",
     "compile:i18n": "formatjs compile-folder --ast --format simple locales public/locales",
     "i18n": "npm run compile:i18n",
@@ -13,6 +14,7 @@
   "dependencies": {
     "lodash": "^4.17.21",
     "next": "12.2.0",
+    "next-sitemap": "^3.1.17",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-intl": "^6.0.4",

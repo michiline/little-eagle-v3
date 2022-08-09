@@ -1,5 +1,6 @@
+import Image from 'next/image'
 import useOnKeyDown from 'utils/hooks/useOnKeyDown'
-import { BackIcon, Center, CloseIcon, ForwardIcon, FullScreenImg, StyledGalleryFull } from './styles'
+import { BackIcon, Center, CloseIcon, ForwardIcon, FullScreenImage, StyledGalleryFull } from './styles'
 
 interface GalleryFullProps {
   url: string
@@ -23,9 +24,7 @@ const GalleryFull = ({ url, handleClose, handleNext, handlePrevious }: GalleryFu
   })
   return (
     <StyledGalleryFull show={!!url}>
-      <Center>
-        <FullScreenImg src={url} alt="alt" />
-      </Center>
+      <Center>{url && <FullScreenImage src={url} alt="alt" layout="fill" quality={100} />}</Center>
       <CloseIcon handleClick={handleClose} />
       <BackIcon handleClick={handlePrevious} />
       <ForwardIcon handleClick={handleNext} />

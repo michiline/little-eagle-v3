@@ -23,7 +23,7 @@ const PortfolioCategory = ({ category }: PortfolioCategoryProps) => {
       <Container backgroundColor="primary">
         <StyledPortfolioCategory>
           <Text>
-            <Typography variant="body" fontWeight="normal" color="dark">
+            <Typography variant="body" fontWeight="normal" color="dark" style={{ width: '50%' }}>
               <FormattedMessage id={`${category.id}.text.1`} />
             </Typography>
             <SecondParagraph variant="body" fontWeight="normal" color="dark">

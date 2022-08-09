@@ -42,4 +42,5 @@ export const SecondParagraph = styled(Typography)`
     margin-left: 0px;
     margin-top: 16px;
   }
+  width: 50%;
 `

@@ -59,6 +59,7 @@ export const portfolio = generatePortfolio([
     galleries: [
       <GalleryProps>{ galleryId: 'wedding-ia', n: 275 },
       <GalleryProps>{ galleryId: 'wedding-md', n: 79 },
+      <GalleryProps>{ galleryId: 'wedding-ni', n: 58 },
       <GalleryProps>{ galleryId: 'wedding-istria', n: 88 },
       <GalleryProps>{ galleryId: 'khl', n: 99 },
       <GalleryProps>{ galleryId: 'aal', n: 74 },
@@ -66,6 +67,8 @@ export const portfolio = generatePortfolio([
       <GalleryProps>{ galleryId: 'wedding-mp', n: 118 },
       <GalleryProps>{ galleryId: 'wedding-rm', n: 62 },
       <GalleryProps>{ galleryId: 'engagement-jk', n: 40 },
+      <GalleryProps>{ galleryId: 'engagement-jk', n: 40, hidden: true },
+      <GalleryProps>{ galleryId: 'engagement-jk', n: 40, hidden: true },
     ],
   },
   <CategoryProps>{

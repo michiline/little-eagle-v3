@@ -1,4 +1,5 @@
 import { IconGalleryBack, IconGalleryClose, IconGalleryForward } from 'components/Icons'
+import Image from 'next/image'
 import styled, { css } from 'styled-components'
 
 export const StyledGalleryFull = styled.div<{ show: boolean }>`
@@ -26,19 +27,13 @@ export const StyledGalleryFull = styled.div<{ show: boolean }>`
 `
 
 export const Center = styled.div`
+  position: relative;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 100%;
 `
 
-export const FullScreenImg = styled.img`
-  max-height: calc(100vh);
-  max-width: calc(100vw);
-  height: auto;
-  width: 100%:
-  object-fit: cover;
+export const FullScreenImage = styled(Image)`
+  object-fit: contain;
 `
 
 export const CloseIcon = styled(IconGalleryClose)`

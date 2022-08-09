@@ -593,6 +593,12 @@
       "value": "Vjenčanje M & T"
     }
   ],
+  "wedding-ni": [
+    {
+      "type": 0,
+      "value": "Vjenčanje N & I"
+    }
+  ],
   "wedding-rm": [
     {
       "type": 0,

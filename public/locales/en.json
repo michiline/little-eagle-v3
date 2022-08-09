@@ -587,6 +587,12 @@
       "value": "Wedding M & T"
     }
   ],
+  "wedding-ni": [
+    {
+      "type": 0,
+      "value": "Wedding N & I"
+    }
+  ],
   "wedding-rm": [
     {
       "type": 0,

@@ -1,3 +1,9 @@
-# https://www.robotstxt.org/robotstxt.html
+# *
 User-agent: *
-Disallow:
+Allow: /
+
+# Host
+Host: https://littleeaglephoto.com
+
+# Sitemaps
+Sitemap: https://littleeaglephoto.com/sitemap.xml

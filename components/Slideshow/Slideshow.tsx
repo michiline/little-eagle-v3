@@ -1,6 +1,4 @@
 import Typography from 'components/Typography'
-import { fill } from 'lodash'
-import dynamic from 'next/dynamic'
 import { useEffect, useState } from 'react'
 import { FormattedMessage } from 'react-intl'
 import { SlideshowItem, Stylable } from 'utils/types'
