@@ -63,7 +63,6 @@ const Footer = () => {
             </Contact>
           </Socials>
         </Row>
-
         <Copyright>
           <Typography variant="caption" color="dark">
             {copyright}
