@@ -4,7 +4,7 @@ import ImageGrid from 'components/ImageGrid'
 import Typography from 'components/Typography'
 import { FormattedMessage } from 'react-intl'
 import { Category } from 'utils/types'
-import { Center, SecondParagraph, StyledPortfolioCategory, Text } from './styles'
+import { Center, FirstParagraph, SecondParagraph, StyledPortfolioCategory, Text } from './styles'
 
 interface PortfolioCategoryProps {
   category: Category
@@ -23,9 +23,9 @@ const PortfolioCategory = ({ category }: PortfolioCategoryProps) => {
       <Container backgroundColor="primary">
         <StyledPortfolioCategory>
           <Text>
-            <Typography variant="body" fontWeight="normal" color="dark" style={{ width: '50%' }}>
+            <FirstParagraph variant="body" fontWeight="normal" color="dark">
               <FormattedMessage id={`${category.id}.text.1`} />
-            </Typography>
+            </FirstParagraph>
             <SecondParagraph variant="body" fontWeight="normal" color="dark">
               <FormattedMessage id={`${category.id}.text.2`} />
             </SecondParagraph>

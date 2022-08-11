@@ -36,11 +36,19 @@ export const Text = styled.div`
   }
 `
 
+export const FirstParagraph = styled(Typography)`
+  width: 50%;
+  @media only screen and (max-width: ${p => p.theme.breakpoints.lg}px) {
+    width: 100%;
+  }
+`
+
 export const SecondParagraph = styled(Typography)`
+  width: 50%;
   margin-left: 16px;
   @media only screen and (max-width: ${p => p.theme.breakpoints.lg}px) {
+    width: 100%;
     margin-left: 0px;
     margin-top: 16px;
   }
-  width: 50%;
 `
