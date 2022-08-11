@@ -22,6 +22,8 @@ export const email = 'ana_orlic@yahoo.com'
 export const facebook = 'https://www.facebook.com/littleeaglephoto'
 export const instagram = 'https://www.instagram.com/littleeaglephoto'
 
+export const copyright = 'Ana Orlić © LittleEagle Photography'
+
 const generateGallery = ({ categoryId, galleryId, n, hidden = false }: GalleryProps): Gallery => {
   return {
     id: galleryId,
