@@ -6,6 +6,7 @@ import { portfolio } from 'utils/const'
 import { Gallery } from 'utils/types'
 import Head from 'next/head'
 import { useIntl } from 'react-intl'
+import Meta from 'components/Meta'
 
 export async function getStaticProps(context) {
   const categoryId = context.params.categoryId
@@ -96,61 +97,56 @@ const GalleryPage = ({ gallery, categoryId }: GalleryPageProps) => {
     }
   }, [gallery.images.high, query.img])
   const handleOpen = (i: number) =>
-    router.replace({
-      pathname,
-      query: { ...query, img: `${i + 1}` },
-    })
+    router.replace(
+      {
+        pathname,
+        query: { ...query, img: `${i + 1}` },
+      },
+      undefined,
+      { scroll: false }
+    )
   const handleClose = () => {
     if (img) {
       delete query.img
-      router.replace({
-        pathname,
-        query,
-      })
+      router.replace(
+        {
+          pathname,
+          query,
+        },
+        undefined,
+        { scroll: false }
+      )
     }
   }
   const handleNext = () => {
     if (img) {
       const nextImg = (img % gallery.images.high.length) + 1
-      router.replace({
-        pathname,
-        query: { ...query, img: `${nextImg}` },
-      })
+      router.replace(
+        {
+          pathname,
+          query: { ...query, img: `${nextImg}` },
+        },
+        undefined,
+        { scroll: false }
+      )
     }
   }
   const handlePrevious = () => {
     if (img) {
       const nextImg = ((img - 1 + gallery.images.high.length - 1) % gallery.images.high.length) + 1
-      router.replace({
-        pathname,
-        query: { ...query, img: `${nextImg}` },
-      })
+      router.replace(
+        {
+          pathname,
+          query: { ...query, img: `${nextImg}` },
+        },
+        undefined,
+        { scroll: false }
+      )
     }
   }
   return (
     <>
-      <Head>
-        <title>{`${intl.formatMessage({ id: gallery.id })} - ${intl.formatMessage({
-          id: categoryId,
-        })} - ${intl.formatMessage({
-          id: 'head.portfolio',
-        })} - ${intl.formatMessage({ id: 'head.base' })}`}</title>
-        <meta
-          name="og:title"
-          content={`${intl.formatMessage({ id: gallery.id })} - ${intl.formatMessage({
-            id: categoryId,
-          })} - ${intl.formatMessage({
-            id: 'head.portfolio',
-          })} - ${intl.formatMessage({ id: 'head.base' })}`}
-        />
-        <meta name="og:url" content={`https://www.littleeaglephoto.com/portfolio/${categoryId}/${gallery.id}`} />
-        <meta
-          name="og:image"
-          content={`https://littleeaglephoto.s3.eu-central-1.amazonaws.com/cover/portfolio/${gallery.id}.jpg`}
-        />
-        <meta name="og:image:width" content="320" />
-        <meta name="og:image:height" content="213" />
-      </Head>
+      <Meta id="gallery" categoryId={categoryId} galleryId={gallery.id} />
       <GalleryJustified images={gallery.images.low} handleClick={handleOpen} />
       <GalleryFull
         url={gallery.images.high[img - 1]}
@@ -163,3 +159,28 @@ const GalleryPage = ({ gallery, categoryId }: GalleryPageProps) => {
 }
 
 export default GalleryPage
+
+{
+  /* <Head>
+<title>{`${intl.formatMessage({ id: gallery.id })} - ${intl.formatMessage({
+  id: categoryId,
+})} - ${intl.formatMessage({
+  id: 'head.portfolio',
+})} - ${intl.formatMessage({ id: 'head.base' })}`}</title>
+<meta
+  name="og:title"
+  content={`${intl.formatMessage({ id: gallery.id })} - ${intl.formatMessage({
+    id: categoryId,
+  })} - ${intl.formatMessage({
+    id: 'head.portfolio',
+  })} - ${intl.formatMessage({ id: 'head.base' })}`}
+/>
+<meta name="og:url" content={`https://www.littleeaglephoto.com/portfolio/${categoryId}/${gallery.id}`} />
+<meta
+  name="og:image"
+  content={`https://littleeaglephoto.s3.eu-central-1.amazonaws.com/cover/portfolio/${gallery.id}.jpg`}
+/>
+<meta name="og:image:width" content="320" />
+<meta name="og:image:height" content="213" />
+</Head> */
+}

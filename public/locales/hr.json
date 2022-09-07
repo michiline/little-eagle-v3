@@ -83,6 +83,12 @@
       "value": "Bok, ja sam Ana!"
     }
   ],
+  "alt": [
+    {
+      "type": 0,
+      "value": "Naslovna fotografija"
+    }
+  ],
   "at-home-with-m-a": [
     {
       "type": 0,
@@ -189,6 +195,12 @@
     {
       "type": 0,
       "value": "Kuba"
+    }
+  ],
+  "description": [
+    {
+      "type": 0,
+      "value": "Little Eagle Photography (Ana Orlić) fotograf za vjenčanja i događaje iz Zagreba. Dostupna u Hrvatskoj i šire."
     }
   ],
   "eestec-meetings": [

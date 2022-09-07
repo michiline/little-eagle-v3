@@ -83,6 +83,12 @@
       "value": "Hi, I'm Ana!"
     }
   ],
+  "alt": [
+    {
+      "type": 0,
+      "value": "Cover photography"
+    }
+  ],
   "at-home-with-m-a": [
     {
       "type": 0,
@@ -189,6 +195,12 @@
     {
       "type": 0,
       "value": "Cuba"
+    }
+  ],
+  "description": [
+    {
+      "type": 0,
+      "value": "Little Eagle Photography (Ana Orlić) is an event and portrait photographer from Zagreb, Croatia. Available worldwide."
     }
   ],
   "eestec-meetings": [

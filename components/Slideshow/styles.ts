@@ -19,17 +19,17 @@ export const SlideshowText = styled.div`
 `
 
 interface SlideshowItemProps {
-  first: boolean
-  active: boolean
+  $first: boolean
+  $active: boolean
 }
 
 export const SlideshowBody = styled.div<SlideshowItemProps>`
   width: 100%;
   height: 100%;
-  position: ${p => (p.first ? 'relative' : 'absolute')};
+  position: ${p => (p.$first ? 'relative' : 'absolute')};
   top: 0;
-  opacity: ${p => (p.active ? 1 : 0)};
-  visibility: ${p => (p.active ? 'visible' : 'hidden')};
+  opacity: ${p => (p.$active ? 1 : 0)};
+  visibility: ${p => (p.$active ? 'visible' : 'hidden')};
   transition-property: opacity, visibility;
   transition-duration: 1000ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -57,10 +57,10 @@ export const ImageCenter = styled.div`
 `
 
 export const SlideshowImage = styled(Image)<SlideshowItemProps>`
-  position: ${p => (p.first ? 'relative' : 'absolute')};
+  position: ${p => (p.$first ? 'relative' : 'absolute')};
   border: 3px solid ${p => p.theme.colors.text.primary};
-  opacity: ${p => (p.active ? 1 : 0)};
-  visibility: ${p => (p.active ? 'visible' : 'hidden')};
+  opacity: ${p => (p.$active ? 1 : 0)};
+  visibility: ${p => (p.$active ? 'visible' : 'hidden')};
   transition-property: opacity, visibility;
   transition-duration: 1000ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -78,12 +78,12 @@ export const SlideshowPicker = styled.div`
   }
 `
 
-export const CircleButton = styled.button<{ active: boolean }>`
+export const CircleButton = styled.button<{ $active: boolean }>`
   border-radius: 50%;
   width: 32px;
   height: 32px;
   padding: 8px;
-  background-color: ${p => (p.active ? p.theme.colors.text.primary : p.theme.colors.background.tertiary)};
+  background-color: ${p => (p.$active ? p.theme.colors.text.primary : p.theme.colors.background.tertiary)};
   border: none;
   cursor: pointer;
   transition-property: background-color;

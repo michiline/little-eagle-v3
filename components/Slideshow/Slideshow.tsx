@@ -34,7 +34,7 @@ const Slideshow = ({ items }: SlideshowProps) => {
         </Typography>
         <SlideshowText>
           {items.map((item, index) => (
-            <SlideshowBody key={index} active={index === activeIndex} first={index === 0}>
+            <SlideshowBody key={index} $active={index === activeIndex} $first={index === 0}>
               <Typography variant="body" color="dark">
                 <FormattedMessage id={item.id} />
               </Typography>
@@ -46,7 +46,7 @@ const Slideshow = ({ items }: SlideshowProps) => {
         </SlideshowText>
         <SlideshowPicker>
           {items.map((_, index) => (
-            <CircleButton key={index} onClick={() => setActiveIndex(index)} active={index === activeIndex} />
+            <CircleButton key={index} onClick={() => setActiveIndex(index)} $active={index === activeIndex} />
           ))}
         </SlideshowPicker>
       </TextColumn>
@@ -57,8 +57,8 @@ const Slideshow = ({ items }: SlideshowProps) => {
               key={index}
               src={item.url}
               alt={'alt'}
-              first={index === 0}
-              active={index === activeIndex}
+              $first={index === 0}
+              $active={index === activeIndex}
               layout="fill"
             />
           ))}
