@@ -1,6 +1,7 @@
 import { Category, CategoryProps, Gallery, GalleryProps, Image, SlideshowItem } from './types'
 
 export const ROOT = process.env.NEXT_PUBLIC_STATIC_URL
+export const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL
 
 export const homeCoverWeb = `${ROOT}/cover/home.jpg`
 export const homeCoverMobile = `${ROOT}/cover/home-768px.jpg`
@@ -19,7 +20,6 @@ export const aboutLogo = '/images/cam-logo-paint.png'
 export const aboutTripodImage = '/images/cam-logo-tripod.png'
 
 export const websiteName = 'Little Eagle Photography'
-export const baseUrl = 'https://littleeaglephoto.com'
 export const email = 'ana_orlic@yahoo.com'
 export const facebook = 'https://www.facebook.com/littleeaglephoto'
 export const instagram = 'https://www.instagram.com/littleeaglephoto'
