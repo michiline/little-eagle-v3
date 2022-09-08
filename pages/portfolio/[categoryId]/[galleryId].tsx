@@ -146,6 +146,7 @@ const GalleryPage = ({ gallery, categoryId }: GalleryPageProps) => {
   }
   return (
     <>
+      <Meta id="gallery" categoryId={categoryId} galleryId={gallery.id} />
       <GalleryJustified images={gallery.images.low} handleClick={handleOpen} />
       <GalleryFull
         url={gallery.images.high[img - 1]}
@@ -158,5 +159,3 @@ const GalleryPage = ({ gallery, categoryId }: GalleryPageProps) => {
 }
 
 export default GalleryPage
-
-// <Meta id="gallery" categoryId={categoryId} galleryId={gallery.id} />
