@@ -36,10 +36,11 @@ export async function getStaticPaths() {
 const CategoryPage = ({ category }) => {
   return (
     <>
-      <Meta id={'category'} categoryId={category.id} />
       <PortfolioCategory category={category} />
     </>
   )
 }
 
 export default CategoryPage
+
+// <Meta id={'category'} categoryId={category.id} />

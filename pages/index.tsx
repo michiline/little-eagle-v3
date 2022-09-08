@@ -4,8 +4,9 @@ import Home from 'modules/Home'
 export default function HomePage() {
   return (
     <>
-      <Meta id={'home'} />
       <Home />
     </>
   )
 }
+
+// <Meta id={'home'} />

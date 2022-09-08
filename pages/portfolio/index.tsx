@@ -7,10 +7,11 @@ const PortfolioPage = () => {
   const intl = useIntl()
   return (
     <>
-      <Meta id="portfolio" />
       <Portfolio />
     </>
   )
 }
 
 export default PortfolioPage
+
+// <Meta id="portfolio" />

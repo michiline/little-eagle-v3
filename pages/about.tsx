@@ -4,10 +4,11 @@ import About from 'modules/About'
 const AboutPage = () => {
   return (
     <>
-      <Meta id="about" />
       <About />
     </>
   )
 }
 
 export default AboutPage
+
+// <Meta id="about" />

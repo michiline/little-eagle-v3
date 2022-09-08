@@ -146,7 +146,6 @@ const GalleryPage = ({ gallery, categoryId }: GalleryPageProps) => {
   }
   return (
     <>
-      <Meta id="gallery" categoryId={categoryId} galleryId={gallery.id} />
       <GalleryJustified images={gallery.images.low} handleClick={handleOpen} />
       <GalleryFull
         url={gallery.images.high[img - 1]}
@@ -160,27 +159,4 @@ const GalleryPage = ({ gallery, categoryId }: GalleryPageProps) => {
 
 export default GalleryPage
 
-{
-  /* <Head>
-<title>{`${intl.formatMessage({ id: gallery.id })} - ${intl.formatMessage({
-  id: categoryId,
-})} - ${intl.formatMessage({
-  id: 'head.portfolio',
-})} - ${intl.formatMessage({ id: 'head.base' })}`}</title>
-<meta
-  name="og:title"
-  content={`${intl.formatMessage({ id: gallery.id })} - ${intl.formatMessage({
-    id: categoryId,
-  })} - ${intl.formatMessage({
-    id: 'head.portfolio',
-  })} - ${intl.formatMessage({ id: 'head.base' })}`}
-/>
-<meta name="og:url" content={`https://www.littleeaglephoto.com/portfolio/${categoryId}/${gallery.id}`} />
-<meta
-  name="og:image"
-  content={`https://littleeaglephoto.s3.eu-central-1.amazonaws.com/cover/portfolio/${gallery.id}.jpg`}
-/>
-<meta name="og:image:width" content="320" />
-<meta name="og:image:height" content="213" />
-</Head> */
-}
+// <Meta id="gallery" categoryId={categoryId} galleryId={gallery.id} />
