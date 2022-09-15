@@ -65,6 +65,7 @@ export const portfolio = generatePortfolio([
   <CategoryProps>{
     categoryId: 'weddings',
     galleries: [
+      <GalleryProps>{ galleryId: 'wedding-pm', n: 127 },
       <GalleryProps>{ galleryId: 'wedding-ia', n: 275 },
       <GalleryProps>{ galleryId: 'wedding-md', n: 79 },
       <GalleryProps>{ galleryId: 'wedding-ni', n: 58 },
@@ -76,12 +77,12 @@ export const portfolio = generatePortfolio([
       <GalleryProps>{ galleryId: 'wedding-rm', n: 62 },
       <GalleryProps>{ galleryId: 'engagement-jk', n: 40 },
       <GalleryProps>{ galleryId: 'engagement-jk', n: 40, hidden: true },
-      <GalleryProps>{ galleryId: 'engagement-jk', n: 40, hidden: true },
     ],
   },
   <CategoryProps>{
     categoryId: 'family',
     galleries: [
+      <GalleryProps>{ galleryId: 'tn-in-cologne', n: 47 },
       <GalleryProps>{ galleryId: 'at-home-with-m-a', n: 64 },
       <GalleryProps>{ galleryId: 'sea-session', n: 23 },
       <GalleryProps>{ galleryId: 'baptism-andrija', n: 49 },
@@ -93,7 +94,6 @@ export const portfolio = generatePortfolio([
       <GalleryProps>{ galleryId: 'autumn-with-t', n: 28 },
       <GalleryProps>{ galleryId: 'maternity-sara', n: 36 },
       <GalleryProps>{ galleryId: 'i-a-a', n: 21 },
-      <GalleryProps>{ galleryId: 'i-a-a', n: 21, hidden: true },
     ],
   },
   <CategoryProps>{

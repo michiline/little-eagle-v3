@@ -539,6 +539,12 @@
       "value": "Studio Zimat"
     }
   ],
+  "tn-in-cologne": [
+    {
+      "type": 0,
+      "value": "T & N u Kölnu"
+    }
+  ],
   "travels": [
     {
       "type": 0,
@@ -609,6 +615,12 @@
     {
       "type": 0,
       "value": "Vjenčanje N & I"
+    }
+  ],
+  "wedding-pm": [
+    {
+      "type": 0,
+      "value": "Vjenčanje P & M"
     }
   ],
   "wedding-rm": [

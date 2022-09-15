@@ -533,6 +533,12 @@
       "value": "Studio Zimat"
     }
   ],
+  "tn-in-cologne": [
+    {
+      "type": 0,
+      "value": "T & N in Cologne"
+    }
+  ],
   "travels": [
     {
       "type": 0,
@@ -603,6 +609,12 @@
     {
       "type": 0,
       "value": "Wedding N & I"
+    }
+  ],
+  "wedding-pm": [
+    {
+      "type": 0,
+      "value": "Wedding P & M"
     }
   ],
   "wedding-rm": [

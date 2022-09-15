@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import useOnKeyDown from 'utils/hooks/useOnKeyDown'
 import { BackIcon, Center, CloseIcon, ForwardIcon, FullScreenImage, StyledGalleryFull } from './styles'
 

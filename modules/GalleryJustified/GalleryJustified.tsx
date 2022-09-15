@@ -1,9 +1,7 @@
 import Container from 'components/Container'
-import { useRouter } from 'next/router'
 import { CustomImage, ListItem, StyledGalleryJustified } from './styles'
 
 const GalleryJustifed = ({ images, handleClick }) => {
-  const router = useRouter()
   return (
     <Container backgroundColor="primary" minHeight={true}>
       <StyledGalleryJustified>
