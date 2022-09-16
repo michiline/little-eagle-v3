@@ -1,11 +1,11 @@
 import PortfolioCategory from 'modules/PortfolioCategory'
-import { portfolio } from 'utils/const'
+import { lPortfolio, portfolio } from 'utils/const'
 import { Category } from 'utils/types'
 import Meta from 'components/Meta'
 
 export async function getStaticProps(context) {
   const categoryId = context.params.categoryId
-  const category = portfolio.filter((elem: Category) => elem.id === categoryId)[0]
+  const category = lPortfolio.filter((elem: Category) => elem.id === categoryId)[0]
   return {
     props: {
       category,
@@ -15,7 +15,7 @@ export async function getStaticProps(context) {
 }
 
 export async function getStaticPaths() {
-  const hr = portfolio.map(category => {
+  const hr = lPortfolio.map(category => {
     return {
       params: { category, categoryId: category.id },
       locale: 'hr',

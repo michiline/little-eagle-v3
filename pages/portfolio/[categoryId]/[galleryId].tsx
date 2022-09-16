@@ -4,7 +4,6 @@ import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import { portfolio } from 'utils/const'
 import { Gallery } from 'utils/types'
-import Head from 'next/head'
 import { useIntl } from 'react-intl'
 import Meta from 'components/Meta'
 

@@ -50,6 +50,15 @@ const generateGallery = ({ categoryId, galleryId, n, hidden = false }: GalleryPr
   }
 }
 
+const generateLGallery = ({ categoryId, galleryId, n, hidden = false }: GalleryProps): Image => {
+  return {
+    id: galleryId,
+    url: `${ROOT}/cover/portfolio/${galleryId}.jpg`,
+    href: `/portfolio/${categoryId}/${galleryId}`,
+    hidden: hidden,
+  }
+}
+
 const generatePortfolio = (categories: Array<CategoryProps>): Array<Category> => {
   return categories.map(({ categoryId, galleries }) => {
     return <Category>{
@@ -60,6 +69,99 @@ const generatePortfolio = (categories: Array<CategoryProps>): Array<Category> =>
     }
   })
 }
+
+const generateLPortfolio = (categories: Array<CategoryProps>): Array<Category> => {
+  return categories.map(({ categoryId, galleries }) => {
+    return <Category>{
+      id: categoryId,
+      url: `${ROOT}/cover/category/${categoryId}.jpg`,
+      href: `/portfolio/${categoryId}`,
+      galleries: galleries.map(({ galleryId, n, hidden }) => generateLGallery({ categoryId, galleryId, n, hidden })),
+    }
+  })
+}
+
+export const lPortfolio = generateLPortfolio([
+  <CategoryProps>{
+    categoryId: 'weddings',
+    galleries: [
+      <GalleryProps>{ galleryId: 'wedding-pm', n: 127 },
+      <GalleryProps>{ galleryId: 'wedding-ia', n: 275 },
+      <GalleryProps>{ galleryId: 'wedding-md', n: 79 },
+      <GalleryProps>{ galleryId: 'wedding-ni', n: 58 },
+      <GalleryProps>{ galleryId: 'wedding-istria', n: 88 },
+      <GalleryProps>{ galleryId: 'khl', n: 99 },
+      <GalleryProps>{ galleryId: 'aal', n: 74 },
+      <GalleryProps>{ galleryId: 'wedding-mt', n: 99 },
+      <GalleryProps>{ galleryId: 'wedding-mp', n: 118 },
+      <GalleryProps>{ galleryId: 'wedding-rm', n: 62 },
+      <GalleryProps>{ galleryId: 'engagement-jk', n: 40 },
+      <GalleryProps>{ galleryId: 'engagement-jk', n: 40, hidden: true },
+    ],
+  },
+  <CategoryProps>{
+    categoryId: 'family',
+    galleries: [
+      <GalleryProps>{ galleryId: 'tn-in-cologne', n: 47 },
+      <GalleryProps>{ galleryId: 'at-home-with-m-a', n: 64 },
+      <GalleryProps>{ galleryId: 'sea-session', n: 23 },
+      <GalleryProps>{ galleryId: 'baptism-andrija', n: 49 },
+      <GalleryProps>{ galleryId: 'baptism-ivan', n: 53 },
+      <GalleryProps>{ galleryId: 'baptism-tamara', n: 39 },
+      <GalleryProps>{ galleryId: 'brothers-n-m', n: 34 },
+      <GalleryProps>{ galleryId: 'baptism-karla', n: 35 },
+      <GalleryProps>{ galleryId: 'christmas-time', n: 29 },
+      <GalleryProps>{ galleryId: 'autumn-with-t', n: 28 },
+      <GalleryProps>{ galleryId: 'maternity-sara', n: 36 },
+      <GalleryProps>{ galleryId: 'i-a-a', n: 21 },
+    ],
+  },
+  <CategoryProps>{
+    categoryId: 'portraits',
+    galleries: [
+      <GalleryProps>{ galleryId: 'in-studio', n: 26 },
+      <GalleryProps>{ galleryId: 'on-location', n: 38 },
+      <GalleryProps>{ galleryId: 'on-location', n: 38, hidden: true },
+    ],
+  },
+  <CategoryProps>{
+    categoryId: 'collaborations',
+    galleries: [
+      <GalleryProps>{ galleryId: 'lilium', n: 36 },
+      <GalleryProps>{ galleryId: 'studio-zimat', n: 45 },
+      <GalleryProps>{ galleryId: 'bovani-design', n: 29 },
+      <GalleryProps>{ galleryId: 'brave-phone', n: 14 },
+      <GalleryProps>{ galleryId: 'lifestyle-istria', n: 43 },
+      <GalleryProps>{ galleryId: 'equilibrium-counselling', n: 17 },
+      <GalleryProps>{ galleryId: 'website-dina', n: 11 },
+      <GalleryProps>{ galleryId: 'website-josipa', n: 14 },
+      <GalleryProps>{ galleryId: 'yoni', n: 40 },
+    ],
+  },
+  <CategoryProps>{
+    categoryId: 'events',
+    galleries: [
+      <GalleryProps>{ galleryId: 'crikvenica-2021', n: 71 },
+      <GalleryProps>{ galleryId: 'goddess-awakening', n: 41 },
+      <GalleryProps>{ galleryId: 'eestec-meetings', n: 47 },
+      <GalleryProps>{ galleryId: 'chill-vibez-battles', n: 47 },
+    ],
+  },
+  <CategoryProps>{
+    categoryId: 'travels',
+    galleries: [
+      <GalleryProps>{ galleryId: 'croatia', n: 84 },
+      <GalleryProps>{ galleryId: 'mexico', n: 94 },
+      <GalleryProps>{ galleryId: 'zanzibar', n: 47 },
+      <GalleryProps>{ galleryId: 'srilanka', n: 30 },
+      <GalleryProps>{ galleryId: 'soca-valley', n: 12 },
+      <GalleryProps>{ galleryId: 'balkan', n: 10 },
+      <GalleryProps>{ galleryId: 'usa', n: 19 },
+      <GalleryProps>{ galleryId: 'europe', n: 16 },
+      <GalleryProps>{ galleryId: 'cuba', n: 16 },
+    ],
+  },
+])
 
 export const portfolio = generatePortfolio([
   <CategoryProps>{
@@ -142,6 +244,85 @@ export const portfolio = generatePortfolio([
     ],
   },
 ])
+// <CategoryProps>{
+//   categoryId: 'weddings',
+//   galleries: [
+//     <GalleryProps>{ galleryId: 'wedding-pm', n: 127 },
+//     <GalleryProps>{ galleryId: 'wedding-ia', n: 275 },
+//     <GalleryProps>{ galleryId: 'wedding-md', n: 79 },
+//     <GalleryProps>{ galleryId: 'wedding-ni', n: 58 },
+//     <GalleryProps>{ galleryId: 'wedding-istria', n: 88 },
+//     <GalleryProps>{ galleryId: 'khl', n: 99 },
+//     <GalleryProps>{ galleryId: 'aal', n: 74 },
+//     <GalleryProps>{ galleryId: 'wedding-mt', n: 99 },
+//     <GalleryProps>{ galleryId: 'wedding-mp', n: 118 },
+//     <GalleryProps>{ galleryId: 'wedding-rm', n: 62 },
+//     <GalleryProps>{ galleryId: 'engagement-jk', n: 40 },
+//     <GalleryProps>{ galleryId: 'engagement-jk', n: 40, hidden: true },
+//   ],
+// },
+// <CategoryProps>{
+//   categoryId: 'family',
+//   galleries: [
+//     <GalleryProps>{ galleryId: 'tn-in-cologne', n: 47 },
+//     <GalleryProps>{ galleryId: 'at-home-with-m-a', n: 64 },
+//     <GalleryProps>{ galleryId: 'sea-session', n: 23 },
+//     <GalleryProps>{ galleryId: 'baptism-andrija', n: 49 },
+//     <GalleryProps>{ galleryId: 'baptism-ivan', n: 53 },
+//     <GalleryProps>{ galleryId: 'baptism-tamara', n: 39 },
+//     <GalleryProps>{ galleryId: 'brothers-n-m', n: 34 },
+//     <GalleryProps>{ galleryId: 'baptism-karla', n: 35 },
+//     <GalleryProps>{ galleryId: 'christmas-time', n: 29 },
+//     <GalleryProps>{ galleryId: 'autumn-with-t', n: 28 },
+//     <GalleryProps>{ galleryId: 'maternity-sara', n: 36 },
+//     <GalleryProps>{ galleryId: 'i-a-a', n: 21 },
+//   ],
+// },
+// <CategoryProps>{
+//   categoryId: 'portraits',
+//   galleries: [
+//     <GalleryProps>{ galleryId: 'in-studio', n: 26 },
+//     <GalleryProps>{ galleryId: 'on-location', n: 38 },
+//     <GalleryProps>{ galleryId: 'on-location', n: 38, hidden: true },
+//   ],
+// },
+// <CategoryProps>{
+//   categoryId: 'collaborations',
+//   galleries: [
+//     <GalleryProps>{ galleryId: 'lilium', n: 36 },
+//     <GalleryProps>{ galleryId: 'studio-zimat', n: 45 },
+//     <GalleryProps>{ galleryId: 'bovani-design', n: 29 },
+//     <GalleryProps>{ galleryId: 'brave-phone', n: 14 },
+//     <GalleryProps>{ galleryId: 'lifestyle-istria', n: 43 },
+//     <GalleryProps>{ galleryId: 'equilibrium-counselling', n: 17 },
+//     <GalleryProps>{ galleryId: 'website-dina', n: 11 },
+//     <GalleryProps>{ galleryId: 'website-josipa', n: 14 },
+//     <GalleryProps>{ galleryId: 'yoni', n: 40 },
+//   ],
+// },
+// <CategoryProps>{
+//   categoryId: 'events',
+//   galleries: [
+//     <GalleryProps>{ galleryId: 'crikvenica-2021', n: 71 },
+//     <GalleryProps>{ galleryId: 'goddess-awakening', n: 41 },
+//     <GalleryProps>{ galleryId: 'eestec-meetings', n: 47 },
+//     <GalleryProps>{ galleryId: 'chill-vibez-battles', n: 47 },
+//   ],
+// },
+// <CategoryProps>{
+//   categoryId: 'travels',
+//   galleries: [
+//     <GalleryProps>{ galleryId: 'croatia', n: 84 },
+//     <GalleryProps>{ galleryId: 'mexico', n: 94 },
+//     <GalleryProps>{ galleryId: 'zanzibar', n: 47 },
+//     <GalleryProps>{ galleryId: 'srilanka', n: 30 },
+//     <GalleryProps>{ galleryId: 'soca-valley', n: 12 },
+//     <GalleryProps>{ galleryId: 'balkan', n: 10 },
+//     <GalleryProps>{ galleryId: 'usa', n: 19 },
+//     <GalleryProps>{ galleryId: 'europe', n: 16 },
+//     <GalleryProps>{ galleryId: 'cuba', n: 16 },
+//   ],
+// },
 
 export const latestGalleries = [portfolio[0].galleries[0], portfolio[1].galleries[0], portfolio[1].galleries[2]]
 
