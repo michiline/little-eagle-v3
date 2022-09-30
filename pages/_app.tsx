@@ -9,6 +9,7 @@ import { IntlProvider } from 'react-intl'
 import Drawer from 'modules/Drawer'
 import * as gtag from '../utils/gtag'
 import dynamic from 'next/dynamic'
+import { AuthProvider } from '../contexts/auth'
 
 const DynamicFooter = dynamic(() => import('modules/Footer'))
 const DynamicHeader = dynamic(() => import('modules/Header'))
@@ -38,17 +39,19 @@ export default function App({ Component, pageProps }) {
   }, [router.events])
   return (
     <>
-      <GlobalStyles />
-      <IntlProvider onError={() => null} locale={locale} messages={messages}>
-        <ThemeProvider theme={theme}>
-          <Suspense fallback={'Loading...'}>
-            <DynamicHeader />
-            <Component {...pageProps} />
-            <DynamicFooter />
-            <Drawer />
-          </Suspense>
-        </ThemeProvider>
-      </IntlProvider>
+      <AuthProvider>
+        <GlobalStyles />
+        <IntlProvider onError={() => null} locale={locale} messages={messages}>
+          <ThemeProvider theme={theme}>
+            <Suspense fallback={'Loading...'}>
+              <DynamicHeader />
+              <Component {...pageProps} />
+              <DynamicFooter />
+              <Drawer />
+            </Suspense>
+          </ThemeProvider>
+        </IntlProvider>
+      </AuthProvider>
     </>
   )
 }

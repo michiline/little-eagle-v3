@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { FormattedMessage } from 'react-intl'
 import { Image, Stylable } from 'utils/types'
-import { StyledImage, ImageLink, StyledImageGrid, Overlay, Title, ImageGridItem } from './styles'
+import { ImageLink, StyledImageGrid, Overlay, Title, ImageGridItem } from './styles'
 
 export interface ImageGridProps extends Stylable {
   images: Array<Image>

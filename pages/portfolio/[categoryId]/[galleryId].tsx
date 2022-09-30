@@ -87,7 +87,6 @@ const GalleryPage = ({ gallery, categoryId }: GalleryPageProps) => {
   const router = useRouter()
   const { query, pathname } = router
   const [img, setImg] = useState<number>(null)
-  const intl = useIntl()
   useEffect(() => {
     if (typeof query.img === 'string') {
       setImg(parseInt(query.img))

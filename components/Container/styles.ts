@@ -24,10 +24,9 @@ export const StyledContainer = styled.div<ContainerProps>`
     p.minHeight &&
     css`
       padding-top: calc(96px);
-      min-height: calc(100vh - 347.367px);
+      min-height: calc(100vh - 370px);
       @media only screen and (max-width: ${p => p.theme.breakpoints.md}px) {
         padding-top: calc(64px);
-        min-height: 0;
       }
     `}
 `

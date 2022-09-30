@@ -161,6 +161,24 @@
       "value": "Božićno vrijeme"
     }
   ],
+  "client.login": [
+    {
+      "type": 0,
+      "value": "Prijavi se"
+    }
+  ],
+  "client.password": [
+    {
+      "type": 0,
+      "value": "Upiši lozinku..."
+    }
+  ],
+  "client.username": [
+    {
+      "type": 0,
+      "value": "Upiši korisničko ime..."
+    }
+  ],
   "collaborations": [
     {
       "type": 0,

@@ -13,4 +13,8 @@ export const GlobalStyles = createGlobalStyle`
     -webkit-tap-highlight-color: transparent;
     outline: none;
   }
+  input[type="text"],input[type="password"] 
+  {
+    background: #FFFBF6;
+  }
 `

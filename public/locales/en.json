@@ -161,6 +161,24 @@
       "value": "Christmas time"
     }
   ],
+  "client.login": [
+    {
+      "type": 0,
+      "value": "Log in"
+    }
+  ],
+  "client.password": [
+    {
+      "type": 0,
+      "value": "Enter password..."
+    }
+  ],
+  "client.username": [
+    {
+      "type": 0,
+      "value": "Enter username..."
+    }
+  ],
   "collaborations": [
     {
       "type": 0,

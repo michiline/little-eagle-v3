@@ -1,4 +1,10 @@
-import { IconGalleryBack, IconGalleryClose, IconGalleryForward } from 'components/Icons'
+import {
+  IconDownload,
+  IconDownloadSmall,
+  IconGalleryBack,
+  IconGalleryClose,
+  IconGalleryForward,
+} from 'components/Icons'
 import Image from 'next/image'
 import styled, { css } from 'styled-components'
 
@@ -39,6 +45,19 @@ export const FullScreenImage = styled(Image)`
 export const CloseIcon = styled(IconGalleryClose)`
   top: 8px;
   right: 16px;
+  position: fixed;
+  opacity: 0.8;
+  transition-property: opacity;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    opacity: 1;
+  }
+`
+
+export const DownloadIcon = styled(IconDownloadSmall)`
+  top: 8px;
+  right: 56px;
   position: fixed;
   opacity: 0.8;
   transition-property: opacity;
