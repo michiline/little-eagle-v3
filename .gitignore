@@ -36,3 +36,5 @@ yarn-error.log*
 
 # locales
 /locales
+
+package-lock.json

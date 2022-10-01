@@ -15,6 +15,7 @@ export const footerLogo = '/images/footer-logo.png'
 
 export const aboutImage1 = `${ROOT}/about1.jpg`
 export const aboutImage2 = `${ROOT}/about2.jpg`
+export const aboutImage3 = `${ROOT}/about3.jpg`
 
 export const aboutLogo = '/images/cam-logo-paint.png'
 export const aboutTripodImage = '/images/cam-logo-tripod.png'

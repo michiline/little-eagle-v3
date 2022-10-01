@@ -1,8 +1,8 @@
 import Container from 'components/Container'
-import { AboutLogo, AboutTripodImage } from 'components/Images'
+import { AboutTripodImage } from 'components/Images'
 import Typography from 'components/Typography'
 import { FormattedMessage } from 'react-intl'
-import { aboutImage1, aboutImage2 } from 'utils/const'
+import { aboutImage2, aboutImage3 } from 'utils/const'
 import {
   AboutLogoHide,
   FirstTextColumn,
@@ -22,7 +22,7 @@ const About = () => {
         <Row>
           <ImageColumn>
             <ImageFrame />
-            <Image src={aboutImage1} alt={'alt'} />
+            <Image src={aboutImage2} alt={'alt'} />
           </ImageColumn>
           <FirstTextColumn>
             <Typography variant="h1">
@@ -73,7 +73,7 @@ const About = () => {
           </TextColumn>
           <SecondImageColumn>
             <ImageFrame />
-            <Image src={aboutImage2} alt={'alt'} />
+            <Image src={aboutImage3} alt={'alt'} />
           </SecondImageColumn>
         </Row>
       </StyledAbout>
