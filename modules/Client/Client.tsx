@@ -6,8 +6,7 @@ import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import { useIntl } from 'react-intl'
 import SquareImageGrid from './components/SquareImageGrid'
-import { Toolbar } from './components/SquareImageGrid/styles'
-import { Center } from './styles'
+import { Center, Toolbar } from './styles'
 
 const Client = ({ images, url }) => {
   const router = useRouter()
@@ -73,7 +72,7 @@ const Client = ({ images, url }) => {
     <Container backgroundColor="primary" minHeight={true}>
       <Center>
         <Toolbar>
-          <a href={url} target="_blank" rel={'noreferrer'}>
+          <a href={url} target="_blank" rel={'noreferrer'} style={{ height: '64px' }}>
             <IconDownload title={intl.formatMessage({ id: 'download.all' })} />
           </a>
         </Toolbar>

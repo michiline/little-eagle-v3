@@ -503,6 +503,12 @@
       "value": "About me"
     }
   ],
+  "menu.client": [
+    {
+      "type": 0,
+      "value": "For clients"
+    }
+  ],
   "menu.home": [
     {
       "type": 0,

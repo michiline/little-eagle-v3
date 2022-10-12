@@ -509,6 +509,12 @@
       "value": "O meni"
     }
   ],
+  "menu.client": [
+    {
+      "type": 0,
+      "value": "Za klijente"
+    }
+  ],
   "menu.home": [
     {
       "type": 0,

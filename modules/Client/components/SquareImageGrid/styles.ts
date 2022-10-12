@@ -44,12 +44,3 @@ export const ListItem = styled.li`
     opacity: 0.9;
   }
 `
-
-export const Toolbar = styled.div`
-  width: 100%;
-  max-width: 1200px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  padding: 0px 16px;
-`

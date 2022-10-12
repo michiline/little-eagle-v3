@@ -46,6 +46,11 @@ const Menu = ({ isOpen, toggleDrawer }: MenuProps) => {
             <FormattedMessage id={'menu.about'} />
           </MenuLink>
         </NavLink>
+        <NavLink href="/client" handleClick={toggleDrawer} fullWidth={true}>
+          <MenuLink variant="menu" color="light" isActive={pathname === '/client'}>
+            <FormattedMessage id={'menu.client'} />
+          </MenuLink>
+        </NavLink>
         <Socials>
           <SocialIcons color={'light'} />
           <Typography variant="caption" color="light" style={{ marginRight: '8px' }}>
