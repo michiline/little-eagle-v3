@@ -103,6 +103,7 @@ export const lPortfolio = generateLPortfolio([
   <CategoryProps>{
     categoryId: 'family',
     galleries: [
+      <GalleryProps>{ galleryId: 'mt-in-park', n: 31 },
       <GalleryProps>{ galleryId: 'tn-in-cologne', n: 47 },
       <GalleryProps>{ galleryId: 'at-home-with-m-a', n: 64 },
       <GalleryProps>{ galleryId: 'sea-session', n: 23 },
@@ -142,10 +143,12 @@ export const lPortfolio = generateLPortfolio([
   <CategoryProps>{
     categoryId: 'events',
     galleries: [
+      <GalleryProps>{ galleryId: 'antonia-bachelorette', n: 65 },
       <GalleryProps>{ galleryId: 'crikvenica-2021', n: 71 },
       <GalleryProps>{ galleryId: 'goddess-awakening', n: 41 },
       <GalleryProps>{ galleryId: 'eestec-meetings', n: 47 },
       <GalleryProps>{ galleryId: 'chill-vibez-battles', n: 47 },
+      <GalleryProps>{ galleryId: 'chill-vibez-battles', n: 47, hidden: true },
     ],
   },
   <CategoryProps>{
@@ -185,6 +188,7 @@ export const portfolio = generatePortfolio([
   <CategoryProps>{
     categoryId: 'family',
     galleries: [
+      <GalleryProps>{ galleryId: 'mt-in-park', n: 31 },
       <GalleryProps>{ galleryId: 'tn-in-cologne', n: 47 },
       <GalleryProps>{ galleryId: 'at-home-with-m-a', n: 64 },
       <GalleryProps>{ galleryId: 'sea-session', n: 23 },
@@ -224,6 +228,7 @@ export const portfolio = generatePortfolio([
   <CategoryProps>{
     categoryId: 'events',
     galleries: [
+      <GalleryProps>{ galleryId: 'antonia-bachelorette', n: 65 },
       <GalleryProps>{ galleryId: 'crikvenica-2021', n: 71 },
       <GalleryProps>{ galleryId: 'goddess-awakening', n: 41 },
       <GalleryProps>{ galleryId: 'eestec-meetings', n: 47 },
@@ -246,7 +251,7 @@ export const portfolio = generatePortfolio([
   },
 ])
 
-export const latestGalleries = [portfolio[0].galleries[0], portfolio[1].galleries[0], portfolio[1].galleries[2]]
+export const latestGalleries = [portfolio[1].galleries[0], portfolio[4].galleries[0], portfolio[0].galleries[0]]
 
 export const testimonials = [
   <SlideshowItem>{

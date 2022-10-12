@@ -7,6 +7,7 @@ export const StyledLogin = styled.div`
   align-items: center;
   width: 100%;
   max-width: 382px;
+  padding: 48px 0;
 `
 
 export const Form = styled.div`

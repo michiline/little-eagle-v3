@@ -89,6 +89,12 @@
       "value": "Cover photography"
     }
   ],
+  "antonia-bachelorette": [
+    {
+      "type": 0,
+      "value": "Bachelorette Antonia"
+    }
+  ],
   "at-home-with-m-a": [
     {
       "type": 0,
@@ -179,6 +185,12 @@
       "value": "Enter username..."
     }
   ],
+  "close": [
+    {
+      "type": 0,
+      "value": "Close"
+    }
+  ],
   "collaborations": [
     {
       "type": 0,
@@ -219,6 +231,18 @@
     {
       "type": 0,
       "value": "Little Eagle Photography (Ana Orlić) is an event and portrait photographer from Zagreb, Croatia. Available worldwide."
+    }
+  ],
+  "download": [
+    {
+      "type": 0,
+      "value": "Download"
+    }
+  ],
+  "download.all": [
+    {
+      "type": 0,
+      "value": "Download all"
     }
   ],
   "eestec-meetings": [
@@ -495,6 +519,12 @@
     {
       "type": 0,
       "value": "Mexico"
+    }
+  ],
+  "mt-in-park": [
+    {
+      "type": 0,
+      "value": "M & T in park"
     }
   ],
   "on-location": [

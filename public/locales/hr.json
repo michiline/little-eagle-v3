@@ -89,6 +89,12 @@
       "value": "Naslovna fotografija"
     }
   ],
+  "antonia-bachelorette": [
+    {
+      "type": 0,
+      "value": "Antonia djevojačka"
+    }
+  ],
   "at-home-with-m-a": [
     {
       "type": 0,
@@ -179,6 +185,12 @@
       "value": "Upiši korisničko ime..."
     }
   ],
+  "close": [
+    {
+      "type": 0,
+      "value": "Zatvori"
+    }
+  ],
   "collaborations": [
     {
       "type": 0,
@@ -219,6 +231,18 @@
     {
       "type": 0,
       "value": "Little Eagle Photography (Ana Orlić) fotograf za vjenčanja i događaje iz Zagreba. Dostupna u Hrvatskoj i šire."
+    }
+  ],
+  "download": [
+    {
+      "type": 0,
+      "value": "Preuzmi"
+    }
+  ],
+  "download.all": [
+    {
+      "type": 0,
+      "value": "Preuzmi sve"
     }
   ],
   "eestec-meetings": [
@@ -501,6 +525,12 @@
     {
       "type": 0,
       "value": "Meksiko"
+    }
+  ],
+  "mt-in-park": [
+    {
+      "type": 0,
+      "value": "U parku s M & T"
     }
   ],
   "on-location": [

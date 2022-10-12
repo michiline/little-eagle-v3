@@ -46,8 +46,10 @@ export const ListItem = styled.li`
 `
 
 export const Toolbar = styled.div`
-  width: min-content;
+  width: 100%;
+  max-width: 1200px;
   display: flex;
   flex-direction: row;
-  margin: 24px 0;
+  justify-content: flex-end;
+  padding: 0px 16px;
 `
