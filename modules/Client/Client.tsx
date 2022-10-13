@@ -75,6 +75,9 @@ const Client = ({ images, url }) => {
           <a href={url} target="_blank" rel={'noreferrer'} style={{ height: '64px' }}>
             <IconDownload title={intl.formatMessage({ id: 'download.all' })} />
           </a>
+          <NavLink href="/logout">
+            <IconLogout />
+          </NavLink>
         </Toolbar>
         <SquareImageGrid images={images} handleClick={handleOpen} />
         <GalleryFull
