@@ -103,6 +103,7 @@ export const lPortfolio = generateLPortfolio([
   <CategoryProps>{
     categoryId: 'family',
     galleries: [
+      <GalleryProps>{ galleryId: 'ma', n: 25 },
       <GalleryProps>{ galleryId: 'mt-in-park', n: 31 },
       <GalleryProps>{ galleryId: 'tn-in-cologne', n: 47 },
       <GalleryProps>{ galleryId: 'at-home-with-m-a', n: 64 },
@@ -116,6 +117,7 @@ export const lPortfolio = generateLPortfolio([
       <GalleryProps>{ galleryId: 'autumn-with-t', n: 28 },
       <GalleryProps>{ galleryId: 'maternity-sara', n: 36 },
       <GalleryProps>{ galleryId: 'i-a-a', n: 21 },
+      <GalleryProps>{ galleryId: 'ma', n: 25, hidden: true },
     ],
   },
   <CategoryProps>{
@@ -188,6 +190,7 @@ export const portfolio = generatePortfolio([
   <CategoryProps>{
     categoryId: 'family',
     galleries: [
+      <GalleryProps>{ galleryId: 'ma', n: 25 },
       <GalleryProps>{ galleryId: 'mt-in-park', n: 31 },
       <GalleryProps>{ galleryId: 'tn-in-cologne', n: 47 },
       <GalleryProps>{ galleryId: 'at-home-with-m-a', n: 64 },
@@ -201,6 +204,7 @@ export const portfolio = generatePortfolio([
       <GalleryProps>{ galleryId: 'autumn-with-t', n: 28 },
       <GalleryProps>{ galleryId: 'maternity-sara', n: 36 },
       <GalleryProps>{ galleryId: 'i-a-a', n: 21 },
+      <GalleryProps>{ galleryId: 'ma', n: 25, hidden: true },
     ],
   },
   <CategoryProps>{
